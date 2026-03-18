@@ -1,142 +1,93 @@
-# 部署指南 - 免費方案
+# 🚀 一鍵部署到 Render
 
-## 🎯 目標
-讓客戶可以從外部訪問你的潛客表單，完全免費！
+## 快速部署
 
-## 📋 方案選擇
+### 步驟 1: 推送到 GitHub
 
-### 方案 A: ngrok（最簡單，適合測試）
-將你的本地電腦變成臨時網站，客戶可以從任何地方訪問。
+你需要先把這個代碼推送到你的 GitHub 賬號：
 
-**優點：**
-- 完全免費
-- 5分鐘搭建
-- 無需伺服器
-
-**缺點：**
-- 網址每次重啟會變（可用固定網址付費版）
-- 電腦需要一直開著
-
-### 方案 B: Render（推薦，適合長期）
-免費雲端托管，24小時在線。
-
-**優點：**
-- 永久免費網址
-- 24小時在線
-- 自動 HTTPS
-
-**缺點：**
-- 免費版有休眠（15分鐘無訪問會休眠，首次訪問需 30 秒喚醒）
-
----
-
-## 🚀 方案 A: ngrok 部署
-
-### 步驟 1: 安裝 ngrok
 ```bash
-# macOS
-brew install ngrok
+# 1. 創建 GitHub 倉庫
+# 訪問 https://github.com/new
+# 倉庫名: leads-system
+# 公開/私有都可以
 
-# 或手動安裝
-curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null
-echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
-sudo apt update && sudo apt install ngrok
-```
-
-### 步驟 2: 註冊 ngrok 賬號
-1. 訪問 https://ngrok.com
-2. 免費註冊
-3. 獲取 Authtoken
-
-### 步驟 3: 配置 ngrok
-```bash
-ngrok config add-authtoken YOUR_TOKEN
-```
-
-### 步驟 4: 啟動系統
-```bash
-# 終端 1: 啟動後端
-cd ~/.openclaw/workspace/leads_system
-./start.sh
-
-# 終端 2: 啟動 ngrok
-ngrok http 8000
-```
-
-### 步驟 5: 獲取網址
-ngrok 會顯示類似：
-```
-Forwarding: https://abc123.ngrok-free.app -> http://localhost:8000
-```
-
-把 `https://abc123.ngrok-free.app` 發給客戶即可！
-
----
-
-## 🚀 方案 B: Render 部署（推薦長期）
-
-### 步驟 1: 準備代碼
-確保以下文件已創建：
-- `render.yaml`（Render 配置文件）
-- `requirements.txt`（已創建）
-- `app.py`（已創建）
-
-### 步驟 2: 上傳到 GitHub
-```bash
-# 在 leads_system 目錄
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/leads-system.git
+# 2. 推送代碼（在 leads_system 目錄執行）
+git remote add origin https://github.com/YOUR_USERNAME/leads-system.git
+git branch -M main
 git push -u origin main
 ```
 
-### 步驟 3: Render 部署
-1. 訪問 https://render.com
-2. 用 GitHub 登錄
-3. 點擊 "New Web Service"
-4. 選擇你的 GitHub 倉庫
-5. 配置：
-   - **Name**: leads-system
-   - **Runtime**: Python 3
+---
+
+### 步驟 2: 一鍵部署
+
+把下面的鏈接中的 `YOUR_USERNAME` 替換成你的 GitHub 用戶名，然後點擊：
+
+```
+https://render.com/deploy?repo=https://github.com/YOUR_USERNAME/leads-system
+```
+
+或者手動部署：
+
+1. 登入 [render.com](https://render.com)
+2. 點擊 "New +" → "Web Service"
+3. 選擇 "Build and deploy from a Git repository"
+4. 連接你的 GitHub 並選擇 `leads-system` 倉庫
+5. 配置如下：
+   - **Name**: `leads-system`
+   - **Runtime**: `Python 3`
    - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `uvicorn app:app --host 0.0.0.0 --port 10000`
+   - **Start Command**: `uvicorn app:app --host 0.0.0.0 --port $PORT`
+   - **Plan**: `Free`
 6. 點擊 "Create Web Service"
 
-### 步驟 4: 獲取網址
-Render 會自動分配一個永久網址，例如：
+---
+
+## 📋 部署後
+
+部署完成後，你會獲得一個永久網址：
 ```
-https://leads-system.onrender.com
+https://leads-system-xxx.onrender.com
 ```
 
----
-
-## 📱 WhatsApp 通知配置
-
-目前 WhatsApp 通知會生成觸發文件。要實現真正自動發送，有幾個選項：
-
-### 選項 1: 使用 OpenClaw（推薦）
-讓我幫你在收到新潛客時通過 OpenClaw 發送 WhatsApp。
-
-### 選項 2: 使用第三方服務
-- Twilio（付費，穩定）
-- CallMeBot（免費，有限制）
+**功能頁面：**
+- 📝 客戶表單: `https://your-url.onrender.com/`
+- ⚙️ 管理後台: `https://your-url.onrender.com/admin`
+- 📊 API 文檔: `https://your-url.onrender.com/docs`
+- 📥 Excel 匯出: `https://your-url.onrender.com/api/export`
 
 ---
 
-## 🔒 安全建議
+## 🔧 環境變數（可選）
 
-1. **資料備份**：定期備份 `data/leads.db` 和 `exports/` 目錄
-2. **HTTPS**：ngrok 和 Render 都自動提供 HTTPS
-3. **訪問控制**：管理後台 `/admin` 建議添加密碼保護
+在 Render Dashboard → 你的服務 → Environment 可設置：
+
+| 變數 | 說明 | 預設 |
+|------|------|------|
+| `WHATSAPP_TO` | WhatsApp 通知接收號碼 | +85221101144 |
 
 ---
 
-## 📝 下一步
+## ⚠️ 注意事項
 
-1. ✅ 先在本地測試系統
-2. ✅ 選擇部署方案（ngrok 或 Render）
-3. ✅ 配置 WhatsApp 通知
-4. ✅ 分享表單給客戶
+- **免費方案**：服務會在 15 分鐘無訪問後休眠，下次訪問需等待 30 秒喚醒
+- **數據庫**：使用 SQLite，數據存儲在 Render 磁盤（免費方案每次部署會重置，建議考慮升級或定期備份）
+- **自定義域名**：可在 Render 設置中添加自己的域名
 
-需要我幫你完成哪一步？
+---
+
+## 🆘 故障排除
+
+**部署失敗？**
+1. 檢查 `requirements.txt` 是否正確
+2. 檢查 `Procfile` 格式（注意大寫 P）
+3. 查看 Render 日誌找錯誤
+
+**服務無法啟動？**
+1. 確認端口使用 `$PORT` 環境變數
+2. 檢查 `app.py` 是否存在並正確
+
+---
+
+*最後更新: 2025-01*
