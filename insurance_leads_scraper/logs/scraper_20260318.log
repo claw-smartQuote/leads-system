@@ -1,0 +1,18 @@
+⚠️ undetected-chromedriver 未安裝，Facebook 模塊將不可用
+======================================================================
+🤖 整合爬蟲系統 v2.0
+======================================================================
+🎯 目標: 100 條有效數據
+📁 輸出: /Users/claw/Desktop/汽車保險潛客數據
+⏰ 時間: 2026-03-18 09:00:01
+======================================================================
+Traceback (most recent call last):
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 436, in <module>
+    sys.exit(main())
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 396, in main
+    db = DatabaseManager()
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 65, in __init__
+    self.init_db()
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 68, in init_db
+    conn = sqlite3.connect(self.db_path)
+sqlite3.DatabaseError: authorization denied

@@ -1,0 +1,17 @@
+# 28Car 保險潛在客戶抓取系統 - Crontab 配置
+# 
+# 使用說明:
+# 1. 編輯 crontab: crontab -e
+# 2. 將以下行添加到文件末尾
+# 3. 保存並退出
+#
+# 注意: 請將 /path/to/insurance_leads_scraper 替換為實際路徑
+
+# 每天上午 9:30 執行爬蟲
+time 9 30 * * * cd /path/to/insurance_leads_scraper && /usr/bin/python3 main.py --pages 3 >> scraper.log 2>&1
+
+# 可選: 每週一上午 9:30 執行更深入的爬取（10頁）
+# 0 9 * * 1 cd /path/to/insurance_leads_scraper && /usr/bin/python3 main.py --pages 10 >> scraper.log 2>&1
+
+# 可選: 每天下午 6:00 執行一次補充爬取
+# 0 18 * * * cd /path/to/insurance_leads_scraper && /usr/bin/python3 main.py --pages 2 >> scraper.log 2>&1

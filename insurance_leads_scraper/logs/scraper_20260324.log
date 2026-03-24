@@ -1,0 +1,477 @@
+/Users/claw/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+======================================================================
+🤖 整合爬蟲系統 v2.0
+======================================================================
+🎯 目標: 100 條有效數據
+📁 輸出: /Users/claw/Desktop/汽車保險潛客數據
+⏰ 時間: 2026-03-24 08:01:20
+======================================================================
+
+🚗 啟動 28car.com 爬蟲...
+  📄 爬取第 1 頁...
+    ✅ [1] 63433910
+    ✅ [2] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [3] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [4] 69922781 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [5] 92676149 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [6] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [7] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [8] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [9] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [9] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [9] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [9] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [9] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [10] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [11] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [12] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+    ✅ [13] 98621233 🚗豐田 PORTE	汽油	5座	1500cc	自動波	2012	$42,
+  📄 爬取第 2 頁...
+    ✅ [13] 63433910
+    ✅ [13] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [13] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [13] 69922781 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [13] 92676149 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [13] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [13] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [13] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [13] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [13] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [13] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [13] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [13] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [13] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [13] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [13] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+    ✅ [13] 98621233 🚗豐田 PORTE	汽油	5座	1500cc	自動波	2012	$42,
+  📄 爬取第 3 頁...
+    ✅ [13] 63433910
+    ✅ [13] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [13] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [13] 69922781 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [13] 92676149 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [13] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [13] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [13] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [13] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [13] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [13] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [13] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [13] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [13] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [13] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [13] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+    ✅ [13] 98621233 🚗豐田 PORTE	汽油	5座	1500cc	自動波	2012	$42,
+  📄 爬取第 4 頁...
+    ✅ [14] 91608108
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 69922781 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 92676149 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+    📊 進度: 14/100 條 (第 5 頁)
+  📄 爬取第 5 頁...
+    ✅ [14] 91608108
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 69922781 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 92676149 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 6 頁...
+    ✅ [14] 91608108
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 69922781 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 92676149 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 7 頁...
+    ✅ [14] 91608108
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 69922781 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 92676149 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 8 頁...
+    ✅ [14] 91608108
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 69922781 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 92676149 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 9 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+    📊 進度: 14/100 條 (第 10 頁)
+  📄 爬取第 10 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 11 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 12 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 13 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 14 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+    📊 進度: 14/100 條 (第 15 頁)
+  📄 爬取第 15 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 16 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 17 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 18 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 19 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+    📊 進度: 14/100 條 (第 20 頁)
+  📄 爬取第 20 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 21 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 22 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 23 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 24 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+    📊 進度: 14/100 條 (第 25 頁)
+  📄 爬取第 25 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 3.5 ZG FACELIFT	汽油	7座	3
+    ✅ [14] 46230177 🚗寶馬 X7 XDRIVE40iA PURE EXCELLENCE	汽油
+    ✅ [14] 61259683 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 61259683 🚗鈴木 Jimny XL	汽油	4座	1460cc	自動波	2025	$
+    ✅ [14] 61259683 🚗豐田 RAV4 DELUXE	汽油	5座	1987cc	自動波	202
+    ✅ [14] 90334418 🚗豐田 VOXY HYBRID ZS FACELIFT NOAH	混能	
+    ✅ [14] 90501122 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 91686180 🚗豐田 ALPHARD 3.5	汽油	7座	3456cc	自動波	201
+    ✅ [14] 64019712 🚗現代 H1 EURO 5	其他	6座	2497cc	自動波	2013	
+  📄 爬取第 26 頁...
+    ✅ [14] 69922781
+    ✅ [14] 91608108 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 63433910 🚗豐田 LAND CRUISER 80	汽油	5座	4500cc	自動波
+    ✅ [14] 91362339 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+    ✅ [14] 61123032 🚗豐田 VELLFIRE 2.5 FACELIFT ALPHARD	汽油
+    ✅ [14] 92676149 🚗Suzuki Skywave 藍色電單車、配有金色輪圈，Ng 電郵:n
+    ✅ [14] 90334418 🚗本田 VEZEL	汽油	5座	1497cc	自動波	2015	$54,
+    ✅ [14] 93793325 🚗豐田 ALPHARD 3.5 SC FACELIFT	汽油	7座	35
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

@@ -1,0 +1,38 @@
+/Users/claw/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 683, in <module>
+    sys.exit(main())
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 639, in main
+    db = DatabaseManager()
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 78, in __init__
+    self.init_db()
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 81, in init_db
+    conn = sqlite3.connect(self.db_path)
+sqlite3.DatabaseError: authorization denied
+/Users/claw/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/claw/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 770, in <module>
+    sys.exit(main())
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 724, in main
+    db = DatabaseManager()
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 79, in __init__
+    self.init_db()
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 82, in init_db
+    conn = sqlite3.connect(self.db_path)
+sqlite3.DatabaseError: authorization denied
+/Users/claw/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 810, in <module>
+    sys.exit(main())
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 764, in main
+    db = DatabaseManager()
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 80, in __init__
+    self.init_db()
+  File "/Users/claw/.openclaw/workspace/insurance_leads_scraper/daily_scraper.py", line 84, in init_db
+    conn = sqlite3.connect(self.db_path, timeout=30, isolation_level=None)
+sqlite3.DatabaseError: authorization denied

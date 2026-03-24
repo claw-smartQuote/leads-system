@@ -1,0 +1,19 @@
+{
+  "tasks": [],
+  "bills": [],
+  "accounts": [
+    {
+      "id": "20260319034217",
+      "name": "🇨🇳 中國移動電話卡充值 (13537871061)",
+      "due_date": "2026-06-15",
+      "created_at": "2026-03-19T03:42:17.976040",
+      "status": "pending",
+      "repeat": "yearly",
+      "priority": "medium",
+      "notes": "每88天需充值一次，號碼：13537871061",
+      "updated_at": "2026-03-19T03:43:58.461682"
+    }
+  ],
+  "events": [],
+  "anniversaries": []
+}

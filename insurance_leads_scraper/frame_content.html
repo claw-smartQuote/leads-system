@@ -1,0 +1,263 @@
+<html><head>
+    <title>易發車網 28car.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=big5">
+    <meta name="viewport" content="width=800">
+    <link rel="canonical" href="https://www.28car.com/">
+    <link rel="stylesheet" href="css/lib.css?v=20240128" type="text/css">
+    <script language="JavaScript" src="js/chrome.js?v=20240128"></script>
+    <script language="JavaScript" src="js/chrome_menu.js?v=20240128"></script>
+    <script language="JavaScript" src="js/lib.js?v=20240128"></script>
+    <script language="JavaScript" src="js/srh.js?v=20240128"></script>
+    <script language="JavaScript" src="js/srh_tip.js?v=20240128"></script>
+    <script language="JavaScript" src="js/tch.js?v=20240128"></script>
+    <script language="JavaScript" src="js/rtm_beta.js?v=20240128"></script>
+    <script language="JavaScript">
+      isM("m_sell_lst.php?");
+
+      var obj = null;
+      var interval = null;
+      var timeout = null;
+
+      function setHigh(o){
+        o.className = "lst_hig";
+      }
+
+      function setNorm(o){
+        o.className = "";
+      }
+
+      function setFlash(o){
+        if (o.className == "lst_fsh") {
+          o.className = "";
+        } else {
+          o.className = "lst_fsh";
+        }
+      }
+
+      function goSort(s){
+        showWait('process');
+        window.location.href = "?h_sort=" + s + "";
+      }
+
+      function goDsp(i, vid, n){
+        if (obj != null) {
+          obj.className = "";
+        }
+        if (interval != null) {
+          clearInterval(interval);
+        }
+        if (timeout != null) {
+          clearTimeout(timeout);
+        }
+        var o = document.getElementById("rw_" + i);
+        if (o != null) {
+          obj = o;
+          setFlash(obj);
+          interval = setInterval("setFlash(obj)",100);
+        }
+        if (n == "y") {
+          goLocation(vid, n);
+        } else {
+          timeout = setTimeout("goLocation(" + vid + ", '" + n + "')", 600);
+        }
+      }
+
+      function goLocation(vid, n){
+        var s = (n == "y") ? "x" : "/sell_lst.php";
+        var u = "sell_dsp.php?h_vid=" + vid + "&h_url_dsp_src=" + s + "&h_vw=1";
+        if (n == "y") {
+          window.open(u, "_blank");
+        } else {
+          window.location.href = u;
+        }
+        clearTimeout(interval);
+      }
+    </script>
+  </head>
+  <body bgcolor="#FFFFFF" vlink="#FF6666" alink="#0000CC" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" style="margin:0px">
+    <!-- begin : top -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1385DA">
+      <tbody><tr height="24">
+        <td nowrap=""><font class="top">&nbsp;易發車網 28car.com&nbsp;在線：1420&nbsp;人</font></td>
+        <td align="right">
+          <table border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td width="50" align="center"><a href="mbr_login.php?h_url_login_src=/sell_lst.php&amp;qs_b=y&amp;qs_e=y"><img src="https://dj1fajk23a.28car.com/image/fr2_mb_li.gif" border="0" width="50" height="22" align="absmiddle" style="display:block"></a></td>
+              <td width="7" align="center"><img src="https://dj1fajk23a.28car.com/image/fr2_mb_sp.gif" border="0" width="3" height="11" align="absmiddle" style="display:block"></td>
+              <td width="50" align="center"><a href="mbr_enq.php"><img src="https://dj1fajk23a.28car.com/image/fr2_mb_rg.gif" border="0" width="50" height="22" align="absmiddle" style="display:block"></a></td>
+              <td width="7" align="center"><img src="https://dj1fajk23a.28car.com/image/fr2_mb_sp.gif" border="0" width="3" height="11" align="absmiddle" style="display:block"></td>
+              <td width="74" align="center"><a href="mbr_get.php"><img src="https://dj1fajk23a.28car.com/image/fr2_mb_gp.gif" border="0" width="74" height="22" align="absmiddle" style="display:block"></a></td>
+              <td width="7" align="center"><img src="https://dj1fajk23a.28car.com/image/fr2_mb_sp.gif" border="0" width="3" height="11" align="absmiddle" style="display:block"></td>
+              <td width="84" align="center"><a href="pub_email_enq.php"><img src="https://dj1fajk23a.28car.com/image/fr2_mb_us.gif" border="0" width="84" height="22" align="absmiddle" style="display:block"></a></td>
+              <td width="3" align="center"></td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr height="1"><td bgcolor="#4CA2E2" colspan="2"><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td></tr>
+      <tr height="1"><td bgcolor="#A1CEEF" colspan="2"><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td></tr>
+      <tr height="1"><td bgcolor="#F9F9F9" colspan="2"><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td></tr>
+    </tbody></table>
+    <!-- end   : top -->
+    <!-- begin : head -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#004477">
+      <tbody><tr height="66">
+        <td width="162"><a href="index.htm"><img src="https://dj1fajk23a.28car.com/image/su5_logo.gif" border="0" width="161" height="66" style="display:block"></a></td>
+        <td align="right">
+        <!-- begin : adv_bnr -->
+          <div id="adv_bnr_obj_0" style="height:60px; Filter:revealTrans(duration=2, transition=5);">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr height="60">
+                <td><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td><td width="122" align="center" title="按此觀看詳情"><a href="msg/msg_open_redirect.php?h_cat=adv_bnr&amp;h_id=402" target="_blank"><img src="adv/adv_bnr/0000/402/402_d.gif?v=20141124155449" style="width:120px; height:60px; display:block" class="adv_bnr" onmouseover="setBnrOver(this); stopBnr(this)" onmouseout="setBnr(this); startBnr()"></a></td>
+                <td><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td><td width="122" align="center" title="按此觀看詳情"><a href="msg/msg_open_redirect.php?h_cat=adv_bnr&amp;h_id=896" target="_blank"><img src="adv/adv_bnr/0000/896/896.gif?v=20250403064215" style="width:120px; height:60px; display:block" class="adv_bnr" onmouseover="setBnrOver(this); stopBnr(this)" onmouseout="setBnr(this); startBnr()"></a></td>
+                <td><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td><td width="122" align="center" title="按此觀看詳情"><a href="msg/msg_open_redirect.php?h_cat=adv_bnr&amp;h_id=402" target="_blank"><img src="adv/adv_bnr/0000/402/402_d.gif?v=20141124155449" style="width:120px; height:60px; display:block" class="adv_bnr" onmouseover="setBnrOver(this); stopBnr(this)" onmouseout="setBnr(this); startBnr()"></a></td>
+                <td><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td><td width="122" align="center" title="按此觀看詳情"><a href="msg/msg_open_redirect.php?h_cat=adv_bnr&amp;h_id=896" target="_blank"><img src="adv/adv_bnr/0000/896/896.gif?v=20250403064215" style="width:120px; height:60px; display:block" class="adv_bnr" onmouseover="setBnrOver(this); stopBnr(this)" onmouseout="setBnr(this); startBnr()"></a></td>
+                <td><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td><td width="122" align="center" title="按此觀看詳情"><a href="msg/msg_open_redirect.php?h_cat=adv_bnr&amp;h_id=402" target="_blank"><img src="adv/adv_bnr/0000/402/402_d.gif?v=20141124155449" style="width:120px; height:60px; display:block" class="adv_bnr" onmouseover="setBnrOver(this); stopBnr(this)" onmouseout="setBnr(this); startBnr()"></a></td>
+                <td><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <map name="adv_bnr_updn_0" id="adv_bnr_updn_0">
+            <area shape="rect" alt="瀏覽上一個「客戶資訊」廣告" coords="0,0,18,10" href="javascript:advBnrGo('w',0,402,-1)" onmouseover="advBnrUpDn(-1, &quot;adv_bnr_updn_img_0&quot;);" onmouseout="advBnrUpDn(0,  &quot;adv_bnr_updn_img_0&quot;)">
+            <area shape="rect" alt="瀏覽下一個「客戶資訊」廣告" coords="0,11,18,22" href="javascript:advBnrGo('w',0,402,1)" onmouseover="advBnrUpDn(1, &quot;adv_bnr_updn_img_0&quot;);" onmouseout="advBnrUpDn(0, &quot;adv_bnr_updn_img_0&quot;)">
+          </map>
+          <script language="JavaScript" src="js/adv_bnr.js?20260309000102"></script>
+          <script language="JavaScript">
+            function advBnrUpDn(v, i){
+              var o = document.getElementById(i);
+              if (o != null) {
+                if (v == 0) {
+                  o.src = 'https://dj1fajk23a.28car.com/image/adv_bnr3.gif';
+                } else if (v == 1) {
+                  o.src = 'https://dj1fajk23a.28car.com/image/adv_bnr3d.gif';
+                } else {
+                  o.src = 'https://dj1fajk23a.28car.com/image/adv_bnr3u.gif';
+                }
+              }
+            }
+          </script>
+        <!-- end   : adv_bnr -->
+        </td>
+      </tr>
+    </tbody></table>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#7DA7D9">
+      <tbody><tr height="25">
+        <td width="4"><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="4" height="1" style="display:block"></td>
+        <td width="100%"><div id="mrq"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td width="20px" align="center"><div style="position:relative; width:20px; color:#FFFFFF; cursor: pointer;" onmouseover="mrq_obj.fastForward(this)" onmousedown="mrq_obj.vfastForward(this)" onmouseup="mrq_obj.fastForward(this)" onmouseout="mrq_obj.normForward(this)">«</div></td><td width="100%" align="center"><div id="mrq_xc" style="position:relative; width:100%; height:25px; overflow:hidden;" onmouseover="this.r=false" onmouseout="this.r=true"><div id="mrq_xs" style="position: absolute; left: 1593px; top: 1px; white-space: nowrap;"><span id="mrq_xsp"><font color="#FFEF00" style="font-size:11px"><b>車手專欄：</b>&nbsp;&nbsp;</font><a href="pub_art_lst.php#art_6444" class="mrqn">&nbsp;➢DEFENDER 升級登場：越野王者 更添個性 操控從此更輕鬆</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="pub_art_lst.php#art_6443" class="mrqn">&nbsp;➢平治攜手業界領先夥伴  加快推動自動駕駛的士（robotaxi）發展</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="pub_art_lst.php#art_6442" class="mrqn">&nbsp;➢引領駕馭的純粹樂趣 豪華小型掀背車的全新標準  全新 BMW 1 系於香港矚目登場 敏捷性能、創新科技與年輕個性全面升級，全新 BMW 1 系開啟全新世代篇章</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="pub_art_lst.php#art_6439" class="mrqn">&nbsp;➢開啓新世代之作BMW iX3 50 xDrive引發全球車壇聚焦熱議  展現SUV電動車「低耗能、高續航距離」完美新定義  歐洲預售火速售罄 香港2026配額即將售罄  「一換一」計劃優惠3月31日結束前  勢必再掀熱浪高潮</a>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FFEF00" style="font-size:11px"><b>分享來信：</b>&nbsp;&nbsp;</font><a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670906')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《人流廣闊快》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670904')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《買家是認真》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670899')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《便真實買家》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670892')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《快能夠出售》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670891')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《一極有效率》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670885')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《網好嘢賣啦》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670876')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《很成功的台》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670875')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《我一直信賴》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670871')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《賣給需要的》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670866')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《好及方便的》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670865')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《再售出成功 》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670851')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《好快已搵到》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670848')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《非常友好的》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670845')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《歷史久方便》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670844')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《配買賣有效》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670842')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《有效率的好》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670841')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《給良好環境》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670839')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《每次係用網》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670838')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《找真心買車》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670837')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《網相當可靠》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670834')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《使很快就售》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670827')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《用一次就識》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670817')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《客好有質素》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670794')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《人流多流通》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openMsg('pub_cmt_dsp.php?h_id=670786')" class="mrqn">&nbsp;<font style="font-size:14px">✉</font>《方便快速既》</a>&nbsp;&nbsp;&nbsp;&nbsp;</span></div></div></td><td width="20px" align="center"><div style="position:relative; width:20px; color:#FFFFFF; cursor: pointer;" onmouseover="mrq_obj.fastBackward(this)" onmousedown="mrq_obj.vfastBackward(this)" onmouseup="mrq_obj.fastBackward(this)" onmouseout="mrq_obj.normForward(this)">»</div></td></tr></tbody></table></div></td>
+        <td width="200" align="center"><a href="adv_enq.php?h_stat=banner" title="觀看訊息內容"><img src="https://dj1fajk23a.28car.com/flash/adv.gif" border="0" align="absmiddle" style="display:block"></a></td>
+        <td width="10"><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td>
+        <td width="80" valign="top">
+          <div id="BNRMENU" style="position:relative;width:100%;z-index:0">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td><img src="https://dj1fajk23a.28car.com/image/adv_bnr1.gif" border="0" width="11" height="22" style="display:block"></td>
+                <td><a href="adv_bnr_enq.php?h_url_src=/sell_lst.php"><img src="https://dj1fajk23a.28car.com/image/adv_bnr2.gif" border="0" width="51" height="22" style="display:block" onmouseover="this.src='https://dj1fajk23a.28car.com/image/adv_bnr2b.gif'" onmouseout="this.src='https://dj1fajk23a.28car.com/image/adv_bnr2.gif'" title="刊登「客戶資訊」查詢"></a></td>
+                <td><img src="https://dj1fajk23a.28car.com/image/adv_bnr3.gif" id="bnr_updn_img_0" border="0" width="18" height="22" style="display:block" usemap="#adv_bnr_updn_0"></td>
+              </tr>
+            </tbody></table>
+          </div>
+        </td>
+        <td width="5"><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" border="0" width="1" height="1" style="display:block"></td>
+      </tr>
+    </tbody></table>
+    <script language="JavaScript" src="js/new.js"></script><script language="JavaScript" src="js/col.js"></script><script language="JavaScript" src="js/cmt.js"></script>
+    <script language="JavaScript">
+      setMarquee();
+    </script>
+    <!-- end   : head -->
+    <!-- begin : menu -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+      <tbody><tr height="24">
+        <td nowrap="" style="background-color: #C8E4FF;" width="47"><font style="font-size:12px" color="#116893">&nbsp;<b>目錄：</b></font></td>
+        <td width="*" bgcolor="#C8E4FF">
+          <div class="chromestyle" id="chromemenu">
+            <ul>
+              <li><a href="index.htm">主頁</a></li>
+              <li><a href="sell_lst.php" rel="m_sell" isdisabledclick="n">私人賣車庫 <font style="font-family: Verdana"> ∇</font></a></li>
+              <li><a href="cmy_lst.php" rel="m_cmy" isdisabledclick="n">車行賣車庫 <font style="font-family: Verdana"> ∇</font></a></li>
+              <li><a href="buy_lst.php" rel="m_buy" isdisabledclick="n">求車庫 <font style="font-family: Verdana"> ∇</font></a></li>
+              <li><a href="num_lst.php" rel="m_num" isdisabledclick="n">車牌庫 <font style="font-family: Verdana"> ∇</font></a></li>
+              <li><a href="index_par.htm" rel="m_par" style="color:#32B179" isdisabledclick="n">零件網 <font style="font-family: Verdana"> ∇</font></a></li>
+              <li><a href="grp_lst.php" rel="m_grp" isdisabledclick="n">車主庫 <font style="font-family: Verdana"> ∇</font></a></li>
+              <li><a href="pub_art_lst.php" rel="m_art" isdisabledclick="n">車手專欄 <font style="font-family: Verdana"> ∇</font></a></li>
+              <li><a href="adv_dir.php" rel="m_adv" isdisabledclick="n">客戶指南 <font style="font-family: Verdana"> ∇</font></a></li>
+            </ul>
+          </div>
+          <div id="chromesmenu"><div id="m_sell" class="dropmenudiv"><a href="sell_add.php">• 刊登私人賣車</a><a href="sell_lst.php">• 觀看所有私人賣車記錄</a><hr style="height:1px; border-width:0; color:#256B9F; background-color:#256B9F"><a href="sell_enq.php">? 了解如何刊登私人賣車</a><a href="pub_enq.php#enq_sell">? 何謂私人賣車庫</a></div><div id="m_cmy" class="dropmenudiv"><a href="cmy_add.php">• 刊登車行賣車</a><a href="cmy_lst.php">• 觀看所有車行賣車記錄</a><a href="cmy_mbr.php">• 觀看所有車行名單記錄</a><hr style="height:1px; border-width:0; color:#256B9F; background-color:#256B9F"><a href="cmy_enq.php">? 了解如何刊登車行賣車</a><a href="pub_enq.php#enq_cmy">? 何謂車行賣車庫</a></div><div id="m_buy" class="dropmenudiv"><a href="buy_add.php">• 刊登徵求汽車</a><a href="buy_lst.php">• 觀看所有徵求汽車記錄</a><hr style="height:1px; border-width:0; color:#256B9F; background-color:#256B9F"><a href="buy_enq.php">? 了解如何刊登徵求汽車</a><a href="pub_enq.php#enq_buy">? 何謂求車庫</a></div><div id="m_num" class="dropmenudiv"><a href="num_add.php">• 刊登賣出車牌</a><a href="num_lst.php">• 觀看所有賣出車牌記錄</a><hr style="height:1px; border-width:0; color:#256B9F; background-color:#256B9F"><a href="num_enq.php">? 了解如何刊登賣出車牌</a><a href="pub_enq.php#enq_num">? 何謂車牌庫</a></div><div id="m_par" class="dropmenudiv"><a href="par_add.php">• 刊登賣出零件</a><a href="index_par.htm">• 觀看所有賣出零件記錄</a><hr style="height:1px; border-width:0; color:#256B9F; background-color:#256B9F"><a href="par_enq.php">? 了解如何刊登賣出零件</a><a href="pub_enq.php#enq_par">? 何謂零件網 - 中古零件庫 / 全新零件庫</a></div><div id="m_grp" class="dropmenudiv"><a href="grp_enq.php">• 開辦車主群組</a><a href="grp_lst.php">• 觀看所有車主群組記錄</a><hr style="height:1px; border-width:0; color:#256B9F; background-color:#256B9F"><a href="grp_enq.php">? 了解如何開辦車主群組</a><a href="own_enq.php">? 了解如何加入主車群組</a><a href="pub_enq.php#enq_grp">? 何謂車主庫</a></div><div id="m_dlr" class="dropmenudiv"><a href="dlr_lst.php">• 觀看所有新車賣車記錄</a><a href="dlr_mbr.php">• 觀看所有新車車行名單記錄</a></div><div id="m_art" class="dropmenudiv"><a href="pub_art_lst.php#art">• 觀看車手專欄文章</a></div><div id="m_adv" class="dropmenudiv"><a href="adv_dir.php?h_f_ca=1">• 修理、翻新、升級、保養</a><a href="adv_dir.php?h_f_ca=2">• 美容、清洗、打蠟</a><a href="adv_dir.php?h_f_ca=3">• 保險服務</a><a href="adv_dir.php?h_f_ca=4">• 財務上會</a><a href="adv_dir.php?h_f_ca=5">• 驗車服務</a><a href="adv_dir.php?h_f_ca=7">• 出租汽車</a><a href="adv_dir.php?h_f_ca=9">• 買賣、收車、經紀</a><a href="adv_dir.php?h_f_ca=11">• 零件、膠胎</a><a href="adv_dir.php?h_f_ca=12">• 機油</a><a href="adv_dir.php?h_f_ca=16">• 展銷博覽</a><a href="adv_dir.php">• 更多...</a><hr style="height:1px; border-width:0; color:#256B9F; background-color:#256B9F"><a href="adv_enq.php">? 了解如何刊登「商戶廣告」橫額廣告</a></div></div>
+          <script type="text/javascript">
+            cssdropdown.startchrome("chromemenu");
+          </script>
+        </td>
+      </tr>
+    </tbody></table>
+    <!-- end   : menu -->
+    <!-- begin : inr -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" background="https://dj1fajk23a.28car.com/image/fr_adv_idx_bg.gif">
+      <tbody><tr height="94">
+        <td width="18" align="center"><!--<img src="https://dj1fajk23a.28car.com/image/inr1.gif" align="absmiddle" border="0">--></td>
+        <td width="*" align="center"><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" width="1" height="1"></td>
+        <td width="760" align="center">
+          <table width="730" height="92" title="按此觀看詳情" border="0" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td><a href="msg/msg_open_redirect.php?h_cat=adv_inr&amp;h_id=691" target="_blank"><img src="adv/adv_inr/0000/691/691.gif?v=20200109031306" style="width:728px; height:90px; display:block" class="adv_bnr" onmouseover="setBnrOver(this)" onmouseout="setBnr(this)"></a></td></tr></tbody></table>
+        </td>
+        <td width="*" align="center"><img src="https://dj1fajk23a.28car.com/image/fr_id_bn.gif" width="1" height="1"></td>
+        <td width="18" align="center"><!--<a href="adv_inr_enq.php"><img src="https://dj1fajk23a.28car.com/image/inr2.gif" align="absmiddle" border="0" onmouseover="this.src='https://dj1fajk23a.28car.com/image/inr2b.gif'" onmouseout="this.src='https://dj1fajk23a.28car.com/image/inr2.gif'" title='刊登「內頁廣告」查詢'></a>--></td>
+      </tr>
+    </tbody></table>
+    <!-- end   : inr -->
+    <!-- begin : content -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+      <tbody><tr>
+        <td>
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td width="100%" bgcolor="#C0C0C0">
+              <table border="0" width="100%" cellspacing="1" cellpadding="0">
+                <tbody><tr>
+                  <td width="100%" bgcolor="#FFFFFF">
+                    <!-- begin : header -->
+                    <script language="Javascript">
+                      function goPage(i){
+                        showWait('process');
+                        document.formp.h_page.value = i;
+                        document.formp.submit();
+                      }
+                    </script>
+                    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                      <tbody><tr height="1"><td bgcolor="#90C7E3"></td></tr>
+                      <tr>
+                        <td>
+                          <table border="0" height="34" width="100%" cellspacing="0" cellpadding="0" background="https://dj1fajk23a.28car.com/image/l1w.gif" style="background-repeat:repeat-x" bgcolor="#3399CC">
+                            <form name="formp" id="formp" method="post" action="/sell_lst.php" onsubmit="showWait('process')"></form>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <tbody><tr>
+                              <td style="width:1px"></td>
+                              <td width="116"><a href="/sell_lst.php" onclick="showWait('process')"><img src="https://dj1fajk23a.28car.com/image/l1.s.gif" border="0" width="116" height="34" title="觀看賣車記錄" style="display:block"></a></td>
+                              <td style="width:6px"></td>
+                              <td width="90" align="center"><input type="button" class="btn_c" value=" +刊登賣車 " style="width:90px;" onclick="window.location='sell_add.php?h_url_src=/sell_lst.php';" title="刊登私人賣車"></td>
+                              <td style="width:6px"></td>
+                              <td width="*">
+                                <table border="0" width="100%" cellspacing="0" cellpadding="2" background="https://dj1fajk23a.28car.com/image/l1b.gif" style="background-repeat:repeat-x; table-layout: fixed" bgcolor="#B4E2F4">
+                                  <tbody><tr height="30"><td width="100%" class="stt">&nbsp;請按記錄看詳情。</td></tr>
+                                </tbody></table>
+                              </td>
+                              <td style="width:6px"></td>
+                              <td width="82" align="center"><input type="button" class="btn_c_d" value="≡ 詳細" onclick="window.location='sell_lst.php?'; showWait('process');" title="以 [詳細資料] 方式顯示記錄" disabled=""></td>
+                              <td width="82" align="center"><input type="button" class="btn_c" style="color:#F26522" value="⊕ 縮圖" onclick="window.location='sell_ico.php?'; showWait('process');" title="以 [縮圖] 方式顯示記錄"></td>
+                              <td style="width:2px"></td>
+                              <td width="230" align="center" nowrap="">
+                                <table border="0" cellspacing="0" cellpadding="1" background="https://dj1fajk23a.28car.com/image/l1gd.gif" style="background-repeat:repeat-x" bgcolor="#005826">
+                                  <tbody><tr height="30">
+                                    <td><input type="button" class="btn_c_d" value="◀上頁" disabled=""></td>
+                                    <td nowrap=""><font size="2" color="#FFFFFF"><b>第<select name="h_page" id="h_page" onchange="goPage(this.value)" class="pag" style="top:1px; position:relative;"><script language="JavaScript">genPage(4596, 1);</script><option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option><option value="71">71</option><option value="72">72</option><option value="73">73</option><option value="74">74</option><option value="75">75</option><option value="76">76</option><option value="77">77</option><option value="78">78</option><option value="79">79</option><option value="80">80</option><option value="81">81</option><option value="82">82</option><option value="83">83</option><option value="84">84</option><option value="85">85</option><option value="86">86</option><option value="87">87</option><option value="88">88</option><option value="89">89</option><option value="90">90</option><option value="91">91</option><option value="92">92</option><option value="93">93</option><option value="94">94</option><option value="95">95</option><option value="96">96</option><option value="97">97</option><option value="98">98</option><option value="99">99</option><option value="100">100</option><option value="101">101</option><option value="102">102</option><option value="103">103</option><option value="104">104</option><option value="105">105</option><option value="106">106</option><option value="107">107</option><option value="108">108</option><option value="109">109</option><option value="110">110</option><option value="111">111</option><option value="112">112</option><option value="113">113</option><option value="114">114</option><option value="115">115</option><option value="116">116</option><option value="117">117</option><option value="118">118</option><option value="119">119</option><option value="120">120</option><option value="121">121</option><option value="122">122</option><option value="123">123</option><option value="124">124</option><option value="125">125</option><option value="126">126</option><option value="127">127</option><option value="128">128</option><option value="129">129</option><option value="130">130</option><option value="131">131</option><option value="132">132</option><option value="133">133</option><option value="134">134</option><option value="135">135</option><option value="136">136</option><option value="137">137</option><option value="138">138</option><option value="139">139</option><option value="140">140</option><option value="141">141</option><option value="142">142</option><option value="143">143</option><option value="144">144</option><option value="145">145</option><option value="146">146</option><option value="147">147</option><option value="148">148</option><option value="149">149</option><option value="150">150</option><option value="151">151</option><option value="152">152</option><option value="153">153</option><option value="154">154</option><option value="155">155</option><option value="156">156</option><option value="157">157</option><option value="158">158</option><option value="159">159</option><option value="160">160</option><option value="161">161</option><option value="162">162</option><option value="163">163</option><option value="164">164</option><option value="165">165</option><option value="166">166</option><option value="167">167</option><option value="168">168</option><option value="169">169</option><option value="170">170</option><option value="171">171</option><option value="172">172</option><option value="173">173</option><option value="174">174</option><option value="175">175</option><option value="176">176</option><option value="177">177</option><option value="178">178</option><option value="179">179</option><option value="180">180</option><option value="181">181</option><option value="182">182</option><option value="183">183</option><option value="184">184</option><option value="185">185</option><option value="186">186</option><option value="187">187</option><option value="188">188</option><option value="189">189</option><option value="190">190</option><option value="191">191</option><option value="192">192</option><option value="193">193</option><option value="194">194</option><option value="195">195</option><option value="196">196</option><option value="197">197</option><option value="198">198</option><option value="199">199</option><option value="200">200</option><option value="201">201</option><option value="202">202</option><option value="203">203</option><option value="204">204</option><option value="205">205</option><option value="206">206</option><option value="207">207</option><option value="208">208</option><option value="209">209</option><option value="210">210</option><option value="211">211</option><option value="212">212</option><option value="213">213</option><option value="214">214</option><option value="215">215</option><option value="216">216</option><option value="217">217</option><option value="218">218</option><option value="219">219</option><option value="220">220</option><option value="221">221</option><option value="222">222</option><option value="223">223</option><option value="224">224</option><option value="225">225</option><option value="226">226</option><option value="227">227</option><option value="228">228</option><option value="229">229</option><option value="230">230</option><option value="231">231</option><option value="232">232</option><option value="233">233</option><option value="234">234</option><option value="235">235</option><option value="236">236</option><option value="237">237</option><option value="238">238</option><option value="239">239</option><option value="240">240</option><option value="241">241</option><option value="242">242</option><option value="243">243</option><option value="244">244</option><option value="245">245</option><option value="246">246</option><option value="247">247</option><option value="248">248</option><option value="249">249</option><option value="250">250</option><option value="251">251</option><option value="252">252</option><option value="253">253</option><option value="254">254</option><option value="255">255</option><option value="256">256</option><option value="257">257</option><option value="258">258</option><option value="259">259</option><option value="260">260</option><option value="261">261</option><option value="262">262</option><option value="263">263</option><option value="264">264</option><option value="265">265</option><option value="266">266</option><option value="267">267</option><option value="268">268</option><option value="269">269</option><option value="270">270</option><option value="271">271</option><option value="272">272</option><option value="273">273</option><option value="274">274</option><option value="275">275</option><option value="276">276</option><option value="277">277</option><option value="278">278</option><option value="279">279</option><option value="280">280</option><option value="281">281</option><option value="282">282</option><option value="283">283</option><option value="284">284</option><option value="285">285</option><option value="286">286</option><option value="287">287</option><option value="288">288</option><option value="289">289</option><option value="290">290</option><option value="291">291</option><option value="292">292</option><option value="293">293</option><option value="294">294</option><option value="295">295</option><option value="296">296</option><option value="297">297</option><option value="298">298</option><option value="299">299</option><option value="300">300</option><option value="301">301</option><option value="302">302</option><option value="303">303</option><option value="304">304</option><option value="305">305</option><option value="306">306</option><option value="307">307</option><option value="308">308</option><option value="309">309</option><option value="310">310</option><option value="311">311</option><option value="312">312</option><option value="313">313</option><option value="314">314</option><option value="315">315</option><option value="316">316</option><option value="317">317</option><option value="318">318</option><option value="319">319</option><option value="320">320</option><option value="321">321</option><option value="322">322</option><option value="323">323</option><option value="324">324</option><option value="325">325</option><option value="326">326</option><option value="327">327</option><option value="328">328</option><option value="329">329</option><option value="330">330</option><option value="331">331</option><option value="332">332</option><option value="333">333</option><option value="334">334</option><option value="335">335</option><option value="336">336</option><option value="337">337</option><option value="338">338</option><option value="339">339</option><option value="340">340</option><option value="341">341</option><option value="342">342</option><option value="343">343</option><option value="344">344</option><option value="345">345</option><option value="346">346</option><option value="347">347</option><option value="348">348</option><option value="349">349</option><option value="350">350</option><option value="351">351</option><option value="352">352</option><option value="353">353</option><option value="354">354</option><option value="355">355</option><option value="356">356</option><option value="357">357</option><option value="358">358</option><option value="359">359</option><option value="360">360</option><option value="361">361</option><option value="362">362</option><option value="363">363</option><option value="364">364</option><option value="365">365</option><option value="366">366</option><option value="367">367</option><option value="368">368</option><option value="369">369</option><option value="370">370</option><option value="371">371</option><option value="372">372</option><option value="373">373</option><option value="374">374</option><option value="375">375</option><option value="376">376</option><option value="377">377</option><option value="378">378</option><option value="379">379</option><option value="380">380</option><option value="381">381</option><option value="382">382</option><option value="383">383</option><option value="384">384</option><option value="385">385</option><option value="386">386</option><option value="387">387</option><option value="388">388</option><option value="389">389</option><option value="390">390</option><option value="391">391</option><option value="392">392</option><option value="393">393</option><option value="394">394</option><option value="395">395</option><option value="396">396</option><option value="397">397</option><option value="398">398</option><option value="399">399</option><option value="400">400</option><option value="401">401</option><option value="402">402</option><option value="403">403</option><option value="404">404</option><option value="405">405</option><option value="406">406</option><option value="407">407</option><option value="408">408</option><option value="409">409</option><option value="410">410</option><option value="411">411</option><option value="412">412</option><option value="413">413</option><option value="414">414</option><option value="415">415</option><option value="416">416</option><option value="417">417</option><option value="418">418</option><option value="419">419</option><option value="420">420</option><option value="421">421</option><option value="422">422</option><option value="423">423</option><option value="424">424</option><option value="425">425</option><option value="426">426</option><option value="427">427</option><option value="428">428</option><option value="429">429</option><option value="430">430</option><option value="431">431</option><option value="432">432</option><option value="433">433</option><option value="434">434</option><option value="435">435</option><option value="436">436</option><option value="437">437</option><option value="438">438</option><option value="439">439</option><option value="440">440</option><option value="441">441</option><option value="442">442</option><option value="443">443</option><option value="444">444</option><option value="445">445</option><option value="446">446</option><option value="447">447</option><option value="448">448</option><option value="449">449</option><option value="450">450</option><option value="451">451</option><option value="452">452</option><option value="453">453</option><option value="454">454</option><option value="455">455</option><option value="456">456</option><option value="457">457</option><option value="458">458</option><option value="459">459</option><option value="460">460</option><option value="461">461</option><option value="462">462</option><option value="463">463</option><option value="464">464</option><option value="465">465</option><option value="466">466</option><option value="467">467</option><option value="468">468</option><option value="469">469</option><option value="470">470</option><option value="471">471</option><option value="472">472</option><option value="473">473</option><option value="474">474</option><option value="475">475</option><option value="476">476</option><option value="477">477</option><option value="478">478</option><option value="479">479</option><option value="480">480</option><option value="481">481</option><option value="482">482</option><option value="483">483</option><option value="484">484</option><option value="485">485</option><option value="486">486</option><option value="487">487</option><option value="488">488</option><option value="489">489</option><option value="490">490</option><option value="491">491</option><option value="492">492</option><option value="493">493</option><option value="494">494</option><option value="495">495</option><option value="496">496</option><option value="497">497</option><option value="498">498</option><option value="499">499</option><option value="500">500</option><option value="501">501</option><option value="502">502</option><option value="503">503</option><option value="504">504</option><option value="505">505</option><option value="506">506</option><option value="507">507</option><option value="508">508</option><option value="509">509</option><option value="510">510</option><option value="511">511</option><option value="512">512</option><option value="513">513</option><option value="514">514</option><option value="515">515</option><option value="516">516</option><option value="517">517</option><option value="518">518</option><option value="519">519</option><option value="520">520</option><option value="521">521</option><option value="522">522</option><option value="523">523</option><option value="524">524</option><option value="525">525</option><option value="526">526</option><option value="527">527</option><option value="528">528</option><option value="529">529</option><option value="530">530</option><option value="531">531</option><option value="532">532</option><option value="533">533</option><option value="534">534</option><option value="535">535</option><option value="536">536</option><option value="537">537</option><option value="538">538</option><option value="539">539</option><option value="540">540</option><option value="541">541</option><option value="542">542</option><option value="543">543</option><option value="544">544</option><option value="545">545</option><option value="546">546</option><option value="547">547</option><option value="548">548</option><option value="549">549</option><option value="550">550</option><option value="551">551</option><option value="552">552</option><option value="553">553</option><option value="554">554</option><option value="555">555</option><option value="556">556</option><option value="557">557</option><option value="558">558</option><option value="559">559</option><option value="560">560</option><option value="561">561</option><option value="562">562</option><option value="563">563</option><option value="564">564</option><option value="565">565</option><option value="566">566</option><option value="567">567</option><option value="568">568</option><option value="569">569</option><option value="570">570</option><option value="571">571</option><option value="572">572</option><option value="573">573</option><option value="574">574</option><option value="575">575</option><option value="576">576</option><option value="577">577</option><option value="578">578</option><option value="579">579</option><option value="580">580</option><option value="581">581</option><option value="582">582</option><option value="583">583</option><option value="584">584</option><option value="585">585</option><option value="586">586</option><option value="587">587</option><option value="588">588</option><option value="589">589</option><option value="590">590</option><option value="591">591</option><option value="592">592</option><option value="593">593</option><option value="594">594</option><option value="595">595</option><option value="596">596</option><option value="597">597</option><option value="598">598</option><option value="599">599</option><option value="600">600</option><option value="601">601</option><option value="602">602</option><option value="603">603</option><option value="604">604</option><option value="605">605</option><option value="606">606</option><option value="607">607</option><option value="608">608</option><option value="609">609</option><option value="610">610</option><option value="611">611</option><option value="612">612</option><option value="613">613</option><option value="614">614</option><option value="615">615</option><option value="616">616</option><option value="617">617</option><option value="618">618</option><option value="619">619</option><option value="620">620</option><option value="621">621</option><option value="622">622</option><option value="623">623</option><option value="624">624</option><option value="625">625</option><option value="626">626</option><option value="627">627</option><option value="628">628</option><option value="629">629</option><option value="630">630</option><option value="631">631</option><option value="632">632</option><option value="633">633</option><option value="634">634</option><option value="635">635</option><option value="636">636</option><option value="637">637</option><option value="638">638</option><option value="639">639</option><option value="640">640</option><option value="641">641</option><option value="642">642</option><option value="643">643</option><option value="644">644</option><option value="645">645</option><option value="646">646</option><option value="647">647</option><option value="648">648</option><option value="649">649</option><option value="650">650</option><option value="651">651</option><option value="652">652</option><option value="653">653</option><option value="654">654</option><option value="655">655</option><option value="656">656</option><option value="657">657</option><option value="658">658</option><option value="659">659</option><option value="660">660</option><option value="661">661</option><option value="662">662</option><option value="663">663</option><option value="664">664</option><option value="665">665</option><option value="666">666</option><option value="667">667</option><option value="668">668</option><option value="669">669</option><option value="670">670</option><option value="671">671</option><option value="672">672</option><option value="673">673</option><option value="674">674</option><option value="675">675</option><option value="676">676</option><option value="677">677</option><option value="678">678</option><option value="679">679</option><option value="680">680</option><option value="681">681</option><option value="682">682</option><option value="683">683</option><option value="684">684</option><option value="685">685</option><option value="686">686</option><option value="687">687</option><option value="688">688</option><option value="689">689</option><option value="690">690</option><option value="691">691</option><option value="692">692</option><option value="693">693</option><option value="694">694</option><option value="695">695</option><option value="696">696</option><option value="697">697</option><option value="698">698</option><option value="699">699</option><option value="700">700</option><option value="701">701</option><option value="702">702</option><option value="703">703</option><option value="704">704</option><option value="705">705</option><option value="706">706</option><option value="707">707</option><option value="708">708</option><option value="709">709</option><option value="710">710</option><option value="711">711</option><option value="712">712</option><option value="713">713</option><option value="714">714</option><option value="715">715</option><option value="716">716</option><option value="717">717</option><option value="718">718</option><option value="719">719</option><option value="720">720</option><option value="721">721</option><option value="722">722</option><option value="723">723</option><option value="724">724</option><option value="725">725</option><option value="726">726</option><option value="727">727</option><option value="728">728</option><option value="729">729</option><option value="730">7

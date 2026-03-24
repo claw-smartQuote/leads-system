@@ -1,0 +1,367 @@
+/Users/claw/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+======================================================================
+🤖 整合爬蟲系統 v2.0
+======================================================================
+🎯 目標: 100 條有效數據
+📁 輸出: /Users/claw/Desktop/汽車保險潛客數據
+⏰ 時間: 2026-03-23 08:37:47
+======================================================================
+
+🚗 啟動 28car.com 爬蟲...
+  📄 爬取第 1 頁...
+    ✅ [1] 91099330
+    ✅ [2] 60120909 🚗萬事得 MAZDA 8	汽油	8座	2261cc	自動波	2015	$
+    ✅ [3] 96991431 🚗平治 G63 AMG	汽油	5座	4000cc	自動波	2022	$2
+    ✅ [3] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+    ✅ [4] 94026617 🚗賓利 MULSANNE SPEED V8	汽油	5座	6782cc	自
+    ✅ [4] 60120909 🚗豐田 SIENTA HYBRID	混能	7座	1500cc	自動波	2
+    ✅ [4] 94026617 🚗賓利 BENTAYGA V8	汽油	5座	3994cc	自動波	202
+    ✅ [4] 94026617 🚗豐田 ALPHARD 3.5 GF FACELIFT	汽油	7座	35
+    ✅ [4] 94026617 🚗豐田 VELLFIRE 3.5 ZG	汽油	7座	3500cc	自動波
+    ✅ [5] 98893576 🚗豐田 VOXY HYBRID	混能	8座	1800cc	自動波	202
+    ✅ [5] 94026617 🚗豐田 VOXY HYBRID	混能	8座	1800cc	自動波	202
+    ✅ [6] 67900956 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [7] 61822201 🚗寶馬 218i GRAN COUPE M SPORT	汽油	5座	14
+    ✅ [7] 67900956 🚗豐田 VELLFIRE ZG	汽油	7座	2500cc	自動波	201
+    ✅ [8] 63175878 🚗奧迪 A4 30TFSI S LINE	汽油	5座	1398cc	自動
+  📄 爬取第 2 頁...
+    ✅ [8] 91099330
+    ✅ [8] 60120909 🚗萬事得 MAZDA 8	汽油	8座	2261cc	自動波	2015	$
+    ✅ [8] 96991431 🚗平治 G63 AMG	汽油	5座	4000cc	自動波	2022	$2
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+    ✅ [8] 94026617 🚗賓利 MULSANNE SPEED V8	汽油	5座	6782cc	自
+    ✅ [8] 60120909 🚗豐田 SIENTA HYBRID	混能	7座	1500cc	自動波	2
+    ✅ [8] 94026617 🚗賓利 BENTAYGA V8	汽油	5座	3994cc	自動波	202
+    ✅ [8] 94026617 🚗豐田 ALPHARD 3.5 GF FACELIFT	汽油	7座	35
+    ✅ [8] 94026617 🚗豐田 VELLFIRE 3.5 ZG	汽油	7座	3500cc	自動波
+    ✅ [8] 98893576 🚗豐田 VOXY HYBRID	混能	8座	1800cc	自動波	202
+    ✅ [8] 94026617 🚗豐田 VOXY HYBRID	混能	8座	1800cc	自動波	202
+    ✅ [8] 67900956 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 61822201 🚗寶馬 218i GRAN COUPE M SPORT	汽油	5座	14
+    ✅ [8] 67900956 🚗豐田 VELLFIRE ZG	汽油	7座	2500cc	自動波	201
+    ✅ [8] 63175878 🚗奧迪 A4 30TFSI S LINE	汽油	5座	1398cc	自動
+  📄 爬取第 3 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+  📄 爬取第 4 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+    📊 進度: 8/100 條 (第 5 頁)
+  📄 爬取第 5 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+  📄 爬取第 6 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+  📄 爬取第 7 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+  📄 爬取第 8 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+  📄 爬取第 9 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+    📊 進度: 8/100 條 (第 10 頁)
+  📄 爬取第 10 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+  📄 爬取第 11 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+  📄 爬取第 12 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+  📄 爬取第 13 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+  📄 爬取第 14 頁...
+    ✅ [8] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [8] 60120909 🚗豐田 ALPHARD 2.5 Z MODELLISTA	汽油	7座	2
+    ✅ [8] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    ✅ [8] 96991431 🚗豐田 VOXY HYBRID SZ MODELLISTA	混能	7座	
+    ✅ [8] 60120909 🚗寶馬 225XE PLUG IN HYBRID	混能	5座	1499c
+    📊 進度: 8/100 條 (第 15 頁)
+  📄 爬取第 15 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 16 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 17 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 18 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 19 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    📊 進度: 9/100 條 (第 20 頁)
+  📄 爬取第 20 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 21 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 22 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 23 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 24 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+    📊 進度: 9/100 條 (第 25 頁)
+  📄 爬取第 25 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 26 頁...
+    ✅ [9] 91210751
+    ✅ [9] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    ✅ [9] 91099330 🚗凌志 LC500 HYBRID	混能	4座	3500cc	自動波	20
+    ✅ [9] 60120909 🚗保時捷 MACAN 2.0 FACELIFT	汽油	5座	2000cc
+    ✅ [9] 60120909 🚗平治 C43 AMG COUPE	汽油	4座	2996cc	自動波	2
+  📄 爬取第 27 頁...
+    ✅ [10] 64090884
+    ✅ [11] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 28 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 29 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    📊 進度: 12/100 條 (第 30 頁)
+  📄 爬取第 30 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 31 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 32 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 33 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 34 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    📊 進度: 12/100 條 (第 35 頁)
+  📄 爬取第 35 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 36 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 37 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 38 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+  📄 爬取第 39 頁...
+    ✅ [12] 64090884
+    ✅ [12] 61133652 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE S	汽
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [12] 91210751 🚗豐田 ALPHARD 2.5 Z	汽油	7座	2500cc	自動波	2
+    ✅ [12] 60120909 🚗鈴木 LAPIN	汽油	4座	660cc	自動波	2014	$88,0
+    📊 進度: 12/100 條 (第 40 頁)
+  📄 爬取第 40 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+  📄 爬取第 41 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+  📄 爬取第 42 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+  📄 爬取第 43 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+  📄 爬取第 44 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    📊 進度: 12/100 條 (第 45 頁)
+  📄 爬取第 45 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+  📄 爬取第 46 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+  📄 爬取第 47 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+  📄 爬取第 48 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+  📄 爬取第 49 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    📊 進度: 12/100 條 (第 50 頁)
+  📄 爬取第 50 頁...
+    ✅ [12] 64090884 🚗保時捷 MACAN Turbo	汽油	5座	3600cc	自動波	20
+    ✅ [12] 61133652 🚗賓利 FLYING SPUR W12	汽油	5座	6000cc	自動波
+    ✅ [12] 96030095 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ⚠️ 已達最大頁數限制 (50 頁)，停止爬取
+
+📊 28car 完成: 12 條
+
+📘 啟動 Facebook 爬蟲...
+❌ Facebook 瀏覽器啟動失敗: Message: session not created: cannot connect to chrome at 127.0.0.1:50931
+from chrome not reachable; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+0   undetected_chromedriver             0x0000000102ee4ed8 undetected_chromedriver + 6758104
+1   undetected_chromedriver             0x0000000102edc67a undetected_chromedriver + 6723194
+2   undetected_chromedriver             0x00000001028e1770 undetected_chromedriver + 452464
+3   undetected_chromedriver             0x00000001028ccbc2 undetected_chromedriver + 367554
+4   undetected_chromedriver             0x0000000102923f24 undetected_chromedriver + 724772
+5   undetected_chromedriver             0x0000000102918e09 undetected_chromedriver + 679433
+6   undetected_chromedriver             0x000000010296a667 undetected_chromedriver + 1013351
+7   undetected_chromedriver             0x0000000102969d2c undetected_chromedriver + 1010988
+8   undetected_chromedriver             0x00000001029284e1 undetected_chromedriver + 742625
+9   undetected_chromedriver             0x00000001029292e1 undetected_chromedriver + 746209
+10  undetected_chromedriver             0x0000000102e9d3ec undetected_chromedriver + 6464492
+11  undetected_chromedriver             0x0000000102ea17be undetected_chromedriver + 6481854
+12  undetected_chromedriver             0x0000000102e7d46d undetected_chromedriver + 6333549
+13  undetected_chromedriver             0x0000000102ea2228 undetected_chromedriver + 6484520
+14  undetected_chromedriver             0x0000000102e6c7b0 undetected_chromedriver + 6264752
+15  undetected_chromedriver             0x0000000102ec8e78 undetected_chromedriver + 6643320
+16  undetected_chromedriver             0x0000000102ec9032 undetected_chromedriver + 6643762
+17  undetected_chromedriver             0x0000000102edc281 undetected_chromedriver + 6722177
+18  libsystem_pthread.dylib             0x00007ff8097f8e05 _pthread_start + 115
+19  libsystem_pthread.dylib             0x00007ff8097f4857 thread_start + 15
+
+📊 Facebook 完成: 0 條
+
+======================================================================
+📊 總計獲取: 14 條
+
+✅ Excel 導出完成:
+   📄 28car 資料: /Users/claw/Desktop/汽車保險潛客數據/本地_28car資料_20260323.xlsx
+      - 28car電話: 14 條
+   📄 全部資料: /Users/claw/Desktop/汽車保險潛客數據/本地_全部資料_20260323.xlsx (14 條)
+
+📊 來源統計:
+   - 28car: 14 條
+   - Facebook: 0 條
+     ├─ 帖子: 0 條
+     ├─ 評論: 0 條
+     └─ 含電話: 0 條
+   - 合併去重後總計: 14 個電話
+======================================================================
+⚠️ 警告: 未達到目標 100 條，僅獲取 14 條

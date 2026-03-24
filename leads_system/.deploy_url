@@ -1,0 +1,11 @@
+🎉 部署準備完成！
+
+GitHub 倉庫: https://github.com/claw-smartQuote/leads-system
+
+🚀 一鍵部署到 Render:
+https://render.com/deploy?repo=https://github.com/claw-smartQuote/leads-system
+
+點擊上方鏈接，然後：
+1. 用 GitHub 登入 Render（如果還沒登入）
+2. 點擊 "Apply" 使用 render.yaml 配置
+3. 等待 3-5 分鐘部署完成

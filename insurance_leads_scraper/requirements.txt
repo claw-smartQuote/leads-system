@@ -1,0 +1,15 @@
+# 28Car 保險潛在客戶抓取系統依賴
+# 安裝命令: pip install -r requirements.txt
+
+# 核心爬蟲框架
+playwright>=1.40.0
+
+# 數據處理
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# 數據庫
+# sqlite3 (Python 內置)
+
+# 可選：用於更強大的瀏覽器控制
+# scrapy>=2.11.0  # 如需使用 Scrapy 框架
