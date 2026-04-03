@@ -1,0 +1,113 @@
+========================================
+🦞 每日爬蟲任務開始: 2026年 3月31日 星期二 02時00分14秒 CST
+========================================
+🚗 執行 28car 爬蟲...
+🚗 28car 爬蟲啟動 (目標100條)
+
+📊 數據庫現有: 110 條
+
+📄 正在抓取第 1 頁...
+   URL: https://www.28car.com/sell_lst.php
+    ✅ 63956394 | (無車型)
+    ✅ 93612617 | 三菱
+    ✅ 63836120 | 豐田
+    ✅ 98247180 | 特斯拉
+    ✅ 69365040 | 奧迪
+    ✅ 98028868 | 平治
+    ✅ 34814222 | 平治
+    ✅ 52642941 | 奧迪
+   本頁新增: 8 | 累計: 118/100
+
+
+🎉 已達到目標 100 條！
+
+==================================================
+✅ 爬蟲完成！
+==================================================
+本次新增: 8 條
+數據庫總計: 118 條
+有車型資料: 116 條 (98%)
+
+📊 已導出 118 條記錄到: /Users/claw/.openclaw/workspace/28car_潛客_100條.xlsx
+
+💾 數據庫: /Users/claw/.openclaw/workspace/car28_scraper.db
+
+📘 檢查 Facebook 登入狀態...
+📘 執行 Facebook 爬蟲...
+Traceback (most recent call last):
+  File "/Users/claw/.openclaw/workspace/fb_crawler_final_v5.py", line 412, in main
+    comments = crawler.extract_comments_semantic(post_url)
+  File "/Users/claw/.openclaw/workspace/fb_crawler_final_v5.py", line 178, in extract_comments_semantic
+    self.page.goto(post_url, wait_until='networkidle', timeout=90000)
+  File "/Library/Python/3.9/site-packages/playwright/sync_api/_generated.py", line 9054, in goto
+    self._sync(
+  File "/Library/Python/3.9/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+  File "/Library/Python/3.9/site-packages/playwright/_impl/_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+  File "/Library/Python/3.9/site-packages/playwright/_impl/_frame.py", line 153, in goto
+    await self._channel.send(
+  File "/Library/Python/3.9/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+  File "/Library/Python/3.9/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.facebook.com/share/p/1DrEnCiSTY/", waiting until "networkidle"
+
+======================================================================
+📘 Facebook 智能爬蟲 v5.0
+======================================================================
+技術方案：Playwright + 語義定位 + Cookie狀態保持
+
+🔑 加載登入狀態: /Users/claw/.fb_crawler/fb_storage_state.json
+
+📄 [1/1] 處理中...
+
+🌐 訪問貼文: https://www.facebook.com/share/p/1DrEnCiSTY/...
+
+❌ 錯誤: Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.facebook.com/share/p/1DrEnCiSTY/", waiting until "networkidle"
+
+
+👋 瀏覽器已關閉
+
+🔄 整合爬蟲結果...
+2026-03-31 02:01:59,423 - INFO - 目錄檢查完成: /Users/claw/.openclaw/workspace/爬蟲潛客總滙
+2026-03-31 02:01:59,424 - INFO - 💾 已備份舊檔案: 爬蟲潛客總滙_備份_20260331_0201.xlsx
+2026-03-31 02:01:59,425 - INFO - 成功連接數據庫: /Users/claw/.openclaw/workspace/car28_scraper.db
+2026-03-31 02:01:59,428 - INFO - ✅ 28car: 118 筆
+2026-03-31 02:01:59,429 - INFO - 成功連接數據庫: /Users/claw/.openclaw/workspace/fb_leads_final.db
+2026-03-31 02:01:59,429 - INFO - ✅ Facebook: 7 筆
+2026-03-31 02:01:59,431 - INFO - 
+📊 合併完成: 125 筆
+2026-03-31 02:01:59,437 - INFO - 🔍 去重完成: 刪除 6 筆重複，剩餘 119 筆
+2026-03-31 02:01:59,498 - INFO - 
+💾 已保存: /Users/claw/.openclaw/workspace/爬蟲潛客總滙/爬蟲潛客總滙_20260331_0201.xlsx
+2026-03-31 02:01:59,512 - INFO - 💾 已更新: /Users/claw/.openclaw/workspace/爬蟲潛客總滙/爬蟲潛客總滙_最新.xlsx
+2026-03-31 02:01:59,512 - INFO - 
+📈 統計:
+2026-03-31 02:01:59,512 - INFO - 平台
+28car       118
+Facebook      1
+2026-03-31 02:01:59,512 - INFO - 總計: 119 筆
+============================================================
+🦞 爬蟲潛客整合系統 (優化版)
+⏰ 執行時間: 2026-03-31 02:01:59
+============================================================
+
+📥 導出數據...
+
+🔄 合併去重...
+
+✅ 完成！
+
+⏱️  執行耗時: 0.09 秒
+============================================================
+
+📋 複製到桌面潛客系統...
+
+========================================
+✅ 任務完成: 2026年 3月31日 星期二 02時01分59秒 CST
+========================================

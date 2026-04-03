@@ -97,13 +97,15 @@ def is_valid_phone(phone, context_lines, current_idx):
     return False
 
 def extract_model(lines, phone_idx):
-    # 向前搜索車型
+    """提取車廠品牌（只返回品牌名稱）"""
+    # 向前搜索車廠品牌
     for j in range(max(0, phone_idx-1), max(0, phone_idx-60), -1):
         check = lines[j].strip()
         if check and len(check) > 3:
             for brand in all_brands:
                 if brand in check:
-                    return check.replace('\t', ' ').replace('  ', ' ')[:80].strip()
+                    # 只返回品牌名稱，不返回整個車型描述
+                    return brand
     return ''
 
 def extract_description(lines, phone_idx):

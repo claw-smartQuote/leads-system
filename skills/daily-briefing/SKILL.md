@@ -17,12 +17,54 @@
 - 使用 Microsoft Edge TTS (node-edge-tts)
 - 聲音：`zh-HK-HiuMaanNeural`（女聲，廣東話）
 - 語言代碼：`zh-HK`
-- 輸出格式：`audio-24khz-48kbitrate-mono-mp3`
+- 中間格式：`audio-24khz-48kbitrate-mono-mp3`
+
+**WhatsApp 語音格式（重要！）：**
+- 格式：**OGG/Opus**
+- 取樣率：48000 Hz
+- 聲道：Mono（單聲道）
+- 位元率：~16 kbps
+- Application: voip
+- 轉換命令：
+  ```bash
+  ffmpeg -i input.mp3 -c:a libopus -b:a 16k -ar 48000 -ac 1 -application voip output.ogg
+  ```
 
 **相關檔案：**
 - `scripts/generate_briefing.py` - 生成晨報文字內容
-- `scripts/generate_cantonese_briefing.py` - 生成廣東話語音
+- `scripts/generate_cantonese_briefing.py` - 生成廣東話語音（OGG/Opus 格式）
 - `scripts/cantonese_tts.py` - 廣東話 TTS 引擎
+
+**長文本處理：**
+- node-edge-tts 對長文本會超時，需分段生成（每段約 80 字）
+- 使用 ffmpeg concat 合併多段音頻
+- 最終轉換為 WhatsApp 相容的 OGG/Opus 格式
+
+---
+
+## ⚠️ 重要提醒：語音格式規範
+
+**所有生成發送的語音檔案必須使用 OGG/Opus 格式！**
+
+| 項目 | 規格 |
+|------|------|
+| 容器格式 | OGG |
+| 音頻編碼 | Opus |
+| 取樣率 | 48000 Hz |
+| 聲道 | Mono（單聲道）|
+| 位元率 | ~16 kbps |
+| Application | voip |
+
+**為何不能用 MP3/M4A：**
+- WhatsApp 原生語音格式為 OGG/Opus
+- MP3/M4A 在 WhatsApp 上可能無法播放或顯示為檔案而非語音消息
+- 內置 `tts` 工具生成的 MP3 可以播放（因為系統會自動轉換）
+- **但手動生成的語音必須使用 OGG/Opus 格式**
+
+**快速轉換命令：**
+```bash
+ffmpeg -i input.mp3 -c:a libopus -b:a 16k -ar 48000 -ac 1 -application voip output.ogg
+```
 
 ## 晨報內容結構
 

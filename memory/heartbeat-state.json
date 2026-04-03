@@ -1,1 +1,11 @@
-{"lastChecks":{"email":"2026-03-23T16:01:00Z","calendar":"2026-03-23T16:01:00Z","weather":null},"enabled":true,"startedAt":"2026-03-17T05:12:19Z"}
+{
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "context": 1775055300
+  },
+  "sessionsNeedingCompact": [],
+  "policyExpiryMay": ["LS6338_李子豪", "RN6534_张兆科", "UF1276_石咏希", "YT8988_林英才"],
+  "notes": "Email check failed (SMTP). Policy check: 4 clients expiring May. Reminder sent 2026-04-01 18:09.",
+  "lastReminderSent": "2026-04-01T18:09:00+08:00"
+}

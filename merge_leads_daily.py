@@ -23,8 +23,14 @@ def merge_leads():
     os.makedirs(BACKUP_DIR, exist_ok=True)
     
     # 查找所有潛客資料檔案（排除總滙檔案本身）
-    pattern = os.path.join(DATA_DIR, "潛客資料_*.xlsx")
-    files = glob.glob(pattern)
+    # 支援兩種命名模式：潛客資料_*.xlsx 和 雲端_render資料_*.xlsx
+    patterns = [
+        os.path.join(DATA_DIR, "潛客資料_*.xlsx"),
+        os.path.join(DATA_DIR, "雲端_render資料_*.xlsx")
+    ]
+    files = []
+    for pattern in patterns:
+        files.extend(glob.glob(pattern))
     
     if not files:
         print(f"{datetime.now()} - 沒有找到潛客資料檔案")

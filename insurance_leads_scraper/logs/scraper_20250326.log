@@ -1,0 +1,953 @@
+/Users/claw/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+======================================================================
+🤖 整合爬蟲系統 v2.0
+======================================================================
+🎯 目標: 100 條有效數據
+📁 輸出: /Users/claw/Desktop/汽車保險潛客數據
+⏰ 時間: 2026-03-26 22:14:09
+======================================================================
+
+🚗 啟動 28car.com 爬蟲...
+  📄 爬取第 1 頁...
+    ✅ [14] 62269008
+    ✅ [14] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [14] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [14] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [14] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [14] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [14] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [14] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [14] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [14] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+    ✅ [14] 53247219 🚗平治 S450 AMG	汽油	5座	3000cc	自動波	2019	$
+    ✅ [14] 52184568 🚗豐田 NOAH HYBRID WXB FACELIFT	混能	7座	1
+    ✅ [14] 68389898 🚗平治 E200 AVANTGARDE	汽油	5座	2000cc	自動波
+    ✅ [14] 65995992 🚗平治 S500	汽油	5座	4663cc	自動波	2014	$168,
+    ✅ [14] 68389898 🚗豐田 HIACE 2.8 DELUXE EURO 6	柴油	5座	28
+    ✅ [14] 68389898 🚗本田 FREED GB5	汽油	7座	1500cc	自動波	2018	
+    ✅ [14] 68389898 🚗奧迪 Q7 45 TFSI QUATTRO	汽油	7座	3000cc	
+    ✅ [14] 55776805 🚗起亞 SORENTO DIESEL	柴油	5座	2200cc	自動波	
+  📄 爬取第 2 頁...
+    ✅ [14] 62269008
+    ✅ [14] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [14] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [14] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [14] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [14] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [14] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [14] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [14] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [14] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+    ✅ [14] 53247219 🚗平治 S450 AMG	汽油	5座	3000cc	自動波	2019	$
+    ✅ [14] 52184568 🚗豐田 NOAH HYBRID WXB FACELIFT	混能	7座	1
+    ✅ [14] 68389898 🚗平治 E200 AVANTGARDE	汽油	5座	2000cc	自動波
+    ✅ [14] 65995992 🚗平治 S500	汽油	5座	4663cc	自動波	2014	$168,
+    ✅ [14] 68389898 🚗豐田 HIACE 2.8 DELUXE EURO 6	柴油	5座	28
+    ✅ [14] 68389898 🚗本田 FREED GB5	汽油	7座	1500cc	自動波	2018	
+    ✅ [14] 68389898 🚗奧迪 Q7 45 TFSI QUATTRO	汽油	7座	3000cc	
+    ✅ [14] 55776805 🚗起亞 SORENTO DIESEL	柴油	5座	2200cc	自動波	
+  📄 爬取第 3 頁...
+    ✅ [14] 62269008
+    ✅ [14] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [14] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [14] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [14] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [14] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [14] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [14] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [14] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [14] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+    ✅ [14] 53247219 🚗平治 S450 AMG	汽油	5座	3000cc	自動波	2019	$
+    ✅ [14] 52184568 🚗豐田 NOAH HYBRID WXB FACELIFT	混能	7座	1
+    ✅ [14] 68389898 🚗平治 E200 AVANTGARDE	汽油	5座	2000cc	自動波
+    ✅ [14] 65995992 🚗平治 S500	汽油	5座	4663cc	自動波	2014	$168,
+    ✅ [14] 68389898 🚗豐田 HIACE 2.8 DELUXE EURO 6	柴油	5座	28
+    ✅ [14] 68389898 🚗本田 FREED GB5	汽油	7座	1500cc	自動波	2018	
+    ✅ [14] 68389898 🚗奧迪 Q7 45 TFSI QUATTRO	汽油	7座	3000cc	
+    ✅ [14] 55776805 🚗起亞 SORENTO DIESEL	柴油	5座	2200cc	自動波	
+  📄 爬取第 4 頁...
+    ✅ [15] 62340533
+    ✅ [15] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [15] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [15] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [15] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [15] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+    📊 進度: 16/100 條 (第 5 頁)
+  📄 爬取第 5 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+  📄 爬取第 6 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+  📄 爬取第 7 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+  📄 爬取第 8 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+  📄 爬取第 9 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+    📊 進度: 16/100 條 (第 10 頁)
+  📄 爬取第 10 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+  📄 爬取第 11 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+  📄 爬取第 12 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+  📄 爬取第 13 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+  📄 爬取第 14 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+    📊 進度: 16/100 條 (第 15 頁)
+  📄 爬取第 15 頁...
+    ✅ [16] 62340533
+    ✅ [16] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [16] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [16] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [16] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [16] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [16] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [16] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [16] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [16] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [16] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [16] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    ✅ [16] 65768938 🚗本田 STEPWGN HYBRID RP5	混能	7座	2000cc	
+    ✅ [16] 53247219 🚗萬事得 MAZDA 6 DIESEL	柴油	5座	2100cc	自動波
+    ✅ [16] 63372121 🚗豐田 NOAH HYBRID	混能	7座	1800cc	自動波	202
+    ✅ [16] 53247219 🚗豐田 BZ4X	電動	5座	150kW	自動波	2024	$268,0
+  📄 爬取第 16 頁...
+    ✅ [17] 56169248
+    ✅ [18] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+  📄 爬取第 17 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+  📄 爬取第 18 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+  📄 爬取第 19 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    📊 進度: 19/100 條 (第 20 頁)
+  📄 爬取第 20 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+  📄 爬取第 21 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+  📄 爬取第 22 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+  📄 爬取第 23 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+  📄 爬取第 24 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+    📊 進度: 19/100 條 (第 25 頁)
+  📄 爬取第 25 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+  📄 爬取第 26 頁...
+    ✅ [19] 56169248
+    ✅ [19] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [19] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [19] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [19] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [19] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [19] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [19] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [19] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [19] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [19] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [19] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [19] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    ✅ [19] 53247219 🚗鈴木 Jimny 1.5 4WD 5MT	汽油	4座	1462cc	棍
+    ✅ [19] 65768938 🚗寶馬 318i SPORT	汽油	5座	2000cc	自動波	2021
+    ✅ [19] 53247219 🚗豐田 ALPHARD 2.4 HYBRID	汽油	7座	2400cc	
+  📄 爬取第 27 頁...
+    ✅ [20] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+  📄 爬取第 28 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+  📄 爬取第 29 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    📊 進度: 21/100 條 (第 30 頁)
+  📄 爬取第 30 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+  📄 爬取第 31 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+  📄 爬取第 32 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+  📄 爬取第 33 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+  📄 爬取第 34 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+    📊 進度: 21/100 條 (第 35 頁)
+  📄 爬取第 35 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+  📄 爬取第 36 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+  📄 爬取第 37 頁...
+    ✅ [21] 94090049
+    ✅ [21] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [21] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [21] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [21] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [21] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [21] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [21] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [21] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [21] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [21] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [21] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [21] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [21] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [21] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    ✅ [21] 91637028 🚗豐田 ALPHARD 2.5 HYBRID SRC MODELLI	混
+  📄 爬取第 38 頁...
+    ✅ [22] 98071471
+    ✅ [22] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+  📄 爬取第 39 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    📊 進度: 23/100 條 (第 40 頁)
+  📄 爬取第 40 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+  📄 爬取第 41 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+  📄 爬取第 42 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+  📄 爬取第 43 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+  📄 爬取第 44 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+    📊 進度: 23/100 條 (第 45 頁)
+  📄 爬取第 45 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+  📄 爬取第 46 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+  📄 爬取第 47 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+  📄 爬取第 48 頁...
+    ✅ [23] 98071471
+    ✅ [23] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [23] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [23] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [23] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [23] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [23] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [23] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [23] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ✅ [23] 56169248 🚗凌志 IS300H	混能	5座	2500cc	自動波	2013	$55
+    ✅ [23] 62340533 🚗豐田 PRIUS 1.8 HYBRID	混能	5座	1800cc	自動
+    ✅ [23] 62340533 🚗本田 FREED HYBRID EX GB7 MUGEN	混能	6座	
+    ✅ [23] 62269008 🚗豐田 VOXY HYBRID ZS KING MODELLIST	混能
+    ✅ [23] 91637028 🚗鈴木 HUSTLER HYBRID	混能	4座	658cc	自動波	2
+    ✅ [23] 91637028 🚗豐田 VELLFIRE 3.5 ZAG MODELLISTA	汽油	7
+    ✅ [23] 91637028 🚗萬事得 MX5 ROADSTER S LEATHER	汽油	2座	15
+    ✅ [23] 96003936 🚗本田 Civic TYPE R EK9	汽油	4座	1595cc	棍波
+    ✅ [23] 91637028 🚗平治 C200 AMG	汽油	5座	1500cc	自動波	2018	$
+  📄 爬取第 49 頁...
+    ✅ [24] 53601171
+    ✅ [25] 98889889 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE	汽油	
+    ✅ [25] 53601171 🚗本田 FD2 TYPE R	汽油	4座	1998cc	棍波	2009	
+    ✅ [25] 53601171 🚗本田 FD2 TYPE R	汽油	4座	1998cc	棍波	2009	
+    ✅ [25] 53601171 🚗奧迪 A5 40TFSI SLINE AVANT	汽油	5座	2000
+    ✅ [26] 64464464 🚗平治 C63 AMG	汽油	5座	4000cc	自動波	2015	$1
+    ✅ [26] 53601171 🚗起亞 SORENTO DIESEL GT	柴油	7座	2200cc	自
+    ✅ [27] 97320146 🚗三菱 EVOLUTION 6.5 TME	汽油	5座	1997cc	棍
+    ✅ [27] 53601171 🚗本田 ODYSSEY 2.4	汽油	7座	2345cc	自動波	201
+    ✅ [28] 65772680 🚗福士 TIGUAN 1.5 TSI ELEGANCE	汽油	5座	15
+    ✅ [28] 98071471 🚗本田 ODYSSEY 2.4 FACELIFT	汽油	7座	2356c
+    ✅ [28] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [28] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [28] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [28] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [28] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [28] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [28] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [28] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    📊 進度: 28/100 條 (第 50 頁)
+  📄 爬取第 50 頁...
+    ✅ [28] 53601171
+    ✅ [28] 98889889 🚗豐田 ALPHARD 3.5 EXECUTIVE LOUNGE	汽油	
+    ✅ [28] 53601171 🚗本田 FD2 TYPE R	汽油	4座	1998cc	棍波	2009	
+    ✅ [28] 53601171 🚗本田 FD2 TYPE R	汽油	4座	1998cc	棍波	2009	
+    ✅ [28] 53601171 🚗奧迪 A5 40TFSI SLINE AVANT	汽油	5座	2000
+    ✅ [28] 64464464 🚗平治 C63 AMG	汽油	5座	4000cc	自動波	2015	$1
+    ✅ [28] 53601171 🚗起亞 SORENTO DIESEL GT	柴油	7座	2200cc	自
+    ✅ [28] 97320146 🚗三菱 EVOLUTION 6.5 TME	汽油	5座	1997cc	棍
+    ✅ [28] 53601171 🚗本田 ODYSSEY 2.4	汽油	7座	2345cc	自動波	201
+    ✅ [28] 65772680 🚗福士 TIGUAN 1.5 TSI ELEGANCE	汽油	5座	15
+    ✅ [28] 98071471 🚗本田 ODYSSEY 2.4 FACELIFT	汽油	7座	2356c
+    ✅ [28] 69191323 🚗特斯拉 MODEL S 60	電動	5座	90kW	自動波	2014	
+    ✅ [28] 63331186 🚗本田 FL5 TYPE R	汽油	5座	2000cc	自動波	2026
+    ✅ [28] 94090049 🚗豐田 HIACE 300 DELUXE EURO 6	柴油	6座	27
+    ✅ [28] 68001777 🚗寶馬 218i GRAN TOURER	汽油	7座	1499cc	自動
+    ✅ [28] 56169248 🚗特斯拉 MODEL Y LONG RANGE	電動	5座	153kW	
+    ✅ [28] 56169248 🚗豐田 PRIUS V GS	混能	5座	1800cc	自動波	2015
+    ✅ [28] 94927159 🚗凌志 CT200H HYBRID	混能	5座	1800cc	自動波	2
+    ✅ [28] 67733722 🚗特斯拉 MODEL Y SR	電動	5座	88kW	自動波	2023	
+    ⚠️ 已達最大頁數限制 (50 頁)，停止爬取
+
+📊 28car 完成: 28 條
+
+📘 啟動 Facebook 爬蟲...
+❌ Facebook 瀏覽器啟動失敗: Message: session not created: cannot connect to chrome at 127.0.0.1:49848
+from chrome not reachable; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+0   undetected_chromedriver             0x0000000100e6dd38 undetected_chromedriver + 6798648
+1   undetected_chromedriver             0x0000000100e653ba undetected_chromedriver + 6763450
+2   undetected_chromedriver             0x0000000100860620 undetected_chromedriver + 452128
+3   undetected_chromedriver             0x000000010084b902 undetected_chromedriver + 366850
+4   undetected_chromedriver             0x00000001008a2c24 undetected_chromedriver + 724004
+5   undetected_chromedriver             0x0000000100897b89 undetected_chromedriver + 678793
+6   undetected_chromedriver             0x00000001008e91da undetected_chromedriver + 1012186
+7   undetected_chromedriver             0x00000001008e889c undetected_chromedriver + 1009820
+8   undetected_chromedriver             0x00000001008a7187 undetected_chromedriver + 741767
+9   undetected_chromedriver             0x00000001008a7f61 undetected_chromedriver + 745313
+10  undetected_chromedriver             0x0000000100e267c7 undetected_chromedriver + 6506439
+11  undetected_chromedriver             0x0000000100e2ac4a undetected_chromedriver + 6523978
+12  undetected_chromedriver             0x0000000100e074fa undetected_chromedriver + 6378746
+13  undetected_chromedriver             0x0000000100e2b6b8 undetected_chromedriver + 6526648
+14  undetected_chromedriver             0x0000000100df6ba0 undetected_chromedriver + 6310816
+15  undetected_chromedriver             0x0000000100e526b8 undetected_chromedriver + 6686392
+16  undetected_chromedriver             0x0000000100e52872 undetected_chromedriver + 6686834
+17  undetected_chromedriver             0x0000000100e64fd1 undetected_chromedriver + 6762449
+18  libsystem_pthread.dylib             0x00007ff81808de05 _pthread_start + 115
+19  libsystem_pthread.dylib             0x00007ff818089857 thread_start + 15
+
+📊 Facebook 完成: 0 條
+
+======================================================================
+📊 總計獲取: 28 條
+
+✅ Excel 導出完成:
+   📄 28car 資料: /Users/claw/Desktop/汽車保險潛客數據/本地_28car資料_20260326.xlsx
+      - 28car電話: 28 條
+   📄 全部資料: /Users/claw/Desktop/汽車保險潛客數據/本地_全部資料_20260326.xlsx (28 條)
+
+📊 來源統計:
+   - 28car: 28 條
+   - Facebook: 0 條
+     ├─ 帖子: 0 條
+     ├─ 評論: 0 條
+     └─ 含電話: 0 條
+   - 合併去重後總計: 28 個電話
+======================================================================
+⚠️ 警告: 未達到目標 100 條，僅獲取 28 條

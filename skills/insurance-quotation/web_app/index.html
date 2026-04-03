@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港車北上-報價系統</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .age-method-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .age-method-btn {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        
+        .age-method-btn.active {
+            border-color: #667eea;
+            background: #f0f4ff;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .age-input-group {
+            display: none;
+        }
+        
+        .age-input-group.active {
+            display: block;
+        }
+        
+        .calculate-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 20px;
+        }
+        
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .age-method-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .age-method-btn {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        
+        .age-method-btn.active {
+            border-color: #667eea;
+            background: #f0f4ff;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .age-input-group {
+            display: none;
+        }
+        
+        .age-input-group.active {
+            display: block;
+        }
+        
+        .result {
+            margin-top: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            display: none;
+        }
+        
+        .result.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .result h3 {
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        
+        .result-label {
+            color: #666;
+        }
+        
+        .result-value {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .total {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #667eea;
+        }
+        
+        .total .result-label {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .total .result-value {
+            font-size: 24px;
+            color: #667eea;
+        }
+        
+        .history {
+            margin-top: 30px;
+            padding: 25px;
+            background: #f0f4ff;
+            border-radius: 15px;
+            display: none;
+        }
+        
+        .history.show {
+            display: block;
+        }
+        
+        .history h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .history-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .history-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .history-item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .history-item-title {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .history-item-price {
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .history-item-detail {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .clear-history {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 13px;
+            color: #555;
+        }
+        
+        @media (max-width: 600px) {
+            .row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 港車北上-報價系統</h1>
+            <p>永誠財產保險 | 汽車保險報價計算工具</p>
+        </div>
+        
+        <div class="content">
+            
+            <form id="quoteForm">
+                <div class="form-group">
+                    <label>車牌號碼</label>
+                    <input type="text" id="plate" placeholder="例如：JD360" required>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label>車輛類型</label>
+                        <select id="fuelType">
+                            <option value="燃油车">燃油車</option>
+                            <option value="新能源车">新能源車</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>使用性質</label>
+                        <select id="category">
+                            <option value="6座以下个人">6座以下個人</option>
+                            <option value="6座以下企业">6座以下企業</option>
+                            <option value="6-10座个人">6-10座個人</option>
+                            <option value="6-10座企业">6-10座企業</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label>乘客數量（不含司機）</label>
+                        <input type="number" id="passengers" value="4" min="1" max="9">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>第三者責任險保額</label>
+                        <select id="thirdParty">
+                            <option value="0">不投保</option>
+                            <option value="100">100萬</option>
+                            <option value="150">150萬</option>
+                            <option value="200">200萬</option>
+                            <option value="300" selected>300萬</option>
+                            <option value="400">400萬</option>
+                            <option value="500">500萬</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>車齡計算方式</label>
+                    <div class="age-method-selector">
+                        <button type="button" class="age-method-btn active" data-method="select">
+                            選擇車齡
+                        </button>
+                        <button type="button" class="age-method-btn" data-method="yearmonth">
+                            年份和月份
+                        </button>
+                    </div>
+                    
+                    <!-- 選擇車齡 -->
+                    <div class="age-input-group active" id="selectAge">
+                        <select id="vehicleAgeSelect">
+                            <option value="3.5">3年以上 → 七折</option>
+                            <option value="2.5">2年以上 → 八折</option>
+                            <option value="1.5">2年以下 → 九折</option>
+                        </select>
+                    </div>
+                    
+                    <!-- 年份和月份 -->
+                    <div class="age-input-group" id="yearMonthAge">
+                        <div class="row">
+                            <input type="number" id="regYear" placeholder="登記年份（如：2021）" min="2000" max="2030">
+                            <input type="number" id="regMonth" placeholder="月份（1-12）" min="1" max="12">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label>駕意險（可選）</label>
+                        <select id="drivingAccident">
+                            <option value="无" selected>不投保</option>
+                            <option value="30万">30萬保障（40元/位）</option>
+                            <option value="50万">50萬保障（60元/位）</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>醫保外用藥（可選）</label>
+                        <select id="medicalOutside">
+                            <option value="10" selected>10萬（默認）</option>
+                            <option value="20">20萬</option>
+                            <option value="0">不投保</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="calculate-btn">計算報價</button>
+            </form>
+            
+            <div class="result" id="result">
+                <h3>📋 報價單</h3>
+                <div id="resultContent"></div>
+            </div>
+            
+            <div class="history" id="history">
+                <h3>📜 報價記錄</h3>
+                <div id="historyList"></div>
+                <button class="clear-history" onclick="clearHistory()">清除記錄</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ========== 費率表數據 ==========
+        const FUEL_THIRD_PARTY_RATES = {
+            "6座以下个人": {100: 755.20, 150: 843.43, 200: 922.08, 300: 1074.67, 400: 1224.08, 500: 1370.37},
+            "6座以下企业": {100: 926.69, 150: 1021.67, 200: 1106.37, 300: 1270.71, 400: 1431.67, 500: 1589.21},
+            "6-10座个人": {100: 893.52, 150: 997.93, 200: 1090.99, 300: 1271.49, 400: 1448.28, 500: 1621.36},
+            "6-10座企业": {100: 1066.80, 150: 1176.13, 200: 1273.65, 300: 1462.85, 400: 1648.15, 500: 1829.55},
+        };
+        
+        const EV_THIRD_PARTY_RATES = {
+            "6座以下个人": {100: 830.72, 150: 927.77, 200: 1014.29, 300: 1182.14, 400: 1346.49, 500: 1507.41},
+            "6座以下企业": {100: 1039.75, 150: 1146.32, 200: 1241.36, 300: 1425.73, 400: 1606.34, 500: 1783.10},
+            "6-10座个人": {100: 982.87, 150: 1097.72, 200: 1200.09, 300: 1398.64, 400: 1593.11, 500: 1783.50},
+            "6-10座企业": {100: 1196.96, 150: 1319.62, 200: 1429.04, 300: 1641.32, 400: 2052.76, 500: 2251.89},
+        };
+        
+        const FUEL_MEDICAL_OUTSIDE_RATES = {0: 0, 10: 73.33, 20: 102.67, 30: 124.00, 50: 158.67, 100: 221.33};
+        const EV_MEDICAL_OUTSIDE_RATES = {0: 0, 10: 71.18, 20: 99.65, 30: 109.41, 50: 140.00, 100: 195.29};
+        
+        const COMPULSORY_BASE_RATES = {
+            "6座以下个人": 950,
+            "6座以下企业": 1000,
+            "6-10座个人": 1100,
+            "6-10座企业": 1130,
+        };
+        
+        // ========== 核心計算函數 ==========
+        
+        function calculateAgeFromYearMonth(year, month) {
+            const now = new Date();
+            const currentYear = now.getFullYear();
+            const currentMonth = now.getMonth() + 1;
+            
+            let ageYear = currentYear - year;
+            let monthDiff;
+            
+            if (currentMonth < month) {
+                ageYear -= 1;
+                monthDiff = 12 - month + currentMonth;
+            } else {
+                monthDiff = currentMonth - month;
+            }
+            
+            return Math.round((ageYear + monthDiff / 12) * 10) / 10;
+        }
+        
+        function calculateCommercialDiscount(fuelType, vehicleAge) {
+            // 燃油车和新能源车统一根据车龄计算折扣
+            if (vehicleAge >= 3) return 0.7;  // 三年以上：七折
+            if (vehicleAge >= 2) return 0.8;  // 两岁以上：八折
+            return 0.9;  // 两岁以下：九折
+        }
+        
+        function calculateDrivingAccident(coverageType, seatCount) {
+            if (coverageType === "无") return 0;
+            if (coverageType === "30万") return seatCount * 40;
+            if (coverageType === "50万") return seatCount * 60;
+            return 0;
+        }
+        
+        function getAgeLabel(vehicleAge) {
+            if (vehicleAge >= 3) return '3年以上 (七折)';
+            if (vehicleAge >= 2) return '2年以上 (八折)';
+            return '2年以下 (九折)';
+        }
+        
+        function generateQuote(data) {
+            const rates = data.fuelType === "燃油车" ? FUEL_THIRD_PARTY_RATES : EV_THIRD_PARTY_RATES;
+            const medicalRates = data.fuelType === "燃油车" ? FUEL_MEDICAL_OUTSIDE_RATES : EV_MEDICAL_OUTSIDE_RATES;
+            
+            const discount = calculateCommercialDiscount(data.fuelType, data.vehicleAge);
+            
+            // 交強險 = 基礎費率 × 折扣
+            const compulsoryBase = COMPULSORY_BASE_RATES[data.category] || 950;
+            const compulsoryPremium = compulsoryBase * discount;
+            
+            // 新能源車：整個商業險固定九折；燃油車：根據車齡折扣
+            const commercialDiscount = (data.fuelType === "新能源车") ? 0.9 : discount;
+            const thirdPartyDiscount = commercialDiscount;
+            
+            const baseThirdParty = rates[data.category][data.thirdParty] || 0;
+            const thirdPartyPremium = baseThirdParty * thirdPartyDiscount;
+            
+            const medicalOutsideLimit = data.medicalOutsideLimit || 10;
+            const medicalOutsideThird = (medicalRates[medicalOutsideLimit] || 0) * commercialDiscount;
+            
+            const totalSeats = data.passengers + 1;
+            const drivingAccidentPremium = calculateDrivingAccident(data.drivingAccident, totalSeats);
+            
+            const commercialTotal = thirdPartyPremium + medicalOutsideThird + drivingAccidentPremium;
+            const totalPremium = compulsoryPremium + commercialTotal;
+            
+            return {
+                plate: data.plate,
+                fuelType: data.fuelType,
+                category: data.category,
+                passengers: data.passengers,
+                vehicleAge: data.vehicleAge,
+                thirdParty: data.thirdParty,
+                medicalOutsideLimit: medicalOutsideLimit,
+                drivingAccidentType: data.drivingAccident,
+                discount: discount,
+                compulsoryPremium: compulsoryPremium,
+                thirdPartyPremium: thirdPartyPremium,
+                medicalOutside: medicalOutsideThird,
+                drivingAccident: drivingAccidentPremium,
+                commercialTotal: commercialTotal,
+                totalPremium: totalPremium
+            };
+        }
+        
+        // ========== 界面交互 ==========
+        
+        let quoteHistory = JSON.parse(localStorage.getItem('quoteHistory') || '[]');
+        
+        // 車齡方式切換
+        document.querySelectorAll('.age-method-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.age-method-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const method = this.dataset.method;
+                document.querySelectorAll('.age-input-group').forEach(g => g.classList.remove('active'));
+                document.getElementById(method === 'select' ? 'selectAge' : 'yearMonthAge').classList.add('active');
+            });
+        });
+        
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const ageMethod = document.querySelector('.age-method-btn.active').dataset.method;
+            let vehicleAge;
+            
+            if (ageMethod === 'select') {
+                vehicleAge = parseFloat(document.getElementById('vehicleAgeSelect').value);
+            } else {
+                const year = parseInt(document.getElementById('regYear').value);
+                const month = parseInt(document.getElementById('regMonth').value);
+                
+                if (!year || !month || month < 1 || month > 12) {
+                    alert('請輸入正確的年份和月份');
+                    return;
+                }
+                
+                vehicleAge = calculateAgeFromYearMonth(year, month);
+            }
+            
+            const data = {
+                plate: document.getElementById('plate').value,
+                fuelType: document.getElementById('fuelType').value,
+                category: document.getElementById('category').value,
+                passengers: parseInt(document.getElementById('passengers').value) || 4,
+                vehicleAge: vehicleAge,
+                thirdParty: parseInt(document.getElementById('thirdParty').value) || 300,
+                medicalOutsideLimit: parseInt(document.getElementById('medicalOutside').value) || 10,
+                drivingAccident: document.getElementById('drivingAccident').value
+            };
+            
+            const result = generateQuote(data);
+            displayResult(result);
+            addToHistory(result);
+        });
+        
+        function displayResult(result) {
+            const resultDiv = document.getElementById('result');
+            const contentDiv = document.getElementById('resultContent');
+            
+            contentDiv.innerHTML = `
+                <div class="result-item">
+                    <span class="result-label">車牌號碼</span>
+                    <span class="result-value">${result.plate}</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">車輛類型</span>
+                    <span class="result-value">${result.fuelType}</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">使用性質</span>
+                    <span class="result-value">${result.category}</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">乘客數量</span>
+                    <span class="result-value">${result.passengers}人</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">汽車登記年期</span>
+                    <span class="result-value">${getAgeLabel(result.vehicleAge)}</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">交強險（20萬）</span>
+                    <span class="result-value">${result.compulsoryPremium.toFixed(2)}元</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">第三者責任險 (${result.thirdParty}萬)</span>
+                    <span class="result-value">${result.thirdPartyPremium.toFixed(2)}元</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">醫保外用藥（${result.medicalOutsideLimit}萬）</span>
+                    <span class="result-value">${result.medicalOutside.toFixed(2)}元</span>
+                </div>
+                ${result.drivingAccident > 0 ? `
+                <div class="result-item">
+                    <span class="result-label">駕意險（${result.drivingAccidentType}）</span>
+                    <span class="result-value">${result.drivingAccident.toFixed(2)}元</span>
+                </div>
+                ` : ''}
+                <div class="result-item">
+                    <span class="result-label">道路救援（12次）</span>
+                    <span class="result-value">免費</span>
+                </div>
+                <div class="result-item total">
+                    <span class="result-label">保費合計</span>
+                    <span class="result-value">${result.totalPremium.toFixed(2)}元</span>
+                </div>
+                <div style="margin-top: 15px; padding-top: 10px; text-align: center; font-size: 12px; color: #999;">
+                    <div>報價日期：${new Date().toLocaleDateString('en-GB', {day:'2-digit',month:'2-digit',year:'numeric'})} ${new Date().toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit',hour12:false})}</div>
+                    <div style="margin-top: 5px;">永誠保險-港車北上  ©smartQuote AI Solution</div>
+                </div>
+                <div style="margin-top: 20px; display: flex; gap: 10px;">
+                    <button onclick="shareAsText()" style="flex: 1; padding: 12px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 14px;">
+                        📄 分享為文字(.txt)
+                    </button>
+                    <button onclick="shareAsImage()" style="flex: 1; padding: 12px; background: #764ba2; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 14px;">
+                        🖼️ 分享為圖片(.jpg)
+                    </button>
+                </div>
+            `;
+            
+            resultDiv.classList.add('show');
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // 生成文件名
+        function getFileName(ext) {
+            const plate = document.getElementById('plate').value || '報價單';
+            const now = new Date();
+            const dd = String(now.getDate()).padStart(2, '0');
+            const mm = String(now.getMonth() + 1).padStart(2, '0');
+            const yyyy = now.getFullYear();
+            return `${plate}(報價)${dd}${mm}${yyyy}.${ext}`;
+        }
+        
+        // 分享为文本文件
+        function shareAsText() {
+            // 从页面获取报价内容
+            const resultContent = document.getElementById('resultContent');
+            const items = resultContent.querySelectorAll('.result-item');
+            
+            let text = '永誠保險報價單\n';
+            text += '=' .repeat(30) + '\n\n';
+            
+            items.forEach(item => {
+                const label = item.querySelector('.result-label')?.textContent?.trim() || '';
+                const value = item.querySelector('.result-value')?.textContent?.trim() || '';
+                if (label && value && !label.includes('分享')) {
+                    text += `${label}: ${value}\n`;
+                }
+            });
+            
+            text += '\n' + '=' .repeat(30) + '\n';
+            text += '此報價僅供參考，具體保費以投保時系統金額為準。';
+            
+            // 添加 UTF-8 BOM 以確保 Windows 正確識別中文
+            const BOM = '\uFEFF';
+            const blob = new Blob([BOM + text], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = getFileName('txt');
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        
+        // 分享为图片
+        function shareAsImage() {
+            const content = document.getElementById('resultContent');
+            const items = content.querySelectorAll('.result-item');
+            
+            // 收集数据
+            const rows = [];
+            items.forEach(item => {
+                const label = item.querySelector('.result-label')?.textContent?.trim();
+                const value = item.querySelector('.result-value')?.textContent?.trim();
+                if (label && value) {
+                    rows.push({ label, value, isTotal: item.classList.contains('total') });
+                }
+            });
+            
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const W = 750;
+            const rowH = 65;
+            const headerH = 80;
+            const footerH = 160;
+            const padding = 40;
+            const H = headerH + (rows.length * rowH) + footerH + 40;
+            
+            canvas.width = W;
+            canvas.height = H;
+            
+            // 背景（淡灰绿色）
+            ctx.fillStyle = '#f0f4f0';
+            ctx.fillRect(0, 0, W, H);
+            
+            // 白色内容区
+            const margin = 20;
+            ctx.fillStyle = '#ffffff';
+            ctx.shadowColor = 'rgba(0,0,0,0.08)';
+            ctx.shadowBlur = 15;
+            ctx.shadowOffsetY = 5;
+            roundRect(ctx, margin, margin, W - margin * 2, H - margin * 2, 15);
+            ctx.fill();
+            ctx.shadowColor = 'transparent';
+            
+            // 标题
+            const startX = padding + margin;
+            let y = margin + 55;
+            ctx.fillStyle = '#333';
+            ctx.font = 'bold 28px "PingFang SC", "Microsoft YaHei", Arial';
+            ctx.textAlign = 'left';
+            ctx.fillText('\u{1F4CB} 報價單', startX, y);
+            
+            // 标题下划线
+            y += 15;
+            ctx.strokeStyle = '#e0e0e0';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(startX, y);
+            ctx.lineTo(W - startX, y);
+            ctx.stroke();
+            
+            y += 10;
+            
+            // 数据行
+            rows.forEach((row, index) => {
+                y += rowH;
+                
+                if (row.isTotal) {
+                    // 保費合計分隔线（蓝色）
+                    ctx.strokeStyle = '#667eea';
+                    ctx.lineWidth = 2.5;
+                    ctx.beginPath();
+                    ctx.moveTo(startX, y - rowH + 15);
+                    ctx.lineTo(W - startX, y - rowH + 15);
+                    ctx.stroke();
+                    
+                    // 保費合計
+                    ctx.fillStyle = '#333';
+                    ctx.font = 'bold 24px "PingFang SC", "Microsoft YaHei", Arial';
+                    ctx.textAlign = 'left';
+                    ctx.fillText(row.label, startX, y);
+                    
+                    ctx.fillStyle = '#667eea';
+                    ctx.font = 'bold 30px "PingFang SC", "Microsoft YaHei", Arial';
+                    ctx.textAlign = 'right';
+                    ctx.fillText(row.value, W - startX, y);
+                } else {
+                    // 普通行
+                    ctx.fillStyle = '#555';
+                    ctx.font = '20px "PingFang SC", "Microsoft YaHei", Arial';
+                    ctx.textAlign = 'left';
+                    ctx.fillText(row.label, startX, y);
+                    
+                    ctx.fillStyle = '#333';
+                    ctx.font = 'bold 20px "PingFang SC", "Microsoft YaHei", Arial';
+                    ctx.textAlign = 'right';
+                    ctx.fillText(row.value, W - startX, y);
+                    
+                    // 行分隔线
+                    ctx.strokeStyle = '#e8e8e8';
+                    ctx.lineWidth = 0.5;
+                    ctx.beginPath();
+                    ctx.moveTo(startX, y + 20);
+                    ctx.lineTo(W - startX, y + 20);
+                    ctx.stroke();
+                }
+            });
+            
+            // 底部標示
+            y += 50;
+            ctx.fillStyle = '#999';
+            ctx.font = '14px "PingFang SC", "Microsoft YaHei", Arial';
+            ctx.textAlign = 'center';
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('en-GB', {day:'2-digit',month:'2-digit',year:'numeric'}) + ' ' + now.toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit',hour12:false});
+            ctx.fillText('報價日期：' + dateStr, W / 2, y);
+            y += 25;
+            ctx.fillText('永誠保險-港車北上  ©smartQuote AI Solution', W / 2, y);
+            
+            // 保存图片
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = getFileName('jpg');
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }, 'image/jpeg', 0.95);
+        }
+        
+        // 圆角矩形辅助函数
+        function roundRect(ctx, x, y, w, h, r) {
+            ctx.beginPath();
+            ctx.moveTo(x + r, y);
+            ctx.lineTo(x + w - r, y);
+            ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+            ctx.lineTo(x + w, y + h - r);
+            ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+            ctx.lineTo(x + r, y + h);
+            ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+            ctx.lineTo(x, y + r);
+            ctx.quadraticCurveTo(x, y, x + r, y);
+            ctx.closePath();
+        }
+        
+        function addToHistory(result) {
+            const historyItem = {
+                ...result,
+                timestamp: new Date().toLocaleString('zh-HK')
+            };
+            quoteHistory.unshift(historyItem);
+            if (quoteHistory.length > 10) quoteHistory.pop();
+            localStorage.setItem('quoteHistory', JSON.stringify(quoteHistory));
+            displayHistory();
+        }
+        
+        function displayHistory() {
+            const historyDiv = document.getElementById('history');
+            const listDiv = document.getElementById('historyList');
+            
+            if (quoteHistory.length === 0) {
+                historyDiv.classList.remove('show');
+                return;
+            }
+            
+            listDiv.innerHTML = quoteHistory.map((item, index) => `
+                <div class="history-item" onclick="loadFromHistory(${index})">
+                    <div class="history-item-header">
+                        <span class="history-item-title">${item.plate} - ${item.fuelType}</span>
+                        <span class="history-item-price">${item.totalPremium.toFixed(2)}元</span>
+                    </div>
+                    <div class="history-item-detail">
+                        ${item.category} | ${item.passengers}人 | ${item.vehicleAge}年 | ${item.timestamp}
+                    </div>
+                </div>
+            `).join('');
+            
+            historyDiv.classList.add('show');
+        }
+        
+        function loadFromHistory(index) {
+            const item = quoteHistory[index];
+            document.getElementById('plate').value = item.plate;
+            document.getElementById('fuelType').value = item.fuelType;
+            document.getElementById('category').value = item.category;
+            document.getElementById('passengers').value = item.passengers;
+            document.getElementById('thirdParty').value = item.thirdParty;
+            document.getElementById('medicalOutside').value = item.medicalOutsideLimit || 10;
+            document.getElementById('drivingAccident').value = item.drivingAccident ? "30万" : "无";
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function clearHistory() {
+            quoteHistory = [];
+            localStorage.removeItem('quoteHistory');
+            document.getElementById('history').classList.remove('show');
+        }
+        
+        // 初始顯示歷史記錄
+        displayHistory();
+    </script>
+</body>
+</html>

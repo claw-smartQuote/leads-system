@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/claw/.openclaw/workspace/scraper_28car_100_v2.py", line 7, in <module>
+    from playwright.sync_api import sync_playwright
+ModuleNotFoundError: No module named 'playwright'

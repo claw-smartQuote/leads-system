@@ -46,6 +46,23 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+### 🧠 Anti-Amnesia Protocol (防失憶協議)
+
+**CRITICAL: You MUST actively preserve memory across sessions**
+
+Before session ends or when important info is discussed:
+1. **Update MEMORY.md** with key facts, decisions, preferences
+2. **Run backup script**: `bash ~/.openclaw/workspace/backup_memory.sh`
+3. **Create daily notes** in `memory/YYYY-MM-DD.md` for today's events
+
+**Memory Checklist** (do this before ending conversation):
+- [ ] New client info saved?
+- [ ] Policy changes documented?
+- [ ] Important dates recorded?
+- [ ] User preferences updated?
+
+**If you don't write it down, it will be LOST tomorrow.**
+
 ## Red Lines
 
 - Don't exfiltrate private data. Ever.

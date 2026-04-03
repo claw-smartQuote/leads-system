@@ -1,114 +1,148 @@
-# MEMORY.md - 長期記憶
+# 港車北上資料庫歸檔流程
 
-*最後更新: 2026-03-23*
+**技能位置**: `~/.openclaw/workspace/skills/hk-north-insurance-filing/SKILL.md`
 
----
+**工作流程**:
+1. 監控 `~/Desktop/等待命名的/` 發現臨時資料夾自動執行
+2. 從 PDF 識別：車牌、客戶名（簡體）、到期月份
+3. 建立 `到期月份_車牌_客戶名` 資料夾
+4. 複製檔案後**清空臨時資料夾**
+5. 移回桌面，權限設為 777
 
-## 👤 關於 smartQuote
-
-- **名稱**: smartQuote
-- **職業**: 香港保險代理人
-- **專業領域**: 一般保險（汽車、勞工、工程）
-- **註冊公司**: 永誠財產保險有限公司 (www.alltrust.com.cn)
-- **主要業務**: 港車北上汽車保險
-- **身份**: 國內正規註冊代理
+**命名格式**: `02_JC829_赵克宏`（簡體中文）
 
 ---
 
-## 💼 業務概況
+# 客戶資料庫
 
-### 保單管理
-- **總保單數量**: 76 份（截至 2026-03）
-- **保險公司**: 永城
-- **主要代理**: 李先生 (亦有楊總-PL 部分保單)
-- **下次續保提醒**: 2026-04-28 (UF1276、RN6534)
-- **提醒設定**: 到期前 28 天日曆提醒
+**位置**: `~/Desktop/港車北上客戶資料庫/`
 
-### 常用文件
-位置：`/Users/claw/.openclaw/media/inbound/保單表格/`
-- 保險代理服務授權書 (PDF)
-- 大新保險汽車駕駛人資料更改表格 (PDF)
-- 車輛保單取消申請書 (PDF)
-- 逾期聲明書 (PDF)
+**命名格式**: `到期月份_車牌號碼_客戶名字`
+例如：`03_ABC123_陳大文`
 
-### 潛客系統
-- **每日自動滙出**: 雲端_render資料_*.xlsx
-- **儲存位置**: 桌面「潛客系統」文件夾
-- **多個數據源**: 28car、Facebook、其他渠道
-- **備份機制**: 每日凌晨自動備份到 `~/.openclaw/backups/daily/`
-
-### 潛客系統
-- **每日自動滙出**: 雲端_render資料_*.xlsx
-- **儲存位置**: 桌面「潛客系統」文件夾
-- **多個數據源**: 28car、Facebook、其他渠道
+**每個客戶資料夾內容**:
+- 投保申請表.pdf
+- 保單.pdf
+- 報價單.pdf
+- 身份證副本.pdf
+- 行車証副本.pdf
+- 強保險副本.pdf
+- 溝通記錄/（跟進WhatsApp記錄）
+- 臨時文件/
 
 ---
 
-## ⚙️ 系統配置
+# 知識庫
 
-- **主要通訊**: WhatsApp
-- **語言**: 中文（廣東話/普通話）
-- **TTS 語音**: 廣東話（粵語）
-- **時區**: Asia/Shanghai
-- **OpenClaw 助手**: 🦞 lobster
-- **助手名稱**: lobster（龍蝦）
+**本地知識庫**: `/Users/claw/.openclaw/workspace/knowledge_base/`
+- 收錄保險條款、投保表格、IIQE教材、費率表、潛客資料等
+- 總計 2.3MB+，覆蓋大新/蘇黎世/安聯/立橋保險
+- 詳見 `knowledge_base/README.md` 索引
 
 ---
 
-## 👤 用戶偏好
+# 潛客系統
 
-### 溝通風格
-- 偏好簡潔直接的回覆
-- 使用中文（廣東話/普通話）溝通
-- 欣賞有個性、不囉嗦的助手
-
-### 工作習慣
-- 重視數據管理（潛客 Excel 檔案系統）
-- 已建立自動化流程（每日滙出、備份、保單檢查）
-- 透過 WhatsApp 進行業務溝通
-
-### 重要事項
-- **中國移動電話卡**: 13537871061（每 88 天需充值，下次 2026-06-15）
+**線上潛客系統**
+- **前台**: https://leads-system.onrender.com/
+- **後台**: https://leads-system.onrender.com/admin
+- **GitHub**: https://github.com/claw-smartQuote/leads-system
+- **部署平台**: Render
 
 ---
 
-## 📝 重要事件紀錄
-
-### 2026-03-24
-- 晨報任務超時（120秒），已延長至 300 秒
-- 手動補發今日晨報（廣東話語音）
-- 確認無即將到期保單
-- **更新晨報內容**：新增天氣預報 + 待辦清單功能
-- **✅ 成功配置廣東話 TTS 引擎**：使用 Microsoft Edge TTS (zh-HK-HiuMaanNeural)
-- **✅ 更改發送時間**：早上 8:00 → **9:00**
-- **更改助手名稱**：Lobster → AI小龍蝦
-- **✅ 學習港車北上保險**：分析三種保單樣本（交強險、商業險、駕乘險），建立知識庫
-- **✅ 學習蘇黎世保險條款**：新增私家車保險條款（ZPP-002-07-2022）分析
-- **✅ 學習蘇黎世旅遊保險**：新增 Get "Z" Go + 旅遊保險計劃（TSP-002-06-2024）分析
-- **✅ 學習蘇黎世海外學生保險**：新增 StudySmart+ 海外學生保險（G24022）分析
-- **✅ 學習蘇黎世外傭保險**：新增 Helpersafe 外傭保險（ZDH-002-06-2021）分析
-- **✅ 學習蘇黎世家居/業主保險**：新增 HomeChoice 家居保險及業主保險分析
-- **✅ 學習火險及商業綜合保險**：新增火險（ZBF/002/08/2017）及商業綜合保險（RTP-BRO-002-12-2022E）分析
-- **總計已學習**：4間保險公司，16份保單/條款文件
-
-### 2026-03-23
-- 設定每日晨報語音播報為**廣東話（粵語）**
-- 更新 `generate_briefing.py` 腳本標註
-- 更新 TOOLS.md 語音偏好設定
-
-### 2026-03-22
-- 啟用 MEMORY.md 長期記憶系統
-- 確認所有自動化流程運作正常（Heartbeat、備份、保單檢查、潛客滙出）
+**FB 爬蟲狀態**
+- ❌ 登入狀態過期（權限問題已修復）
+- 28car 爬蟲： 110 筆，無需手動登入
 
 ---
 
-## 🎯 待學習/改進項目
+**長效記憶機制**
+- 核心狀態存放於: `long_term_memory.json`
+- 每次對話開始先讀取，快速恢復狀態
+- 上下文過長時自動觸發代謝壓縮
+## 知識庫更新 (2026-03-30)
 
-- [ ] 深入學習港車北上保險條款細節
-- [ ] 分析潛客數據 pattern
-- [ ] 建立保費計算輔助技能
-- [ ] 客戶溝通模板整理
+**已完成學習：**
+- 50份文件（PDF + XLSX）已學習並存入知識庫
+- 知識庫位置: `memory/knowledge_base_raw.json`
+- 摘要位置: `memory/knowledge_summary.md`
+
+**檔案分類：**
+- 保險條款（insurance_clauses）: 3份
+- 投保表格（application_forms）: 5份
+- IIQE考試資料（iqe_exam）: 12份
+- 費率表（rate_tables）: 2份
+- 保單管理表格（policy_management）: 5份
+- 保單樣本（policy_samples）: 1份
+- 潛客資料（leads）: 1份
+- 其他文件（other）: 15份
+
+**合作保險公司：**
+- 大新保險（汽車保險）
+- 蘇黎世保險（汽車、電車、電動車、勞工）
+- 安聯保險（電動車）
+- 立橋保險（汽車）
+
+**IIQE考試覆蓋：**
+- Paper 1, Paper 2, Paper 3 試題及精華筆記
+
+## ⚠️ 重要：每日工作流程 (2026-03-30 新增)
+
+**必須熟讀**: `memory/DAILY_WORKFLOW.md`
+
+**每日固定流程**:
+1. **FB 爬蟲**: `python3 fb_crawler_final_v5.py`
+   - 自動檢查登入狀態
+   - 如果過期/超時：運行 `python3 fb_auto_login.py`
+2. **Excel 輸出**: 自動生成到 `~/.openclaw/workspace/fb_潛客名單_final.xlsx`
+3. **桌面備份**: `cp ~/.openclaw/workspace/fb_潛客名單_final.xlsx ~/Desktop/`
+4. **潛客系統**: 同步到 https://leads-system.onrender.com/admin
+
+**FB 登入問題解決方案**:
+- 加載超時/登入過期 → `python3 fb_auto_login.py`
+- CAPTCHA → 等用戶手動完成
+- 備用方案 → 28car 爬蟲（110筆數據，無需登入）
 
 ---
 
-*備註: 此文件由 AI 助手維護，記錄重要資訊以便提供更好服務。*
+# FB 爬蟲核心學習（2026-04-03）
+
+## 關鍵發現
+
+### Facebook 群組帖子結構
+1. **帖子以對話框形式打開**
+   - CSS selector: `[role="dialog"]`
+   - 關閉按鈕: `[aria-label="關閉"]`
+
+2. **留言定位**
+   - 留言區塊: `[role="article"]`
+   - 用戶連結: `a[href*="/groups/"]` (群組成員)
+   - 留言內容: `div[dir="auto"]`
+
+3. **回覆展開**
+   - 按鈕文字: `查看 X 則回覆`
+   - 正則: `r'查看\s*\d+\s*則回覆'`
+
+4. **對話框內滾動**
+   - ❌ `window.scrollTo()` 無效
+   - ✅ `page.keyboard.press('ArrowDown')`
+   - ✅ 對話框元素聚焦後滾動
+
+### Browser 工具使用技巧
+- 重啟瀏覽器: `browser action=stop` → `browser action=start`
+- 查找元素: `browser action=snapshot refs=aria`
+- 對話框內按鍵: `kind=press key=ArrowDown`
+
+### 替代爬蟲方案
+| 方案 | 狀態 | 特點 |
+|------|------|------|
+| httpx+BeautifulSoup | ✅ 可用 | 簡單頁面、無反機器人 |
+| Browser 工具 | ✅ 最佳 | Facebook、需要登入 |
+| simple_scraper.py | ✅ 已創建 | 輕量替代方案 |
+
+## 已更新文件
+- `skills/browser-automation/SKILL.md` - 加入 FB 爬蟲流程
+- `fb_crawler_final_v5.py` - v5.2 版本
+- `skills/simple-web-scraper/SKILL.md` - 新技能
+- `memory/DAILY_WORKFLOW.md` - 加入學習要點

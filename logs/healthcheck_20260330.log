@@ -1,0 +1,26 @@
+[2026年 3月30日 星期一 18時47分36秒 CST] 檢查潛客系統狀態...
+⚠️ 潠客系統異常 (HTTP 000)
+│
+◇  Config warnings ───────────────────────────────────────────────────╮
+│                                                                     │
+│  - plugins.entries.minimax-portal-auth: plugin not found:           │
+│    minimax-portal-auth (stale config entry ignored; remove it from  │
+│    plugins config)                                                  │
+│                                                                     │
+├─────────────────────────────────────────────────────────────────────╯
+完成: 2026年 3月30日 星期一 18時47分52秒 CST
+[2026年 3月30日 星期一 18時48分39秒 CST] 檢查潛客系統狀態...
+✅ 潛客系統正常運行 (HTTP 200)
+完成: 2026年 3月30日 星期一 18時48分40秒 CST
+[2026年 3月30日 星期一 18時48分44秒 CST] 檢查潛客系統狀態...
+⚠️ 潠客系統異常 (HTTP 000)
+│
+◇  Config warnings ───────────────────────────────────────────────────╮
+│                                                                     │
+│  - plugins.entries.minimax-portal-auth: plugin not found:           │
+│    minimax-portal-auth (stale config entry ignored; remove it from  │
+│    plugins config)                                                  │
+│                                                                     │
+├─────────────────────────────────────────────────────────────────────╯
+✅ Sent via gateway (whatsapp). Message ID: 3EB0CF0F4BBAEF766D9748
+完成: 2026年 3月30日 星期一 18時48分51秒 CST

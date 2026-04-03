@@ -275,7 +275,7 @@ def generate_briefing():
     
     # 構建報告內容
     parts = []
-    parts.append(f"{greeting}！呢度係 Lobster 每日晨報。")
+    parts.append(f"{greeting}！呢度係 AI小龍蝦 每日晨報。")
     parts.append(f"今日係 {info['date']}，{info['weekday']}。")
     
     # 天氣預報

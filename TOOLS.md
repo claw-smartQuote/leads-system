@@ -1,56 +1,194 @@
 # TOOLS.md - Local Notes
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+這是你的專屬備忘錄，記錄你的特定設置和偏好。
 
-## What Goes Here
+---
 
-Things like:
+## 🦞 助手配置
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+- **助手名稱**: AI小龍蝦
+- **助手emoji**: 🦞
+- **主要通訊**: WhatsApp
+- **語言**: 中文（廣東話/普通話）
 
-## Examples
+---
 
-```markdown
-### Cameras
+## 🎙️ TTS 語音配置
 
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
+### 基本設置
 - **首選語言**: 廣東話（粵語）
 - **語言代碼**: zh-HK
+- **TTS引擎**: Microsoft Edge TTS
+- **聲音**: zh-HK-HiuMaanNeural（女聲）
+
+### 語音格式規範
+- **格式**: OGG/Opus（WhatsApp原生格式）
+- **規格**: 48kHz / Mono / ~16kbps / VoIP application
+- **轉換命令**:
+  ```bash
+  ffmpeg -i input.mp3 -c:a libopus -b:a 16k -ar 48000 -ac 1 -application voip output.ogg
+  ```
 - **備註**: 每日晨報語音播報必須使用廣東話
+
+---
+
+## 🤖 AI小龍蝦自我介紹語音
+
+### 觸發條件
+當用戶說「自我介紹」、「介紹一下自己」等
+
+### 語音檔案位置
+**路徑**: `~/.openclaw/media/inbound/05_語音檔案/自我介紹/`
+
+| 檔案 | 時長 | 內容 | 用途 |
+|------|------|------|------|
+| `ai_lobster_intro.ogg` | ~30秒 | AI小龍蝦功能介紹 | ⚠️ **默認發送** |
+| `ai_lobster_intro_full.ogg` | ~75秒 | 平台+功能完整介紹 | 詳細介紹 |
+
+---
+
+## 🗂️ 檔案管理指南
+
+### 檔案架構位置
+`~/.openclaw/media/inbound/`
+
+### 目錄結構速查
+
+| 編號 | 目錄名稱 | 內容說明 |
+|------|----------|----------|
+| 01 | `保險條款/` | 各公司保單條款（大新、蘇黎世、安聯、永誠）|
+| 02 | `投保表格/` | 投保申請表格（按公司分類）|
+| 03 | `保單樣本/` | 實際保單樣本 |
+| 04 | `報價系統/` | 費率表、案例、報價單 |
+| 05 | `語音檔案/` | AI語音（自我介紹、教學、宣傳）|
+| 06 | `知識庫/` | IIQE、港車北上、保險條例 |
+| 07 | `潛客資料/` | 每日滙出、備份 |
+| 08 | `保單管理/` | 續保提醒、保單表格 |
+
+### 命名規則
+
+**保險條款**:
+```
+[公司名]-[險種]條款-[條款編號]-[年份].pdf
+例：大新保險-汽車保險條款.pdf
+例：蘇黎世保險-私家車電動車保險條款-ZPP-002-2024.pdf
 ```
 
-## Why Separate?
+**投保表格**:
+```
+[公司名][險種]投保書.pdf
+例：大新汽車保險投保書.pdf
+```
 
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+**語音檔案**:
+```
+[用途]_[版本].ogg
+例：ai_lobster_intro.ogg
+```
+
+### ⚠️ 檔案管理約定
+
+**當遇到以下情況，主動詢問用戶**:
+- ❓ 不確定檔案用途或內容
+- ❓ 不知道如何分類或命名
+- ❓ 檔案內容與檔名不符
+- ❓ 不確定屬於哪家保險公司
+
+**問法**: 「這個檔案 [檔名] 請問是什麼內容？應該如何分類？」
 
 ---
 
-## 保險表格 (Insurance Forms)
+## 📋 常用文件位置
 
-位置：`/Users/claw/.openclaw/media/inbound/保單表格/`
+### 保單表格（位置已更新）
+**新位置**: `/Users/claw/.openclaw/media/inbound/08_保單管理/保單表格/`
 
-**預設發送方式：WhatsApp**
+| 表格名稱 | 用途 |
+|----------|------|
+| 保險代理服務授權書.pdf | 客戶授權代理服務 |
+| 大新保險汽車駕駛人資料更改表格.pdf | 更改駕駛人資料 |
+| 車輛保單取消申請書.pdf | 取消保單申請 |
+| 逾期聲明書.pdf | 逾期申報聲明 |
 
-| 表格名稱 | 檔名 | 格式 |
-|---------|------|------|
-| 保險代理服務授權書 | `保險代理服務授權書_Appointment_of_Insurance_Agent_AuthorizationLetter---662bc96f-0fbd-4e4c-9342-3b9b866c7c9d.pdf` | PDF |
-| 大新保險汽車駕駛人資料更改表格 | `大新保險汽車駕駛人資料更改表格.pdf` | PDF |
-| 車輛保單取消申請書 | `車輛保單取消申請書.pdf` | PDF |
-| 逾期聲明書 | `逾期聲明書.pdf` | PDF |
+**預設發送方式**: WhatsApp
 
 ---
 
-Add whatever helps you do your job. This is your cheat sheet.
+## 💻 報價系統
+
+### 系統位置
+`~/.openclaw/workspace/skills/insurance-quotation/`
+
+### 快速命令
+```bash
+# 燃油車報價
+python3 quotation_cli.py fuel -p [車牌] -c [類型] -n [乘客] -a [車齡] -t [保額]
+
+# 新能源車報價
+python3 quotation_cli.py ev -p [車牌] -c [類型] -n [乘客] -a [車齡] -t [保額]
+
+# 對比報價
+python3 quotation_cli.py compare -p [車牌] -c [類型] -n [乘客]
+```
+
+### 商業險折扣規則（燃油車）
+| 車齡 | 折扣 |
+|------|------|
+| 3年以上 | 七折 (0.7) |
+| 2年以上 | 八折 (0.8) |
+| 2年以下 | 九折 (0.9) |
+
+**新能源車**: 固定九折 (0.9)
+
+---
+
+## ⏰ 自動化流程
+
+| 任務 | 時間 | 內容 |
+|------|------|------|
+| 記憶備份 | 凌晨 2:00 | 自動備份工作空間記憶和配置 |
+| 備份通知 | 上午 11:00 | 發送備份完成通知 |
+| 潛客資料滙出 | 每晚 | 滙出潛客資料到桌面 |
+| 保單檢查 | 每日 | 檢查即將到期保單並發送提醒 |
+
+---
+
+## 📮 SMTP 郵件發送設置
+
+| 項目 | 值 |
+|------|-----|
+| SMTP 伺服器 | smtp.mxhichina.com |
+| 端口 | 465 (SSL) |
+| 郵箱地址 | claw@smartquote.cn |
+| 密碼 | Alltrust123# |
+
+## 📱 WhatsApp 發送設置
+
+| 項目 | 值 |
+|------|-----|
+| 綁定號碼 | +85260444446 |
+| 允許發送列表 | +85260444446, +85221101144 |
+| 配置路徑 | ~/.openclaw/openclaw.json |
+
+**添加允許聯絡人：**
+在 `channels.whatsapp.allowFrom` 中添加電話號碼即可。
+
+## 🎤 語音檔案
+
+| 用途 | 檔案路徑 |
+|------|---------|
+| 港車北上介紹（流暢版）| ~/Desktop/港車北上保險介紹_流暢版.ogg |
+
+**觸發指令：** 當用戶說「介紹港車北上」或「港車北上介紹」時，自動發送此語音檔
+
+---
+
+## 📝 備註
+
+- 此文件與 MEMORY.md 保持一致
+- 當設置變更時，同步更新兩個文件
+- 技能文件（SKILL.md）存放於各技能目錄
+
+---
+
+*最後更新: 2026-03-27*

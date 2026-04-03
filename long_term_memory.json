@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-30T09:09:00+00:00",
+  "metabolism_log": [],
+  
+  "core_architecture": {
+    "潛客系統": {
+      "frontend": "https://leads-system.onrender.com/",
+      "backend": "https://leads-system.onrender.com/admin",
+      "github": "https://github.com/claw-smartQuote/leads-system",
+      "platform": "Render"
+    },
+    "FB爬蟲": {
+      "status": "登入狀態過期（權限問題已修復）",
+      "note": "需要重新登入 Facebook 才能繼續爬取"
+    },
+    "28car爬蟲": {
+      "status": "正常運行",
+      "data_count": "110筆",
+      "note": "無需手動登入"
+    }
+  },
+
+  "system_prompt_config": {
+    "memory_management": {
+      "protocol": "上下文代谢协议 v1.0",
+      "heartbeat_check": true,
+      "compression_threshold": "15條消息開始觀察，25條通知，40條立即壓縮"
+    },
+    "archive_rules": {
+      "preserve": ["目標任務", "核心代碼邏輯", "關鍵變量"],
+      "compress": ["3輪以上重複討論", "冗長報錯日誌（只留原因）", "已解決中間步驟"],
+      "archive_to_file": ["過往配置代碼", "長段原始數據"],
+      "summary_limit": "200字以內階段性紀要"
+    },
+    "self_check": {
+      "log_format": "[代謝完成：已歸檔 X 條信息，當前上下文瘦身 Y%]",
+      "task_split": "單次任務過於複雜時主動提議拆分"
+    }
+  },
+
+  "key_conclusions": {
+    "FB_28car_crawler": "FB爬蟲因登入狀態過期需要重新登入；28car爬蟲穩定運行110筆數據，無需登入",
+    "VPP_system": "VPP系統部署於Render平台，前後台正常運行",
+    "Kimi_API": "Kimi API用於AI對話功能，配置見各項目settings"
+  },
+
+  "notes": [
+    "每次對話開始前先讀取此json了解核心狀態",
+    "覺得「腦子重」時自動更新此文件並觸發上下文壓縮",
+    "嚴禁刪除核心任務、代碼邏輯、關鍵變量"
+  ]
+}

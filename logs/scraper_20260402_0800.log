@@ -1,0 +1,95 @@
+========================================
+🦞 每日爬蟲任務開始: Thu Apr  2 08:00:00 CST 2026
+========================================
+🚗 執行 28car 爬蟲...
+🚗 28car 爬蟲啟動 (目標100條)
+
+📊 數據庫現有: 153 條
+
+Traceback (most recent call last):
+  File "/Users/claw/.openclaw/workspace/scraper_28car_100_v2.py", line 254, in <module>
+    main()
+  File "/Users/claw/.openclaw/workspace/scraper_28car_100_v2.py", line 177, in main
+    browser = p.chromium.launch(headless=False)
+  File "/Library/Python/3.9/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Library/Python/3.9/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+  File "/Library/Python/3.9/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Library/Python/3.9/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+  File "/Library/Python/3.9/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /var/root/Library/Caches/ms-playwright/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+📘 檢查 Facebook 登入狀態...
+📘 執行 Facebook 爬蟲...
+======================================================================
+📘 Facebook 智能爬蟲 v5.0
+======================================================================
+技術方案：Playwright + 語義定位 + Cookie狀態保持
+
+⚠️ 未找到 FB 登入狀態，正在啟動自動登入...
+
+======================================================================
+🔐 需要登入 Facebook
+======================================================================
+
+請選擇：
+1. 運行 python3 fb_auto_login.py --setup 設置憑證（自動登入）
+2. 運行 python3 fb_login.py 手動登入
+3. 使用 28car 爬蟲（無需 FB 登入）
+
+或直接回复你的 FB 電郵和密碼，我幫你設置：
+   格式： fb 你的@email.com 你的密碼
+
+
+🔄 整合爬蟲結果...
+2026-04-02 08:00:02,475 - INFO - 目錄檢查完成: /Users/claw/.openclaw/workspace/爬蟲潛客總滙
+2026-04-02 08:00:02,477 - INFO - 💾 已備份舊檔案: 爬蟲潛客總滙_備份_20260402_0800.xlsx
+2026-04-02 08:00:02,480 - INFO - 成功連接數據庫: /Users/claw/.openclaw/workspace/car28_scraper.db
+2026-04-02 08:00:02,483 - INFO - ✅ 28car: 153 筆
+2026-04-02 08:00:02,484 - INFO - 成功連接數據庫: /Users/claw/.openclaw/workspace/fb_leads_final.db
+2026-04-02 08:00:02,486 - INFO - ✅ Facebook: 49 筆
+2026-04-02 08:00:02,489 - INFO - 
+📊 合併完成: 202 筆
+2026-04-02 08:00:02,495 - INFO - 🔍 去重完成: 刪除 48 筆重複，剩餘 154 筆
+2026-04-02 08:00:02,635 - INFO - 
+💾 已保存: /Users/claw/.openclaw/workspace/爬蟲潛客總滙/爬蟲潛客總滙_20260402_0800.xlsx
+2026-04-02 08:00:02,682 - INFO - 💾 已更新: /Users/claw/.openclaw/workspace/爬蟲潛客總滙/爬蟲潛客總滙_最新.xlsx
+2026-04-02 08:00:02,682 - INFO - 
+📈 統計:
+2026-04-02 08:00:02,683 - INFO - 平台
+28car       153
+Facebook      1
+2026-04-02 08:00:02,683 - INFO - 總計: 154 筆
+============================================================
+🦞 爬蟲潛客整合系統 (優化版)
+⏰ 執行時間: 2026-04-02 08:00:02
+============================================================
+
+📥 導出數據...
+
+🔄 合併去重...
+
+✅ 完成！
+
+⏱️  執行耗時: 0.21 秒
+============================================================
+
+📋 複製到桌面潛客系統...
+✅ 已複製: /Users/claw/.openclaw/workspace/fb_潛客_20260402.xlsx
+✅ 已複製到桌面: ~/Desktop/fb_潛客_20260402.xlsx
+
+========================================
+✅ 任務完成: Thu Apr  2 08:00:02 CST 2026
+========================================

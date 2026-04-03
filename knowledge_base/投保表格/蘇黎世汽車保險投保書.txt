@@ -1,0 +1,322 @@
+1
+Date of birth	
+Gender		
+Male		
+Female
+出生日期 
+性別 
+男 
+ 
+女
+Private Motor Car Insurance Plan 
+enrollment form
+私家汽車保險計劃投保表格
+Name of motor car owner (Same as vehicle registration document)	
+HKID card/Passport/Business registration no./Company registration no.*
+車主姓名（須與車輛登記文件上相同） 
+香港身份證／護照／商業登記號碼／公司編號*
+Mobile no.	
+Email address
+手提電話號碼 
+電郵地址
+Business/Occupation	
+Day time telephone no.
+業務／職業 
+日間聯絡電話
+Please 
+ the appropriate box and * delete where inappropriate. 請 
+ 適用方格及於*號刪去不適用者。
+Please use block letter if you fill in the form in English. 如用英文填寫資料，請使用正楷書寫。
+All fields are mandatory. 所有項目必須填報。
+1. Applicant information 投保人資料
+2. Insurance information 保險資料
+Correspondence 
+address 
+通訊地址
+Flat/Room*	
+Floor	
+Block	
+Building
+室／單位* 
+樓 
+座 
+大廈
+Estate name/no. & name of street/Lot no.*	
+District	
+HK/KLN/NT*
+屋苑名稱／街名及門牌／地段* 
+地區 
+香港／九龍／新界*
+Day日	
+Month月	Year年
+Type of cover		
+Comprehensive cover	
+Third party cover
+投保類別 
+綜合保險 
+第三者保險
+Third party property damage liability limit upgrade to		
+HKD 3,000,000 港元	
+HKD 7,500,000 港元
+提升｢第三者財產損毁的法律責任｣賠償額至 
+HKD 5,000,000 港元 
+HKD 10,000,000 港元
+For internal use only 
+只供內部使用
+Agent name
+代理人姓名：BBBBBBBBBBBBBBBBBBB
+Agent no.
+代理人編號：BBBBBBBBBBBBBBBBBBB
+Do you have another motor car insured with Zurich?
+您有沒有其他於蘇黎世受保之車輛？
+Existing Zurich private motor policy no.
+現有之蘇黎世汽車保險計劃保單號碼
+Yes	
+No
+有 
+沒有
+Annual China Extension (Guangdong Province and Macau)		
+Loss of or Damage to Vehicle China Extension (applicable to Comprehensive cover only)
+全年中港跨境伸延保障（廣東省及澳門） 
+中港跨境汽車損失及毀壞伸延保障（只適用於綜合保險客戶）
+Effective date of insurance	
+from	
+to
+保障生效日期 
+由 
+至
+Day日	
+Month月	Year年
+Day日	
+Month月	Year年
+ZPP-IA-EF-11-2022
+Clear form
+
+2
+3. Motor car information 車輛細節
+4. Named driver information 指定司機資料
+Registration mark	
+Year of manufacture	
+Type of body
+車牌 
+製造年份 
+車身類型
+Make and model		
+No. of seat(s) (including driver)
+廠名及型號 
+座位限額（包括司機）
+Cubic capacity 
+Engine no.	
+Chassis no.
+汽缸容量 
+cc  引擎號碼 
+底盤號碼
+Hire Purchase Company
+按揭公司
+Insured value (present value including accessories like air conditioner and audio)
+投保價（現值包括冷氣機及音響裝置） 
+HKD 
+港元
+Claim-Free Discount (CFD) (equivalent No Claim Discount rate (NCD) )	
+0% (NCD 0 %)	
+30% (NCD 20%)	
+35% (NCD 30%)
+「無賠償折扣」(CFD)（相對的無索償折扣率 (NCD)） 
+45% (NCD 40 %)	
+50% (NCD 50%)	
+60% (NCD 60%)
+Driver 1
+司機一
+Driver 2
+司機二
+Driver 3
+司機三
+Driver 4
+司機四
+Driver 5
+司機五
+Full name of driver
+司機全名
+HKID card/Passport no.*
+香港身份證／護照號碼*
+Occupation 職業
+(Full/Part-time 全職或兼職）
+Date of birth 出生日期
+（dd日／mm月／yy年）
+Gender 性別
+Male男／Female女*
+Male男／Female女*
+Male男／Female女*
+Male男／Female女*
+Male男／Female女*
+Relationship with applicant
+與投保人關係
+Total no. of years driving 
+(Hong Kong and elsewhere)
+駕駛年數（香港及外地）
+Years
+年
+Years
+年
+Years
+年
+Years
+年
+Years
+年
+Yes 是No 否
+1.
+Is the motor car used for carrying passengers/goods for hire or reward, driving instruction purposes, or relating to motor trade?
+該車輛是否用作於租賃載客／貨或教授駕駛或與銷售車輛有關用途？
+2.
+Have you ever been refused any motor insurance renewal or cancelled the motor insurance in mid-term by an insurer?
+您／您們是否曾經被保險公司拒絕汽車保險續期或被取消汽車保險？
+3.
+Has the motor car been modified for performance improvement?
+該車輛是否曾作與車輛性能有關的改裝？
+4.
+Are you employed in any of the following occupations 您／您們是否從事以下職業：
+•
+Entertainment 娛樂事業
+•
+Hired car services 車輛租賃服務
+•
+Jockey/Horse trainer/Groom 騎師／練馬師／馬夫
+•
+Media (Photographer/Reporter) 傳媒 (攝影／記者)
+•
+Motor trade/Motor repair 汽車貿易 / 汽車維修
+•
+Professional model 職業模特兒
+•
+Professional sportsman 職業運動員
+•
+Student 學生
+•
+Unemployed 待業
+5. Other information 其他資料
+ZPP-IA-EF-11-2022
+
+3
+5.	 Other information (continued) 其他資料（續）
+Yes 是No 否
+5. Have you ever suffered from defective vision (except wearing corrective lenses) or hearing, or any mental infirmity?
+您／您們是否曾患有視覺（戴適當眼鏡除外）、聽覺或任何精神上的疾病？
+6. How many driving offence points have you incurred or has your license been suspended in the last two years (offence points before taking the 
+Driving Improvement Scheme)?
+您／您們是否在過往兩年內被記「違例駕駛記分」或被吊銷駕駛執照（在接受駕駛改進計劃前之分數）？
+ 
+0 points 分  
+1 – 7 points 分 
+8 – 10 points 分 
+More than 10 points 10 分以上 
+
+ 
+Suspended or Disqualified license 被停牌或被取消駕駛資格
+7. How many motor car non-windscreen claims reported in the last three years?
+過往三年內曾提出多少次非擋風玻璃的私家車保險索償？
+ 
+0 次 
+1 次  
+2 次 
+3 次 
+4 次 
+5 or above 次或以上
+ZPP-IA-EF-11-2022
+6.	 Declaration and Authorization 聲明及授權
+1.	 I/We declare that to the best of my/our knowledge and belief the information on this enrollment form is true and complete in every respect. I/We 
+understand that this enrollment form and declaration will form the basis of the contract between me/us and Zurich Insurance Company Ltd (“Company”). 
+本人／我們特此聲明此投保表格的資料乃根據本人／我們所知及所信為確實及完全而填報，屬實無訛。本人／我們明白本人／我們與蘇黎世保險有限
+公司（「貴公司」）的保險合約將照此投保表格及聲明而訂立。
+2.	 I/We agree that this enrollment form and declaration shall be the basis of the contract between me/us and the Company and shall be deemed to be 
+incorporated in such contract, and any renewal thereof which may be agreed, subject to the terms and conditions of the policy of this Plan issued 
+by the Company. If any answer has been written by any other person, such person shall, for that purpose, be deemed to be my/our agent and not 
+the agent of the Company.
+本人／我們謹此承認本投保表格為本人／我們與　貴公司訂立此保險契約及以後續約之根據，並願意接受此計劃保單上所刊載一切條款。若本投保表
+格經由他人代寫，均屬已經本人認可及授權。
+3.	 I/We agreed to authorize the Company to pass the information in this insurance application or other relevant information to Transport Department 
+for vehicle licensing purpose.
+本人／我們同意授權　貴公司將本保險申請的資料或其他有關資料給予運輸署用作車輛牌照服務之用途。
+4.	 I/We understand that I/we shall refer to the Policy of this Insurance for details of the insurance coverage, exclusion clauses and terms and conditions.
+本人／我們明白所有保障範圍、不承保事項、條款及細則概以此保險保單為準。
+5.	 I/We understand I/we must complete and provide all information requested in this enrollment form, failing which the Company cannot process my 
+application for this Insurance.
+本人／我們明白本人／我們必須完成及提供此投保表格要求之所有資料，否則　貴公司將不會受理本人／我們資料不全之保險申請。
+6.	 I/We hereby authorize any company within the Zurich Insurance Group which is in possession of my/our personal information to release part or all 
+of the information to the Company or its agents.
+本人／我們特此授權蘇黎世保險集團中任何持有本人／我們個人資料的公司提供部分或全部資料予　貴公司或其代理人。
+This insurance application will not be in force until the application(s) has been accepted by the Company and the premium has been paid.
+此保險申請須待　貴公司覆核，接納投保書及收訖保費後才能生效。
+Continued on next page
+續下頁
+
+The personal information of customers (including policyholders, insured persons, beneficiaries, premium payors, trustees, policy assignees and 
+claimants) collected or held by Zurich Insurance Company Ltd (“Company”) from time to time, which also includes data collected or generated in 
+the ordinary course of the Company’s business and the continuation of relationship with the customer (such as claim information and medical history 
+received from third parties), may be used by the Company and/or a company within its group (“Zurich Insurance Group”) for the purposes necessary 
+in providing services to the customers (otherwise the Company is unable to provide services to customers who fail to provide the required information).
+由蘇黎世保險有限公司（「本公司」）不時收集或持有的客戶（包括保單持有人、受保人、受益人、保費付款人、信託人、保單受讓人及索償人）個人
+資料，其中亦包括在公司日常業務過程中以及就持續與客戶的關係而收集或產生的資料（例如從第三方收到的索償資料和病歷），均可供本公司及／或
+其所屬集團（「蘇黎世保險集團」）內的公司使用作為向客戶提供服務而必須的用途（否則本公司將無法為未能提供所需資料的客戶提供服務）。
+Please read carefully the details of the Company’s privacy policy which is made available on our website at www.zurich.
+com.hk/pics or by scanning the QR code. You may also contact our Customer Care Center at 2968 2288 or insurance 
+intermediaries for enquires. 本公司之私隱政策詳載於www.zurich.com.hk/pics或可透過掃描QR碼細閱。您亦可致電2968 2288與
+我們的客戸服務中心聯絡又或向保險中介人查詢。
+Consent for marketing purposes - Voluntary:
+就市場推廣用途之同意 – 自願性：
+Certain personal information of policyholders and insured persons collected or held by the Company (which also includes data collected or 
+generated in the ordinary course of the Company’s business and the continuation of relationship with the customer), in particular, names, contact 
+information, age, gender, identity document reference, marital status, financial background, demographic data, transaction pattern and behavior, 
+policy information, claim information, and medical history may be used by the Company, only upon having such policyholders’ or insured 
+persons’ consent or indication of no objection, for providing marketing materials and conducting direct marketing activities in relation to 
+insurance and/or financial products and services of the Zurich Insurance Group and/or other financial services providers, and/or other related 
+services of business partners, with whom the Company maintains business referral or other arrangements (such as reward, loyalty, co-branding 
+or privileges programs and related services and products, services and products offered by the Company’s business or co-branding partners, 
+donations or contributions for charitable and/or non-profit making purposes). For the avoidance of doubt, the latest instruction (for example, consent 
+or indication of no objection, or request for opt-out) received from a customer shall override any previous instruction given to the Company in this 
+regard in relation to all personal information of the customer collected or held by the Company from time to time.
+由本公司收集或持有的保單持有人及受保人的某些個人資料（其中亦包括在本公司日常業務過程中以及就持續與客戶的關係收集或產生的資料），特
+別是姓名、聯絡資料、年齡、性別、身份證明文件資料、婚姻狀況、經濟背景、人口統計數據、交易模式和行為、保單資料、索償資料及醫療紀錄
+等，於獲該保單持有人或受保人同意或作不反對指示後，均可供本公司使用作為蘇黎世保險集團及／或與本公司維持業務引薦關係或其他安排之其他
+金融服務供應商的保險及／或金融產品及服務，及／或其他商業合作夥伴之相關服務，提供市場推廣資料及進行直接市場推廣活動。（例如獎賞、忠
+誠獎勵、合作品牌或優惠計劃以及相關服務和產品，由本公司商業合作夥伴或合作品牌夥伴提供的服務和產品，出於慈善及／或非牟利目的的捐贈或
+捐款）。為免生疑問，就本公司不時收集或持有的所有客戶個人資料，本公司將會以從客戶收到的最新指示（例如同意或表示不反對的指示，或提出
+反對要求）。
+The Company may provide (and may receive money or property in return for providing) certain personal information, in particular, name, contact 
+information, age, gender and policy information of a policyholder and an insured person, only upon having such policyholder’s and insured 
+person’s written consent, to be used by the following parties, within or outside of Hong Kong, for their own and/or the Company’s marketing 
+purposes set out above:
+(1)	 companies within the Zurich Insurance Group;
+(2)	 other banking/financial institutions, commercial or charitable organizations with whom the Company maintains business referral or other 
+arrangements;
+(3)	 third party reward, loyalty, co-branding or privileges program providers;
+(4)	 third party marketing service providers and insurance intermediaries.
+於獲保單持有人及受保人書面同意後，本公司方可就以下人士本身及／或就本公司的市場推廣用途，向以下於香港境內或境外的人士提供其某些個人
+資料（並可能收到金錢或其他財產作為回報），特別是姓名、聯絡資料、年齡、性別、保單持有人及受保人的保單資料等，以供其使用：
+(1) 蘇黎世保險集團成員公司；
+(2) 與本公司維持業務引薦關係或其他安排的其他銀行／金融機構、商業或慈善組織；
+(3) 第三方獎賞、忠誠獎勵、合作品牌或優惠計劃提供者；
+(4) 第三方市場推廣相關服務供應商及保險中介人。
+I/We do not wish Zurich providing, using and provision of your personal data for direct marketing purposes in accordance with the Zurich PICS.
+本人/ 我們不希望　貴公司根據個人資料收集聲明，提供及使用個人資料用作直銷推廣用途。
+7.	 Notice to customers relating to the Personal Data (Privacy) Ordinance (“Ordinance”)
+	
+有關個人資料（私隱）條例（「私隱條例」）的客戶通知
+I/We confirm that all information provided by me/us in this application form is true, correct and accurate. I/We further confirm my/our agreement to 
+all sections in this application form, including without limitation, the above Declaration and the Notice to customers relating to the Personal Data 
+(Privacy) Ordinance.  
+本人／我們確認由本人／我們於此申請表格提供之所有資料均為事實正確無誤。本人／我們更確認同意本申請表格內之所有部分，包括但不限於上列
+之聲明及有關個人資料（私隱）條例的客戶通知。
+Signature of applicant/policyholder
+投保人簽署／保單持有人
+Date 
+日期
+Day日	
+Month月	Year年
+Zurich Insurance Company Ltd (a company incorporated in Switzerland with limited liability)
+25-26/F, One Island East, 18 Westlands Road, Island East, Hong Kong
+蘇黎世保險有限公司（於瑞士註冊成立之有限公司）
+香港港島東華蘭路18號港島東中心25-26樓
+Telephone 電話：+852 2968 2288     Website 網址：www.zurich.com.hk
+ZPP-IA-EF-11-2022
+SIGN蘇黎世汽車保險司機資料更改表格 - G23082, ZPP-IA-EF-10-2023, 司機資料更改/汽車保險提升
