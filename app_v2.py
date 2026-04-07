@@ -32,13 +32,20 @@ async def admin():
     rows = ""
     for i, lead in enumerate(leads_db, 1):
         rows += f"""
-        <tr>
+        <tr data-id="{i}">
             <td>{i}</td>
             <td>{lead.get('name', '-')}</td>
             <td>{lead.get('phone', '-')}</td>
+            <td>{lead.get('email', '-')}</td>
             <td>{lead.get('car_plate', '-')}</td>
+            <td>{lead.get('car_model', '-')}</td>
+            <td>{lead.get('expiry_date', '-')}</td>
             <td>{lead.get('inquiry_type', '-')}</td>
-            <td>{lead.get('status', '新')}</td>
+            <td><span class="status status-{lead.get('status', '新').lower()}">{lead.get('status', '新')}</span></td>
+            <td>
+                <button class="btn-view" onclick="viewLead({i})">查看</button>
+                <button class="btn-delete" onclick="deleteLead({i})">刪除</button>
+            </td>
         </tr>
         """
     
@@ -50,7 +57,7 @@ async def admin():
     <title>潛客管理後台</title>
     <style>
         body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }}
-        .container {{ max-width: 1200px; margin: 0 auto; }}
+        .container {{ max-width: 1400px; margin: 0 auto; }}
         h1 {{ color: #333; }}
         .stats {{ display: flex; gap: 20px; margin: 20px 0; }}
         .stat-box {{ background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex: 1; text-align: center; }}
@@ -60,7 +67,22 @@ async def admin():
         th, td {{ padding: 12px; text-align: left; border-bottom: 1px solid #eee; }}
         th {{ background: #667eea; color: white; font-weight: 500; }}
         tr:hover {{ background: #f9f9f9; }}
-        .btn {{ padding: 8px 16px; background: #667eea; color: white; border: none; border-radius: 4px; text-decoration: none; display: inline-block; }}
+        .btn {{ padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; margin-right: 5px; }}
+        .btn-view {{ background: #667eea; color: white; }}
+        .btn-delete {{ background: #dc3545; color: white; }}
+        .status {{ padding: 4px 8px; border-radius: 4px; font-size: 12px; }}
+        .status-新 {{ background: #e3f2fd; color: #1976d2; }}
+        .status-已聯繫 {{ background: #fff3e0; color: #f57c00; }}
+        .status-已報價 {{ background: #f3e5f5; color: #7b1fa2; }}
+        .status-完成 {{ background: #e8f5e9; color: #388e3c; }}
+        .actions {{ margin: 20px 0; display: flex; gap: 10px; }}
+        .btn-action {{ padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; text-decoration: none; display: inline-block; }}
+        .btn-primary {{ background: #667eea; color: white; }}
+        .btn-export {{ background: #28a745; color: white; }}
+        .modal {{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; }}
+        .modal-content {{ background: white; padding: 30px; border-radius: 10px; max-width: 500px; margin: 100px auto; }}
+        .modal h2 {{ margin-top: 0; }}
+        .modal-close {{ float: right; cursor: pointer; font-size: 24px; }}
     </style>
 </head>
 <body>
@@ -76,8 +98,8 @@ async def admin():
                 <div class="number">{new_count}</div>
             </div>
         </div>
-        <div style="margin: 20px 0;">
-            <a href="/" class="btn">🌐 查看表單</a>
+        <div class="actions">
+            <a href="/" target="_blank" class="btn-action btn-primary">🌐 查看表單</a>
         </div>
         <table>
             <thead>
@@ -85,16 +107,64 @@ async def admin():
                     <th>編號</th>
                     <th>姓名</th>
                     <th>電話</th>
+                    <th>電郵/微信</th>
                     <th>車牌</th>
+                    <th>車型</th>
+                    <th>到期日</th>
                     <th>查詢類型</th>
                     <th>狀態</th>
+                    <th>操作</th>
                 </tr>
             </thead>
             <tbody>
-                {rows if rows else '<tr><td colspan="6" style="text-align:center;color:#999;">暫無資料</td></tr>'}
+                {rows if rows else '<tr><td colspan="10" style="text-align:center;color:#999;">暫無資料</td></tr>'}
             </tbody>
         </table>
     </div>
+    
+    <!-- Modal for viewing details -->
+    <div id="leadModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2>潛客詳細資料</h2>
+            <div id="leadDetails"></div>
+        </div>
+    </div>
+    
+    <script>
+        let leads = {leads_db};
+        
+        function viewLead(id) {{
+            const lead = leads[id - 1];
+            if (!lead) return;
+            
+            let html = '<table style="width:100%;">';
+            for (let [key, value] of Object.entries(lead)) {{
+                if (value) {{
+                    html += `<tr><td style="padding:8px;border-bottom:1px solid #eee;"><strong>${{key}}:</strong></td><td style="padding:8px;border-bottom:1px solid #eee;">${{value}}</td></tr>`;
+                }}
+            }}
+            html += '</table>';
+            
+            document.getElementById('leadDetails').innerHTML = html;
+            document.getElementById('leadModal').style.display = 'block';
+        }}
+        
+        function deleteLead(id) {{
+            if (!confirm('確定要刪除這筆記錄嗎？')) return;
+            alert('刪除功能需要後端支援');
+        }}
+        
+        function closeModal() {{
+            document.getElementById('leadModal').style.display = 'none';
+        }}
+        
+        window.onclick = function(event) {{
+            if (event.target == document.getElementById('leadModal')) {{
+                closeModal();
+            }}
+        }}
+    </script>
 </body>
 </html>
 """
@@ -113,7 +183,11 @@ async def create_lead(request: Request):
             "email": data.get("email"),
             "car_plate": data.get("car_plate"),
             "car_model": data.get("car_model"),
+            "car_year": data.get("car_year"),
+            "current_insurer": data.get("current_insurer"),
+            "expiry_date": data.get("expiry_date"),
             "inquiry_type": data.get("inquiry_type"),
+            "notes": data.get("notes"),
             "status": "新"
         }
         leads_db.append(lead)
