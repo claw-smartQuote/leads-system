@@ -100,6 +100,7 @@ async def admin():
         </div>
         <div class="actions">
             <a href="/" target="_blank" class="btn-action btn-primary">🌐 查看表單</a>
+            <button class="btn-action btn-export" onclick="exportData()">📊 匯出 Excel</button>
         </div>
         <table>
             <thead>
@@ -169,6 +170,10 @@ async def admin():
         
         function closeModal() {{
             document.getElementById('leadModal').style.display = 'none';
+        }}
+        
+        function exportData() {{
+            window.open('/api/leads', '_blank');
         }}
         
         window.onclick = function(event) {{
