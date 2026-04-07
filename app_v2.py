@@ -142,7 +142,7 @@ async def admin():
             let html = '<table style="width:100%;">';
             for (let [key, value] of Object.entries(lead)) {{
                 if (value) {{
-                    html += `<tr><td style="padding:8px;border-bottom:1px solid #eee;"><strong>${{key}}:</strong></td><td style="padding:8px;border-bottom:1px solid #eee;">${{value}}</td></tr>`;
+                    html += '<tr><td style="padding:8px;border-bottom:1px solid #eee;"><strong>' + key + ':</strong></td><td style="padding:8px;border-bottom:1px solid #eee;">' + value + '</td></tr>';
                 }}
             }}
             html += '</table>';
@@ -151,21 +151,21 @@ async def admin():
             document.getElementById('leadModal').style.display = 'block';
         }}
         
-        async function deleteLead(id) {{
+        function deleteLead(id) {{
             if (!confirm('確定要刪除這筆記錄嗎？')) return;
-            try {{
-                const response = await fetch(`/api/leads/${{id-1}}`, {{
-                    method: 'DELETE'
+            fetch('/api/leads/' + (id - 1), {{ method: 'DELETE' }})
+                .then(function(response) {{ return response.json(); }})
+                .then(function(data) {{
+                    if (data.success) {{
+                        alert('已刪除');
+                        location.reload();
+                    }} else {{
+                        alert('刪除失敗: ' + (data.error || '未知錯誤'));
+                    }}
+                }})
+                .catch(function(e) {{
+                    alert('刪除失敗: ' + e);
                 }});
-                if (response.ok) {{
-                    alert('已刪除');
-                    location.reload();
-                }} else {{
-                    alert('刪除失敗');
-                }}
-            }} catch (e) {{
-                alert('刪除失敗：' + e);
-            }}
         }}
         
         function closeModal() {{
@@ -216,7 +216,7 @@ async def create_lead(request: Request):
 async def get_leads():
     return {"leads": leads_db, "total": len(leads_db)}
 
-@app.delete("/api/leads/<int:lead_id>")
+@app.delete("/api/leads/{lead_id}")
 async def delete_lead(lead_id: int):
     """刪除指定潛客"""
     try:
