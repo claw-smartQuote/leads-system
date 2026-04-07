@@ -219,25 +219,28 @@ async def get_leads():
 @app.get("/api/leads/excel")
 async def export_leads_excel():
     """導出 Excel 文件"""
-    from fastapi.responses import StreamingResponse
-    import io
+    import tempfile
     import pandas as pd
     from datetime import datetime
+    from fastapi.responses import FileResponse
     
     if not leads_db:
         return JSONResponse({"error": "No data"}, status_code=404)
     
+    # 創建臨時文件
+    temp_file = tempfile.NamedTemporaryFile(suffix='.xlsx', delete=False)
+    temp_path = temp_file.name
+    temp_file.close()
+    
     df = pd.DataFrame(leads_db)
-    output = io.BytesIO()
-    with pd.ExcelWriter(output, engine='openpyxl') as writer:
-        df.to_excel(writer, index=False, sheet_name='潛客資料')
-    output.seek(0)
+    df.to_excel(temp_path, index=False, engine='openpyxl')
     
     filename = f"潛客資料_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
-    return StreamingResponse(
-        output,
+    
+    return FileResponse(
+        temp_path,
         media_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-        headers={'Content-Disposition': f'attachment; filename={filename}'}
+        filename=filename
     )
 
 @app.delete("/api/leads/{lead_id}")
