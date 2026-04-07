@@ -2,7 +2,7 @@
 FastAPI 汽車保險潛客系統 - 極簡版
 """
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 import os
 from pathlib import Path
 
@@ -103,18 +103,23 @@ async def admin():
 @app.post("/api/leads")
 async def create_lead(request: Request):
     """接收潛客資料"""
-    form = await request.form()
-    lead = {
-        "name": form.get("name"),
-        "phone": form.get("phone"),
-        "email": form.get("email"),
-        "car_plate": form.get("car_plate"),
-        "car_model": form.get("car_model"),
-        "inquiry_type": form.get("inquiry_type"),
-        "status": "新"
-    }
-    leads_db.append(lead)
-    return {"success": True}
+    try:
+        body = await request.body()
+        import json
+        data = json.loads(body)
+        lead = {
+            "name": data.get("name"),
+            "phone": data.get("phone"),
+            "email": data.get("email"),
+            "car_plate": data.get("car_plate"),
+            "car_model": data.get("car_model"),
+            "inquiry_type": data.get("inquiry_type"),
+            "status": "新"
+        }
+        leads_db.append(lead)
+        return JSONResponse({"success": True})
+    except Exception as e:
+        return JSONResponse({"success": False, "error": str(e)}, status_code=500)
 
 @app.get("/api/leads")
 async def get_leads():
