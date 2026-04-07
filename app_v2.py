@@ -100,7 +100,7 @@ async def admin():
 """
     return HTMLResponse(content=html)
 
-@app.post("/api/lead")
+@app.post("/api/leads")
 async def create_lead(request: Request):
     """接收潛客資料"""
     form = await request.form()
