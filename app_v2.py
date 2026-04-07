@@ -150,9 +150,21 @@ async def admin():
             document.getElementById('leadModal').style.display = 'block';
         }}
         
-        function deleteLead(id) {{
+        async function deleteLead(id) {{
             if (!confirm('確定要刪除這筆記錄嗎？')) return;
-            alert('刪除功能需要後端支援');
+            try {{
+                const response = await fetch(`/api/leads/${{id-1}}`, {{
+                    method: 'DELETE'
+                }});
+                if (response.ok) {{
+                    alert('已刪除');
+                    location.reload();
+                }} else {{
+                    alert('刪除失敗');
+                }}
+            }} catch (e) {{
+                alert('刪除失敗：' + e);
+            }}
         }}
         
         function closeModal() {{
@@ -198,6 +210,18 @@ async def create_lead(request: Request):
 @app.get("/api/leads")
 async def get_leads():
     return {"leads": leads_db, "total": len(leads_db)}
+
+@app.delete("/api/leads/<int:lead_id>")
+async def delete_lead(lead_id: int):
+    """刪除指定潛客"""
+    try:
+        if 0 <= lead_id < len(leads_db):
+            deleted = leads_db.pop(lead_id)
+            return JSONResponse({"success": True, "deleted": deleted})
+        else:
+            return JSONResponse({"success": False, "error": "Record not found"}, status_code=404)
+    except Exception as e:
+        return JSONResponse({"success": False, "error": str(e)}, status_code=500)
 
 @app.get("/health")
 async def health():
