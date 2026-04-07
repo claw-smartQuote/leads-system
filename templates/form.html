@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI人工智能免費協助汽車保險到期提示及報價，香港人註冊國內中介人，專業辦理港車北上保險">
+    <meta property="og:title" content="免費 汽車保險 到期提示及報價">
+    <meta property="og:description" content="AI人工智能免費協助提示保單到期及報價，香港人註冊國內中介人，專業辦理港車北上保險">
+    <meta property="og:url" content="https://leads-system.onrender.com">
+    <meta property="og:type" content="website">
+    <title>免費 汽車保險 到期提示及報價</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; }
+        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 10px; }
+        .header p { font-size: 16px; opacity: 0.9; }
+        .form-container { padding: 30px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: 500; color: #333; margin-bottom: 8px; font-size: 15px; }
+        label .required { color: #e74c3c; }
+        input, select, textarea { width: 100%; padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; transition: all 0.3s ease; font-family: inherit; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
+        textarea { resize: vertical; min-height: 100px; }
+        .submit-btn { width: 100%; padding: 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 10px; font-size: 18px; font-weight: 600; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+        .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4); }
+        .submit-btn:active { transform: translateY(0); }
+        .benefits { background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 25px; }
+        .benefits h3 { color: #667eea; font-size: 16px; margin-bottom: 12px; }
+        .benefits ul { list-style: none; padding: 0; }
+        .benefits li { padding: 5px 0; color: #555; font-size: 14px; }
+        .benefits li:before { content: "✓"; color: #27ae60; font-weight: bold; margin-right: 8px; }
+        .success-message { display: none; background: #d4edda; color: #155724; padding: 20px; border-radius: 10px; text-align: center; margin-top: 20px; }
+        .success-message.show { display: block; animation: fadeIn 0.5s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+        .footer { text-align: center; padding: 20px; color: #999; font-size: 12px; background: #f8f9fa; }
+        .loading { display: none; text-align: center; padding: 20px; }
+        .loading.show { display: block; }
+        .spinner { border: 3px solid #f3f3f3; border-top: 3px solid #667eea; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 10px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 保險<br>到期提示及報價</h1>
+            <p>AI 人工智能 免費協助 提示保單到期及報價</p>
+        </div>
+        <div class="form-container">
+            <div class="benefits">
+                <h3>💡 為什麼選擇我們？</h3>
+                <ul>
+                    <li>免費AI人工智能協助提示保單到期</li>
+                    <li>免費專業諮詢，無隱�藏費用</li>
+                    <li>比較多家保險公司報價</li>
+                    <li>快速處理，即日受理</li>
+                    <li>協助辦理港車北上保險, 香港人註冊國內中介人 (粵語)</li>
+                </ul>
+            </div>
+            <form id="leadForm">
+                <h3 style="margin-bottom: 20px; color: #333;">📋 您的資料</h3>
+                <div class="form-group">
+                    <label>姓名 <span class="required">*</span></label>
+                    <input type="text" name="name" required placeholder="請輸入您的姓名">
+                </div>
+                <div class="form-group">
+                    <label>聯絡電話/whatsapp <span class="required">*</span></label>
+                    <input type="tel" name="phone" required placeholder="例如: 91234567">
+                </div>
+                <div class="form-group">
+                    <label>電郵地址/微信</label>
+                    <input type="text" name="email" placeholder="例如: example@email.com 或 WeChatID">
+                </div>
+                <h3 style="margin: 30px 0 20px; color: #333;">🚙 車輛資料</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>車牌號碼</label>
+                        <input type="text" name="car_plate" placeholder="例如: AB1234">
+                    </div>
+                    <div class="form-group">
+                        <label>車輛年份</label>
+                        <input type="text" name="car_year" placeholder="例如: 2020">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>車輛型號</label>
+                    <input type="text" name="car_model" placeholder="例如: Toyota Camry">
+                </div>
+                <div class="form-group">
+                    <label>現有保險公司</label>
+                    <input type="text" name="current_insurer" placeholder="例如: AIG / 蘇黎世 / 立橋">
+                </div>
+                <div class="form-group">
+                    <label>保單到期日</label>
+                    <input type="date" name="expiry_date">
+                </div>
+                <div class="form-group">
+                    <label>查詢類型 <span class="required">*</span></label>
+                    <select name="inquiry_type" required>
+                        <option value="">請選擇</option>
+                        <option value="新保">新保（新車投保）</option>
+                        <option value="續保">續保（現有保單續期）</option>
+                        <option value="轉保">轉保（轉換保險公司）</option>
+                        <option value="港車北上">🇨🇳 港車北上保險</option>
+                        <option value="其他">其他查詢</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>保險種類</label>
+                    <select name="insurance_type">
+                        <option value="">請選擇</option>
+                        <option value="全保">全保</option>
+                        <option value="三保">三保</option>
+                        <option value="交強險">交強險</option>
+                        <option value="商業險(第三者責任)">商業險(第三者責任)</option>
+                        <option value="駕意險">駕意險</option>
+                        <option value="其他險種">其他險種</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>備註 / 特別要求</label>
+                    <textarea name="notes" placeholder="請描述您的需求，例如：需要第三者保險、希望比較價格等..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">到期前提示/報價</button>
+            </form>
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>正在提交...</p>
+            </div>
+            <div class="success-message" id="successMessage">
+                <h3>✅ 提交成功！</h3>
+                <p>感謝你，我們會儘快與你聯繫。</p>
+                <p style="margin-top: 10px; font-size: 14px;">預計回覆時間：1-2 個工作天</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>你提供的資料將保密處理，僅適用於到期提示或報價用途</p>
+            <p style="margin-top: 5px;">© 2025 smartQuote AI solution</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const loading = document.getElementById('loading');
+            const successMessage = document.getElementById('successMessage');
+            form.style.display = 'none';
+            loading.classList.add('show');
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            try {
+                const response = await fetch('/api/leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                if (response.ok) {
+                    loading.classList.remove('show');
+                    successMessage.classList.add('show');
+                } else { throw new Error('提交失敗'); }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('提交時發生錯誤，請稍後再試。');
+                loading.classList.remove('show');
+                form.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
