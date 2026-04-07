@@ -173,7 +173,7 @@ async def admin():
         }}
         
         function exportData() {{
-            window.open('/api/leads', '_blank');
+            window.open('/api/leads/excel', '_blank');
         }}
         
         window.onclick = function(event) {{
@@ -215,6 +215,30 @@ async def create_lead(request: Request):
 @app.get("/api/leads")
 async def get_leads():
     return {"leads": leads_db, "total": len(leads_db)}
+
+@app.get("/api/leads/excel")
+async def export_leads_excel():
+    """導出 Excel 文件"""
+    from fastapi.responses import StreamingResponse
+    import io
+    import pandas as pd
+    from datetime import datetime
+    
+    if not leads_db:
+        return JSONResponse({"error": "No data"}, status_code=404)
+    
+    df = pd.DataFrame(leads_db)
+    output = io.BytesIO()
+    with pd.ExcelWriter(output, engine='openpyxl') as writer:
+        df.to_excel(writer, index=False, sheet_name='潛客資料')
+    output.seek(0)
+    
+    filename = f"潛客資料_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
+    return StreamingResponse(
+        output,
+        media_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        headers={'Content-Disposition': f'attachment; filename={filename}'}
+    )
 
 @app.delete("/api/leads/{lead_id}")
 async def delete_lead(lead_id: int):
