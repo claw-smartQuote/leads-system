@@ -11,6 +11,18 @@
     <title>汽車保險 到期提示及報價</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #1a365d;
+            --primary-light: #2c5282;
+            --accent: #d69e2e;
+            --accent-light: #ecc94b;
+            --bg-light: #f7fafc;
+            --text-dark: #1a202c;
+            --text-muted: #718096;
+            --success: #38a169;
+            --border: #e2e8f0;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -19,7 +31,7 @@
         
         body {
             font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(180deg, #1a365d 0%, #2c5282 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -28,27 +40,50 @@
             max-width: 600px;
             margin: 0 auto;
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             overflow: hidden;
         }
         
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--primary);
             color: white;
-            padding: 30px;
+            padding: 35px 30px;
             text-align: center;
+            position: relative;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent);
         }
         
         .header h1 {
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
         }
         
         .header p {
-            font-size: 16px;
+            font-size: 15px;
             opacity: 0.9;
+        }
+        
+        .header .tagline {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--primary);
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
         }
         
         .form-container {
@@ -62,29 +97,31 @@
         label {
             display: block;
             font-weight: 500;
-            color: #333;
+            color: var(--text-dark);
             margin-bottom: 8px;
-            font-size: 15px;
+            font-size: 14px;
         }
         
         label .required {
-            color: #e74c3c;
+            color: #c53030;
         }
         
         input, select, textarea {
             width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 16px;
+            padding: 14px 16px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 15px;
             transition: all 0.3s ease;
             font-family: inherit;
+            background: var(--bg-light);
         }
         
         input:focus, select:focus, textarea:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+            background: white;
         }
         
         .form-row {
@@ -107,19 +144,20 @@
         .submit-btn {
             width: 100%;
             padding: 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: white;
             border: none;
-            border-radius: 10px;
-            font-size: 18px;
+            border-radius: 8px;
+            font-size: 17px;
             font-weight: 600;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
         }
         
         .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 10px 30px rgba(26, 54, 93, 0.3);
         }
         
         .submit-btn:active {
@@ -127,16 +165,18 @@
         }
         
         .benefits {
-            background: #f8f9fa;
+            background: var(--bg-light);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
             margin-bottom: 25px;
+            border-left: 4px solid var(--accent);
         }
         
         .benefits h3 {
-            color: #667eea;
-            font-size: 16px;
+            color: var(--primary);
+            font-size: 15px;
             margin-bottom: 12px;
+            font-weight: 600;
         }
         
         .benefits ul {
@@ -145,26 +185,56 @@
         }
         
         .benefits li {
-            padding: 5px 0;
-            color: #555;
+            padding: 6px 0;
+            color: var(--text-muted);
             font-size: 14px;
+            display: flex;
+            align-items: center;
         }
         
-        .benefits li:before {
-            content: "✓";
-            color: #27ae60;
+        .benefits li::before {
+            content: '✓';
+            color: var(--success);
             font-weight: bold;
-            margin-right: 8px;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+        }
+        
+        .section-title h3 {
+            color: var(--primary);
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .section-title .icon {
+            width: 28px;
+            height: 28px;
+            background: var(--accent);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 14px;
         }
         
         .success-message {
             display: none;
-            background: #d4edda;
-            color: #155724;
-            padding: 20px;
-            border-radius: 10px;
+            background: #f0fff4;
+            color: #22543d;
+            padding: 25px;
+            border-radius: 12px;
             text-align: center;
             margin-top: 20px;
+            border: 2px solid #9ae6b4;
         }
         
         .success-message.show {
@@ -177,18 +247,39 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
+        .success-message h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .success-message p {
+            font-size: 14px;
+            color: #48bb78;
+        }
+        
         .footer {
             text-align: center;
-            padding: 20px;
-            color: #999;
+            padding: 25px 20px;
+            color: var(--text-muted);
             font-size: 12px;
-            background: #f8f9fa;
+            background: var(--bg-light);
+            border-top: 1px solid var(--border);
+        }
+        
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
         }
         
         .loading {
             display: none;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
         }
         
         .loading.show {
@@ -196,13 +287,13 @@
         }
         
         .spinner {
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #667eea;
+            border: 3px solid var(--border);
+            border-top: 3px solid var(--primary);
             border-radius: 50%;
             width: 40px;
             height: 40px;
             animation: spin 1s linear infinite;
-            margin: 0 auto 10px;
+            margin: 0 auto 15px;
         }
         
         @keyframes spin {
@@ -214,24 +305,28 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1> 汽車保險 到期提示及報價</h1>
+            <span class="tagline">🚗 專業汽車保險顧問</span>
+            <h1>汽車保險 到期提示及報價</h1>
             <p>AI 人工智能 免費協助 提示保單到期及報價</p>
         </div>
         
         <div class="form-container">
             <div class="benefits">
-                <h3>💡 為什麼選擇我們？</h3>
+                <h3>💡 為什麼選擇 SmartQuote？</h3>
                 <ul>
                     <li>免費AI人工智能協助提示保單到期</li>
                     <li>免費專業諮詢，無隱藏費用</li>
                     <li>比較多家保險公司報價</li>
-                    <li>快速處理，即日報價</li>
-                    <li>協助辦理港車北上保險, 香港人註冊國內中介人 (粵語)</li>
+                    <li>快速處理，即日回覆</li>
+                    <li>專業辦理港車北上保險</li>
                 </ul>
             </div>
             
             <form id="leadForm">
-                <h3 style="margin-bottom: 20px; color: #333;">📋 您的資料</h3>
+                <div class="section-title">
+                    <div class="icon">👤</div>
+                    <h3>您的資料</h3>
+                </div>
                 
                 <div class="form-group">
                     <label>姓名 <span class="required">*</span></label>
@@ -239,16 +334,19 @@
                 </div>
                 
                 <div class="form-group">
-                    <label>聯絡電話/whatsapp <span class="required">*</span></label>
+                    <label>聯絡電話 / WhatsApp <span class="required">*</span></label>
                     <input type="tel" name="phone" required placeholder="例如: 91234567">
                 </div>
                 
                 <div class="form-group">
-                    <label>電郵地址/微信</label>
+                    <label>電郵地址 / 微信</label>
                     <input type="text" name="email" placeholder="例如: example@email.com 或 WeChatID">
                 </div>
                 
-                <h3 style="margin: 30px 0 20px; color: #333;">🚙 車輛資料</h3>
+                <div class="section-title" style="margin-top: 30px;">
+                    <div class="icon">🚙</div>
+                    <h3>車輛資料</h3>
+                </div>
                 
                 <div class="form-row">
                     <div class="form-group">
@@ -306,7 +404,7 @@
                     <textarea name="notes" placeholder="請描述您的需求，例如：需要第三者保險、希望比較價格等..."></textarea>
                 </div>
                 
-                <button type="submit" class="submit-btn">到期前提示/報價</button>
+                <button type="submit" class="submit-btn">📋 提交查詢</button>
             </form>
             
             <div class="loading" id="loading">
@@ -316,15 +414,19 @@
             
             <div class="success-message" id="successMessage">
                 <h3>✅ 提交成功！</h3>
-                <p>感謝你，我們會儘快與你聯繫。</p>
-                <p style="margin-top: 10px; font-size: 14px;">預計回覆時間：1-2 個工作天</p>
+                <p>感謝您提交查詢，我們會儘快與您聯繫。</p>
+                <p style="margin-top: 10px; font-size: 13px;">預計回覆時間：1-2 個工作天</p>
             </div>
         </div>
         
         <div class="footer">
-            <p>你提供的資料將保密處理，僅適用於到期提示或報價用途</p>
-            <p style="margin-top: 5px;"><a href="/terms" style="color: #667eea; text-decoration: none;">免責條款及私隱條款</a></p>
-            <p style="margin-top: 5px;">© 2025 SmartQuote | 查詢：<a href="mailto:ai@smartquote.cn" style="color: #667eea;">ai@smartquote.cn</a></p>
+            <p>您提供的資料將保密處理，僅適用於到期提示或報價用途</p>
+            <p style="margin-top: 8px;">
+                <a href="/terms">免責條款及私隱條款</a>
+            </p>
+            <p style="margin-top: 12px; color: var(--primary); font-weight: 500;">
+                SmartQuote | 查詢：<a href="mailto:ai@smartquote.cn">ai@smartquote.cn</a>
+            </p>
         </div>
     </div>
     

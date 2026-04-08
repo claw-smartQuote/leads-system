@@ -199,10 +199,20 @@ async def terms():
     <title>免責條款及私隱條款 - 汽車保險到價提示及報價服務</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #1a365d;
+            --primary-light: #2c5282;
+            --accent: #d69e2e;
+            --accent-light: #ecc94b;
+            --bg-light: #f7fafc;
+            --text-dark: #1a202c;
+            --text-muted: #718096;
+            --border: #e2e8f0;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(180deg, #1a365d 0%, #2c5282 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -210,56 +220,85 @@ async def terms():
             max-width: 800px;
             margin: 0 auto;
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             overflow: hidden;
         }
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--primary);
             color: white;
-            padding: 30px;
+            padding: 35px 30px;
             text-align: center;
+            position: relative;
         }
-        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 10px; }
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent);
+        }
+        .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 10px; letter-spacing: 1px; }
+        .header p { opacity: 0.9; }
         .content { padding: 40px; }
-        .section { margin-bottom: 40px; }
+        .section { margin-bottom: 35px; }
         .section h2 {
-            color: #667eea;
-            font-size: 22px;
+            color: var(--primary);
+            font-size: 20px;
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #667eea;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--accent);
+            display: flex;
+            align-items: center;
         }
-        .section h3 { color: #333; font-size: 18px; margin: 20px 0 10px; }
-        .section p { color: #555; line-height: 1.8; margin-bottom: 15px; }
-        .section ul { color: #555; line-height: 2; margin-left: 25px; }
+        .section h2 .num {
+            background: var(--accent);
+            color: var(--primary);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            margin-right: 12px;
+            font-weight: 700;
+        }
+        .section h3 { color: var(--text-dark); font-size: 16px; margin: 20px 0 12px; font-weight: 600; }
+        .section p { color: var(--text-muted); line-height: 1.8; margin-bottom: 15px; font-size: 14px; }
+        .section ul { color: var(--text-muted); line-height: 2; margin-left: 20px; font-size: 14px; }
         .highlight {
-            background: #fff3cd;
-            padding: 15px;
+            background: #fffaf0;
+            padding: 18px;
             border-radius: 10px;
-            border-left: 4px solid #ffc107;
+            border-left: 4px solid var(--accent);
             margin: 20px 0;
         }
-        .highlight p { margin-bottom: 0; color: #856404; }
+        .highlight p { margin-bottom: 0; color: #92400e; font-weight: 500; }
         .back-btn {
             display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 14px 35px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: white;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: 500;
-            transition: transform 0.2s;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
         }
-        .back-btn:hover { transform: translateY(-2px); }
+        .back-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(26, 54, 93, 0.3); }
         .footer {
             text-align: center;
-            padding: 20px;
-            color: #999;
+            padding: 25px 20px;
+            color: var(--text-muted);
             font-size: 12px;
-            background: #f8f9fa;
+            background: var(--bg-light);
+            border-top: 1px solid var(--border);
         }
-        .contact { color: #667eea; text-decoration: none; }
+        .contact { color: var(--primary); text-decoration: none; font-weight: 500; }
+        .contact:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -270,7 +309,7 @@ async def terms():
         </div>
         <div class="content">
             <div class="section">
-                <h2>一、免責條款</h2>
+                <h2><span class="num">一</span>免責條款</h2>
                 
                 <h3>1. 服務性質</h3>
                 <p>本服務只作為資訊平台，提供的保險報價及到價提示僅供參考，不構成任何保險建議或要約邀請。</p>
@@ -292,7 +331,7 @@ async def terms():
             </div>
             
             <div class="section">
-                <h2>二、私隱條款</h2>
+                <h2><span class="num">二</span>私隱條款</h2>
                 
                 <h3>1. 收集資料</h3>
                 <p>本服務收集的個人資料（包括姓名、電話、電郵、車牌及車型）只用於提供保險報價服務及到價提示，不會用於任何其他用途。</p>
@@ -321,7 +360,7 @@ async def terms():
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
-                <a href="/" class="back-btn">返回首頁</a>
+                <a href="/" class="back-btn">← 返回首頁</a>
             </div>
         </div>
         <div class="footer">
