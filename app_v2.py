@@ -202,8 +202,8 @@ async def terms():
         :root {
             --primary: #1a365d;
             --primary-light: #2c5282;
-            --accent: #d69e2e;
-            --accent-light: #ecc94b;
+            --accent: #a0aec0;
+            --accent-light: #c0c0c0;
             --bg-light: #f7fafc;
             --text-dark: #1a202c;
             --text-muted: #718096;
