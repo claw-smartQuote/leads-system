@@ -187,6 +187,153 @@ async def admin():
 """
     return HTMLResponse(content=html)
 
+@app.get("/terms")
+async def terms():
+    """免責條款及私隱條款"""
+    html = """
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免責條款及私隱條款 - 汽車保險到價提示及報價服務</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 10px; }
+        .content { padding: 40px; }
+        .section { margin-bottom: 40px; }
+        .section h2 {
+            color: #667eea;
+            font-size: 22px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        .section h3 { color: #333; font-size: 18px; margin: 20px 0 10px; }
+        .section p { color: #555; line-height: 1.8; margin-bottom: 15px; }
+        .section ul { color: #555; line-height: 2; margin-left: 25px; }
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        .highlight p { margin-bottom: 0; color: #856404; }
+        .back-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+        .back-btn:hover { transform: translateY(-2px); }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+            background: #f8f9fa;
+        }
+        .contact { color: #667eea; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>免責條款及私隱條款</h1>
+            <p>汽車保險到價提示及報價服務</p>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>一、免責條款</h2>
+                
+                <h3>1. 服務性質</h3>
+                <p>本服務只作為資訊平台，提供的保險報價及到價提示僅供參考，不構成任何保險建議或要約邀請。</p>
+                
+                <h3>2. 非保險中介</h3>
+                <p>本服務並非保險中介人或保險公司，所有報價均由第三方保險公司或其代理提供。本服務不對任何保險公司的產品、報價或決定負責。</p>
+                
+                <h3>3. 資料準確性</h3>
+                <p>本服務盡力確保提供準確資訊，但無法保證所有資料完整無誤。最終保費及承保條款以保險公司正式回覆為準。</p>
+                
+                <h3>4. 第三方連結</h3>
+                <p>本服務可能包含第三方網站連結，這些網站的內容及私隱慣例不在本服務控制範圍內。</p>
+                
+                <div class="highlight">
+                    <p><strong>⚠️ 重要提示：</strong><br>
+                    用戶使用此服務代表同意自行承擔風險。<br>
+                    就所有不可抗力因素（包括但不限於天災、網絡故障、系統中斷等），本服務不承擔任何責任。</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>二、私隱條款</h2>
+                
+                <h3>1. 收集資料</h3>
+                <p>本服務收集的個人資料（包括姓名、電話、電郵、車牌及車型）只用於提供保險報價服務及到價提示，不會用於任何其他用途。</p>
+                
+                <h3>2. 資料保密</h3>
+                <p>所有個人資料均保密處理，不會出售或轉讓予任何第三方（法律規定除外）。</p>
+                
+                <h3>3. 資料用途</h3>
+                <ul>
+                    <li>提供保險報價比較</li>
+                    <li>發送到價提示通知</li>
+                    <li>改善服務質素</li>
+                </ul>
+                
+                <h3>4. 資料保存及刪除</h3>
+                <p>用戶可隨時要求刪除個人資料，請聯絡：<a href="mailto:ai@smartquote.cn" class="contact">ai@smartquote.cn</a></p>
+                
+                <h3>5. Cookies</h3>
+                <p>本服務使用 cookies 提升用戶體驗，用戶可透過瀏覽器設定拒絕 cookies。</p>
+                
+                <div class="highlight">
+                    <p><strong>⚠️ 重要提示：</strong><br>
+                    用戶使用此服務代表同意自行承擔風險。<br>
+                    就所有不可抗力因素（包括但不限於天災、網絡故障、系統中斷等），本服務不承擔任何責任。</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="/" class="back-btn">返回首頁</a>
+            </div>
+        </div>
+        <div class="footer">
+            最後更新日期：2026年4月8日<br>
+            查詢電郵：<a href="mailto:ai@smartquote.cn" class="contact">ai@smartquote.cn</a>
+        </div>
+    </div>
+</body>
+</html>
+    """
+    return HTMLResponse(content=html)
+
 @app.post("/api/leads")
 async def create_lead(request: Request):
     """接收潛客資料"""
