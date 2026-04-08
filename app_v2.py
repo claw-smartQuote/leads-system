@@ -54,10 +54,11 @@ async def admin(credentials: HTTPBasicCredentials = Depends(security)):
     new_count = len([l for l in leads_db if l.get("status") == "新"])
     
     rows = ""
-    for i, lead in enumerate(leads_db, 1):
+    for i, lead in enumerate(leads_db):
+        lead_id = lead.get('id', i+1)
         rows += f"""
-        <tr data-id="{i}">
-            <td>{i}</td>
+        <tr data-id="{lead_id}">
+            <td>{lead_id}</td>
             <td>{lead.get('name', '-')}</td>
             <td>{lead.get('phone', '-')}</td>
             <td>{lead.get('email', '-')}</td>
@@ -67,8 +68,8 @@ async def admin(credentials: HTTPBasicCredentials = Depends(security)):
             <td>{lead.get('inquiry_type', '-')}</td>
             <td><span class="status status-{lead.get('status', '新').lower()}">{lead.get('status', '新')}</span></td>
             <td>
-                <button class="btn-view" onclick="viewLead({i})">查看</button>
-                <button class="btn-delete" onclick="deleteLead({i})">刪除</button>
+                <button class="btn-view" onclick="viewLead('{lead_id}')">查看</button>
+                <button class="btn-delete" onclick="deleteLead('{lead_id}')">刪除</button>
             </td>
         </tr>
         """
@@ -160,7 +161,7 @@ async def admin(credentials: HTTPBasicCredentials = Depends(security)):
         let leads = {leads_db};
         
         function viewLead(id) {{
-            const lead = leads[id - 1];
+            const lead = leads.find(function(l) {{ return l.id == id; }});
             if (!lead) return;
             
             let html = '<table style="width:100%;">';
@@ -177,7 +178,9 @@ async def admin(credentials: HTTPBasicCredentials = Depends(security)):
         
         function deleteLead(id) {{
             if (!confirm('確定要刪除這筆記錄嗎？')) return;
-            fetch('/api/leads/' + (id - 1), {{ method: 'DELETE' }})
+            var idx = leads.findIndex(function(l) {{ return l.id == id; }});
+            if (idx < 0) {{ alert('找不到記錄'); return; }}
+            fetch('/api/leads/' + idx, {{ method: 'DELETE' }})
                 .then(function(response) {{ return response.json(); }})
                 .then(function(data) {{
                     if (data.success) {{
@@ -403,8 +406,13 @@ async def create_lead(request: Request):
     try:
         body = await request.body()
         import json
+        from datetime import datetime
         data = json.loads(body)
+        # 生成 YYMMDDHHMMSS 格式編號
+        now = datetime.now()
+        lead_id = now.strftime("%y%m%d%H%M%S")
         lead = {
+            "id": lead_id,
             "name": data.get("name"),
             "phone": data.get("phone"),
             "email": data.get("email"),
@@ -418,7 +426,7 @@ async def create_lead(request: Request):
             "status": "新"
         }
         leads_db.append(lead)
-        return JSONResponse({"success": True})
+        return JSONResponse({"success": True, "id": lead_id})
     except Exception as e:
         return JSONResponse({"success": False, "error": str(e)}, status_code=500)
 
