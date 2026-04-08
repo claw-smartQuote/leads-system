@@ -1,16 +1,26 @@
 """
 FastAPI 汽車保險潛客系統 - 極簡版
 """
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Depends, status
 from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
 import os
 from pathlib import Path
 
 app = FastAPI()
 BASE_DIR = Path(__file__).parent
 
+# 管理員密碼（生產環境建議改為環境變量）
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD = "smartquote2026"
+
 # 記憶體資料庫
 leads_db = []
+
+def verify_admin(credentials: HTTPBasicCredentials):
+    if credentials.username == ADMIN_USERNAME and credentials.password == ADMIN_PASSWORD:
+        return True
+    return False
 
 # 讀取 HTML 模板
 def read_html(filename):
@@ -25,8 +35,21 @@ async def root():
     return HTMLResponse(content=read_html("templates/form.html"))
 
 @app.get("/admin")
-async def admin():
-    """管理後台"""
+async def admin(credentials: HTTPBasicCredentials = Depends(security)):
+    """管理後台 - 需要登入"""
+    if credentials.username != ADMIN_USERNAME or credentials.password != ADMIN_PASSWORD:
+        return HTMLResponse(
+            headers={"WWW-Authenticate": "Basic realm=\"管理後台\""},
+            content="""<!DOCTYPE html><html><head><title>需要登入</title></head>
+            <body style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; display:flex; justify-content:center; align-items:center; height:100vh; margin:0; background:#f5f5f5;">
+            <div style="text-align:center; padding:40px; background:white; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+                <h2 style="color:#1a365d;">🔐 管理後台</h2>
+                <p style="color:#666;">請輸入管理員帳號密碼</p>
+            </div>
+            </body></html>""",
+            status_code=401
+        )
+    
     new_count = len([l for l in leads_db if l.get("status") == "新"])
     
     rows = ""
@@ -399,11 +422,15 @@ async def create_lead(request: Request):
         return JSONResponse({"success": False, "error": str(e)}, status_code=500)
 
 @app.get("/api/leads")
-async def get_leads():
+async def get_leads(credentials: HTTPBasicCredentials = Depends(security)):
+    if credentials.username != ADMIN_USERNAME or credentials.password != ADMIN_PASSWORD:
+        return JSONResponse({"error": "Unauthorized"}, status_code=401)
     return {"leads": leads_db, "total": len(leads_db)}
 
 @app.get("/api/leads/excel")
-async def export_leads_excel():
+async def export_leads_excel(credentials: HTTPBasicCredentials = Depends(security)):
+    if credentials.username != ADMIN_USERNAME or credentials.password != ADMIN_PASSWORD:
+        return JSONResponse({"error": "Unauthorized"}, status_code=401)
     """導出 Excel 文件"""
     import tempfile
     import pandas as pd
@@ -430,8 +457,10 @@ async def export_leads_excel():
     )
 
 @app.delete("/api/leads/{lead_id}")
-async def delete_lead(lead_id: int):
+async def delete_lead(lead_id: int, credentials: HTTPBasicCredentials = Depends(security)):
     """刪除指定潛客"""
+    if credentials.username != ADMIN_USERNAME or credentials.password != ADMIN_PASSWORD:
+        return JSONResponse({"error": "Unauthorized"}, status_code=401)
     try:
         if 0 <= lead_id < len(leads_db):
             deleted = leads_db.pop(lead_id)
