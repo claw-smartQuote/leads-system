@@ -9,6 +9,7 @@ from pathlib import Path
 
 app = FastAPI()
 BASE_DIR = Path(__file__).parent
+security = HTTPBasic()
 
 # 管理員密碼（生產環境建議改為環境變量）
 ADMIN_USERNAME = "admin"
