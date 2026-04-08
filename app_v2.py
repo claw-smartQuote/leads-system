@@ -196,7 +196,7 @@ async def terms():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>免責條款及私隱條款 - 汽車保險到價提示及報價服務</title>
+    <title>免責條款及私隱條款 - 汽車保險到期提示及報價服務</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -305,14 +305,14 @@ async def terms():
     <div class="container">
         <div class="header">
             <h1>免責條款及私隱條款</h1>
-            <p>汽車保險到價提示及報價服務</p>
+            <p>汽車保險到期提示及報價服務</p>
         </div>
         <div class="content">
             <div class="section">
                 <h2><span class="num">一</span>免責條款</h2>
                 
                 <h3>1. 服務性質</h3>
-                <p>本服務只作為資訊平台，提供的保險報價及到價提示僅供參考，不構成任何保險建議或要約邀請。</p>
+                <p>本服務只作為資訊平台，提供的保險報價及到期提示僅供參考，不構成任何保險建議或要約邀請。</p>
                 
                 <h3>2. 非保險中介</h3>
                 <p>本服務並非保險中介人或保險公司，所有報價均由第三方保險公司或其代理提供。本服務不對任何保險公司的產品、報價或決定負責。</p>
@@ -334,7 +334,7 @@ async def terms():
                 <h2><span class="num">二</span>私隱條款</h2>
                 
                 <h3>1. 收集資料</h3>
-                <p>本服務收集的個人資料（包括姓名、電話、電郵、車牌及車型）只用於提供保險報價服務及到價提示，不會用於任何其他用途。</p>
+                <p>本服務收集的個人資料（包括姓名、電話、電郵、車牌及車型）只用於提供保險報價服務及到期提示，不會用於任何其他用途。</p>
                 
                 <h3>2. 資料保密</h3>
                 <p>所有個人資料均保密處理，不會出售或轉讓予任何第三方（法律規定除外）。</p>
@@ -342,7 +342,7 @@ async def terms():
                 <h3>3. 資料用途</h3>
                 <ul>
                     <li>提供保險報價比較</li>
-                    <li>發送到價提示通知</li>
+                    <li>發送到期提示通知</li>
                     <li>改善服務質素</li>
                 </ul>
                 
