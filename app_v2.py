@@ -479,14 +479,6 @@ async def delete_lead(lead_id: int, credentials: HTTPBasicCredentials = Depends(
     except Exception as e:
         return JSONResponse({"success": False, "error": str(e)}, status_code=500)
 
-@app.get("/quote")
-async def quote():
-    """港車北上汽車保險報價系統"""
-    quote_path = Path(__file__).parent.parent / "skills" / "insurance-quotation" / "web_app" / "index.html"
-    if quote_path.exists():
-        return HTMLResponse(content=quote_path.read_text(encoding="utf-8"))
-    return HTMLResponse(content="<h1>報價系統維護中</h1>")
-
 @app.get("/health")
 async def health():
     return {"status": "ok"}
