@@ -401,8 +401,11 @@ class InsuranceQuotationSystem:
         # 2. 商业险折扣（燃油车和新能源车统一根据车龄计算）
         # 根据V.13费率表：交強險折扣0.7→商業險0.9, 交強險折扣0.8→商業險1
         commercial_discount = self.calculate_commercial_discount(vehicle_fuel_type, vehicle_age)
-        # 商业险折扣 = 交强险折扣 + 0.2（但不超过1）
-        if commercial_discount <= 0.7:
+        
+        # 保額 >= 400萬時用固定乘數 1.35/1.1
+        if third_party_limit >= 400:
+            third_party_discount = 1.35 / 1.1  # 約1.227
+        elif commercial_discount == 0.7:
             third_party_discount = 0.9  # 3年以上：商業險0.9
         else:
             third_party_discount = 1.0  # 2年以下：商業險無折扣

@@ -525,14 +525,21 @@
             
             // 商業險折扣（燃油車和新能源車統一根據車齡計算）
             // 根據V.13費率表：交強險折扣0.7→商業險0.9, 交強險折扣0.8→商業險1
-            const commercialDiscount = (discount <= 0.7) ? 0.9 : 1.0;
-            const thirdPartyDiscount = commercialDiscount;
+            // 保額 >= 400萬時用固定乘數 1.35/1.1
+            let thirdPartyDiscount;
+            if (data.thirdParty >= 400) {
+                thirdPartyDiscount = 1.35 / 1.1;  // 約1.227
+            } else if (discount === 0.7) {
+                thirdPartyDiscount = 0.9;  // 3年以上：商業險0.9
+            } else {
+                thirdPartyDiscount = 1.0;  // 2年以下：商業險無折扣
+            }
             
             const baseThirdParty = rates[data.category][data.thirdParty] || 0;
             const thirdPartyPremium = baseThirdParty * thirdPartyDiscount;
             
             const medicalOutsideLimit = data.medicalOutsideLimit || 10;
-            const medicalOutsideThird = (medicalRates[medicalOutsideLimit] || 0) * commercialDiscount;
+            const medicalOutsideThird = (medicalRates[medicalOutsideLimit] || 0) * thirdPartyDiscount;
             
             const totalSeats = data.passengers + 1;
             const drivingAccidentPremium = calculateDrivingAccident(data.drivingAccident, totalSeats);
@@ -549,7 +556,8 @@
                 thirdParty: data.thirdParty,
                 medicalOutsideLimit: medicalOutsideLimit,
                 drivingAccidentType: data.drivingAccident,
-                discount: discount,
+                compulsoryDiscount: discount,
+                commercialDiscount: thirdPartyDiscount,
                 compulsoryPremium: compulsoryPremium,
                 thirdPartyPremium: thirdPartyPremium,
                 medicalOutside: medicalOutsideThird,
@@ -635,6 +643,10 @@
                 <div class="result-item">
                     <span class="result-label">汽車登記年期</span>
                     <span class="result-value">${getAgeLabel(result.vehicleAge)}</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">折扣（交強險/商業險）</span>
+                    <span class="result-value">${result.compulsoryDiscount.toFixed(1)}折 / ${result.commercialDiscount.toFixed(3)}折</span>
                 </div>
                 <div class="result-item">
                     <span class="result-label">交強險（20萬）</span>
