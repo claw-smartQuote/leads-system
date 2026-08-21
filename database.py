@@ -183,6 +183,27 @@ class Database:
         
         return leads
 
+
+    def delete_lead(self, lead_id: int) -> bool:
+        """刪除指定潛客
+        
+        Args:
+            lead_id: 潛客 ID
+            
+        Returns:
+            是否成功刪除
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute("DELETE FROM leads WHERE id = ?", (lead_id,))
+        deleted = cursor.rowcount > 0
+        
+        conn.commit()
+        conn.close()
+        
+        return deleted
+
 # 測試
 if __name__ == "__main__":
     db = Database()
