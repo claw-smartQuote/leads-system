@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>港車北上-報價系統</title>
+    <title>港車北上-報價系統 v2.0 (V.13)</title>
     <style>
         * {
             margin: 0;
@@ -311,7 +311,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🚗 港車北上-報價系統</h1>
+            <h1>🚗 港車北上-報價系統 <small>v2.0 (V.13)</small></h1>
             <p>永誠財產保險 | 汽車保險報價計算工具</p>
         </div>
         
@@ -397,8 +397,9 @@
                         <label>駕意險（可選）</label>
                         <select id="drivingAccident">
                             <option value="无" selected>不投保</option>
-                            <option value="30万">30萬保障（40元/位）</option>
-                            <option value="50万">50萬保障（60元/位）</option>
+                            <option value="30万">30萬保障</option>
+                            <option value="50万">50萬保障</option>
+                            <option value="80万">80萬保障</option>
                         </select>
                     </div>
                     
@@ -438,14 +439,14 @@
         };
         
         const EV_THIRD_PARTY_RATES = {
-            "6座以下个人": {100: 830.72, 150: 927.77, 200: 1014.29, 300: 1182.14, 400: 1346.49, 500: 1507.41},
-            "6座以下企业": {100: 1039.75, 150: 1146.32, 200: 1241.36, 300: 1425.73, 400: 1606.34, 500: 1783.10},
-            "6-10座个人": {100: 982.87, 150: 1097.72, 200: 1200.09, 300: 1398.64, 400: 1593.11, 500: 1783.50},
-            "6-10座企业": {100: 1196.96, 150: 1319.62, 200: 1429.04, 300: 1641.32, 400: 2052.76, 500: 2251.89},
+            "6座以下个人": {100: 755.20, 150: 843.42, 200: 922.08, 300: 1074.67, 400: 1224.08, 500: 1370.38},
+            "6座以下企业": {100: 945.22, 150: 1042.11, 200: 1128.51, 300: 1296.12, 400: 1460.31, 500: 1621.00},
+            "6-10座个人": {100: 893.52, 150: 997.93, 200: 1090.99, 300: 1271.49, 400: 1448.28, 500: 1621.36},
+            "6-10座企业": {100: 1088.14, 150: 1199.66, 200: 1299.13, 300: 1492.11, 400: 1866.14, 500: 2047.18},
         };
         
         const FUEL_MEDICAL_OUTSIDE_RATES = {0: 0, 10: 73.33, 20: 102.67, 30: 124.00, 50: 158.67, 100: 221.33};
-        const EV_MEDICAL_OUTSIDE_RATES = {0: 0, 10: 71.18, 20: 99.65, 30: 109.41, 50: 140.00, 100: 195.29};
+        const EV_MEDICAL_OUTSIDE_RATES = {0: 0, 10: 64.71, 20: 90.59, 30: 109.41, 50: 140.00, 100: 195.29};
         
         const COMPULSORY_BASE_RATES = {
             "6座以下个人": 950,
@@ -481,11 +482,29 @@
             return 0.9;  // 两岁以下：九折
         }
         
+        // 駕意險費率 (V.13 - 按座位數計費)
+        const DRIVING_ACCIDENT_RATES_BY_SEAT = {
+            2: {"30万": 120, "50万": 180, "80万": 294},
+            3: {"30万": 120, "50万": 180, "80万": 294},
+            4: {"30万": 160, "50万": 240, "80万": 392},
+            5: {"30万": 200, "50万": 300, "80万": 490},
+            6: {"30万": 240, "50万": 360, "80万": 540},
+            7: {"30万": 280, "50万": 420, "80万": 630},
+            8: {"30万": 320, "50万": 480, "80万": 720},
+        };
+        
         function calculateDrivingAccident(coverageType, seatCount) {
             if (coverageType === "无") return 0;
-            if (coverageType === "30万") return seatCount * 40;
-            if (coverageType === "50万") return seatCount * 60;
-            return 0;
+            
+            // 2座按3座價格
+            let seats = seatCount;
+            if (seats <= 2) seats = 3;
+            if (seats > 8) seats = 8;
+            
+            const rates = DRIVING_ACCIDENT_RATES_BY_SEAT[seats];
+            if (!rates) return 0;
+            
+            return rates[coverageType] || 0;
         }
         
         function getAgeLabel(vehicleAge) {
