@@ -201,7 +201,7 @@ async def admin_dashboard(request: Request):
         </div>
         
         <script>
-            let leads = """ + leads_json + """;
+            let leads = {leads_json};
             
             function viewLead(id) {
                 const lead = leads.find(function(l) { return l.id == id; });
