@@ -523,8 +523,9 @@
             const compulsoryBase = COMPULSORY_BASE_RATES[data.category] || 950;
             const compulsoryPremium = compulsoryBase * discount;
             
-            // 新能源車：整個商業險固定九折；燃油車：根據車齡折扣
-            const commercialDiscount = (data.fuelType === "新能源车") ? 0.9 : discount;
+            // 商業險折扣（燃油車和新能源車統一根據車齡計算）
+            // 根據V.13費率表：交強險折扣0.7→商業險0.9, 交強險折扣0.8→商業險1
+            const commercialDiscount = (discount <= 0.7) ? 0.9 : 1.0;
             const thirdPartyDiscount = commercialDiscount;
             
             const baseThirdParty = rates[data.category][data.thirdParty] || 0;

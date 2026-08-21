@@ -121,7 +121,7 @@ SYSTEM_PARAMS = {
     },
     "ev": {
         "exchange_rate": 1.09,      # 港币汇率（显示用，计算中不使用）
-        "commercial_discount": 0.9,  # 新能源商业险折扣（固定九折）
+        "commercial_discount": None,  # 新能源商业险折扣（根据车龄计算，与燃油车相同）
         "has_holiday_double": False,
         "has_medical_driver": False,
         "has_medical_passenger": False,
@@ -398,14 +398,14 @@ class InsuranceQuotationSystem:
         compulsory_discount = self.calculate_commercial_discount(vehicle_fuel_type, vehicle_age)
         compulsory_premium = compulsory_base * compulsory_discount
         
-        # 2. 商业险折扣
-        # 新能源车：整個商業險固定九折；燃油车：根据车龄折扣
-        if vehicle_fuel_type == "新能源车":
-            commercial_discount = 0.9  # 新能源车整個商業險固定九折
-            third_party_discount = 0.9  # 新能源车第三者责任险固定九折
+        # 2. 商业险折扣（燃油车和新能源车统一根据车龄计算）
+        # 根据V.13费率表：交強險折扣0.7→商業險0.9, 交強險折扣0.8→商業險1
+        commercial_discount = self.calculate_commercial_discount(vehicle_fuel_type, vehicle_age)
+        # 商业险折扣 = 交强险折扣 + 0.2（但不超过1）
+        if commercial_discount <= 0.7:
+            third_party_discount = 0.9  # 3年以上：商業險0.9
         else:
-            commercial_discount = self.calculate_commercial_discount(vehicle_fuel_type, vehicle_age)
-            third_party_discount = commercial_discount
+            third_party_discount = 1.0  # 2年以下：商業險無折扣
         
         third_party_premium = self.calculate_third_party_premium(
             vehicle_fuel_type, vehicle_category, third_party_limit, 
@@ -420,19 +420,19 @@ class InsuranceQuotationSystem:
         else:
             passenger_driver_premium, passenger_occupant_premium = 0, 0
         
-        # 5. 医保外用药（三者）- 新能源车固定九折
+        # 5. 医保外用药（三者）- 应用商业险折扣
         medical_outside_third = self.calculate_medical_outside_premium(
             vehicle_fuel_type, medical_outside_limit
-        ) * commercial_discount  # 应用商业险折扣
+        ) * third_party_discount  # 应用商业险折扣
         
         # 6. 医保外用药（司机/乘客）- 仅燃油车支持
         medical_outside_driver = 0
         medical_outside_passenger = 0
         if vehicle_fuel_type == "燃油车":
             if has_medical_driver:
-                medical_outside_driver = self.calculate_medical_outside_premium(vehicle_fuel_type, 10) * commercial_discount
+                medical_outside_driver = self.calculate_medical_outside_premium(vehicle_fuel_type, 10) * third_party_discount
             if has_medical_passenger:
-                medical_outside_passenger = self.calculate_medical_outside_premium(vehicle_fuel_type, 10) * commercial_discount
+                medical_outside_passenger = self.calculate_medical_outside_premium(vehicle_fuel_type, 10) * third_party_discount
         
         # 7. 节假日翻倍 - 仅燃油车支持
         holiday_double_premium = 0
@@ -501,7 +501,7 @@ class InsuranceQuotationSystem:
             has_holiday_double=has_holiday_double,
             exchange_rate=params["exchange_rate"],
             vehicle_age=vehicle_age,
-            commercial_discount=commercial_discount
+            commercial_discount=third_party_discount
         )
     
     def generate_quote_by_year_month(self,
