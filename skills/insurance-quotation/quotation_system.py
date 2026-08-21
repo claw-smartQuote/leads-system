@@ -3,7 +3,7 @@
 """
 永诚保险整合报价系统
 支持燃油车与新能源车报价
-版本: 1.1 (已修复重复代码问题)
+版本: 2.0 (V.13 费率表 - 2026-08-21)
 """
 
 import logging
@@ -11,6 +11,10 @@ import time
 from dataclasses import dataclass
 from typing import Optional, Dict, List, Tuple
 from enum import Enum
+
+# 系统版本
+SYSTEM_VERSION = "2.0"
+RATE_VERSION = "V.13"
 
 # 配置日志
 logging.basicConfig(
@@ -203,8 +207,9 @@ class InsuranceQuotationSystem:
     
     def __init__(self):
         self.system_name = "永诚保险报价系统"
-        self.version = "1.1"
-        logger.info(f"初始化 {self.system_name} v{self.version}")
+        self.version = SYSTEM_VERSION
+        self.rate_version = RATE_VERSION
+        logger.info(f"初始化 {self.system_name} v{self.version} ({self.rate_version})")
     
     def calculate_third_party_premium(self, vehicle_fuel_type: str, vehicle_category: str, 
                                        limit: int, discount: float) -> float:
@@ -573,7 +578,7 @@ class InsuranceQuotationSystem:
         """格式化报价单文本"""
         lines = []
         lines.append("=" * 50)
-        lines.append("永诚保险报价单")
+        lines.append(f"永诚保险报价单 [v{SYSTEM_VERSION} - {RATE_VERSION}]")
         lines.append("=" * 50)
         lines.append("")
         lines.append(f"车牌号: {quote.license_plate}")

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 永诚保险报价系统 - 命令行界面
+版本: 2.0 (V.13 费率表)
 """
 
 import argparse
@@ -10,13 +11,15 @@ from quotation_system import (
     InsuranceQuotationSystem, 
     quick_quote_fuel, 
     quick_quote_ev, 
-    compare_quotes
+    compare_quotes,
+    SYSTEM_VERSION,
+    RATE_VERSION
 )
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='永诚保险报价系统 - 支持燃油车与新能源车',
+        description=f'永诚保险报价系统 v{SYSTEM_VERSION} - 支持燃油车与新能源车 (费率: {RATE_VERSION})',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 示例:
